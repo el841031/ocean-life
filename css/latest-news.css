@@ -1,0 +1,259 @@
+@import "./common/header.css";
+@import "./common/footer.css";
+@import "./common/all.css";
+@import "./common/font.css";
+@import "./common/ticket.css";
+
+/* 設定頁面所在位置,入館資訊 */
+header.header > div.block_1100 > nav.nav > ul.nav_list > li > a.on{
+  color: #55F4FF;
+}
+
+
+/* 網頁尺寸不得低於1100px */
+section.news{
+min-width: 1100px;
+margin: 0 auto;
+/* border: 1px solid red; */
+
+}
+
+/* 標題尺寸1100px */
+section.news > div.title_1100{
+width: 1100px;
+margin: 0 auto;
+/* border: 1px solid green; */
+}
+
+/* 內容尺寸1100px */
+section.news > div.news_1100{
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.news > div.title_1100{
+  width: 1100px;
+  margin: 0 auto;
+  position: relative; /* 最新消息標題定位 */
+}
+/* 日期跟分類做flex */
+div.news_1100 > div.news > ul > li > a > div.time_box{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+
+  position: relative; /* 原點定位 */
+}
+
+/* banner圖 */
+section.news > div.news_bg{
+  background-image: url(../images/news_bg.jpg);
+  height: 360px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+
+  position: relative; /* 為了設z-index */
+  z-index: -1;
+
+}
+
+/* 最新消息標題 */
+section.news > div.title_1100 > div.title{
+  position: absolute;
+  bottom: 176px;
+  left: 65px;
+}
+
+/* 新聞內文 */
+div.news_1100 > div.news > ul{
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: space-around;  /* 原本是between,因為會碰旁邊的訂票 */
+  flex-wrap: wrap;
+}
+div.news_1100 > div.news > ul > li{
+  /* border: 1px solid pink; */
+  width: 243px;
+
+  margin-bottom: 36px;
+}
+
+/* 照片 */
+div.news_1100 > div.news > ul > li > a{
+  /* width: 245px;
+  height: 172px; */
+  /* border: 1px solid red; */
+  display: inline-block;
+}
+div.news_1100 > div.news > ul > li > a >img{
+  width: 245px;
+  height: 172px;
+  display: inline-block;
+}
+
+
+/* 文字 */
+section.news > div.title_1100 > div.title > P:first-child{
+  font-size: 28px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+
+}
+section.news > div.title_1100 > div.title > P:last-child{
+  color: #55F4FF;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  margin-top: -4px;
+
+}
+
+section.news > div.news_1100 > div.change_bt > a{
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  border: 2px solid #1152A0;
+  padding: 9px 30px;
+  color: #1152A0;
+}
+section.news > div.news_1100 > div.change_bt > a.all_news{
+  background-color: #1152A0;
+  color: white;
+}
+
+div.news_1100 > div.news > ul > li > a > div > h6{
+  color: #585353;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+div.news_1100 > div.news > ul > li > a > div > h5{
+  color: #474747;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  margin: 8px 0px;
+}
+
+
+/* 頁碼 */
+section.news > div.news_1100 > div.number_bt{
+  font-size: 0px;
+}
+section.news > div.news_1100 > div.number_bt > a{
+  color: #1152A0;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  border: 1.5px solid #1152A0;
+  padding: 2px 8px 2px 8px;
+}
+section.news > div.news_1100 > div.number_bt > a.one{
+  background-color: #1152A0;
+  color: white;
+  padding: 2px 6px 2px 8px;
+}
+
+/* 按鈕切換的外距 */
+section.news > div.news_1100 > div.change_bt > a.office_news{
+  margin: 0px 15px;
+}
+section.news > div.news_1100 > div.change_bt{
+  margin: 60px 0px 60px 0px;
+}
+section.news > div.news_1100 > div.number_bt{
+  margin: 10px 0px 90px 0px;
+}
+
+/* 偽元素|圓點 */
+div.news_1100 > div.news > ul > li > a > div.time_box > h6:last-child::after{
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #1152A0;
+  position: absolute;
+  top: 7px;
+  right: 65px;
+}
+
+/* 偽元素|線條 */
+/* 橫線 */
+div.news_1100 > div.news > ul > li.one::after, li.two::after, li.three::after, li.four::after{
+  content: "";
+  display: inline-block;
+  width: 245px;
+  height: 1.5px;
+  background: #DFDFDF;
+  position: absolute;
+  top: 296px;
+}
+/* 直線 */
+div.news_1100 > div.news > ul > li.one::before, li.five::before{
+  content: "";
+  display: inline-block;
+  width: 1.5px;
+  height: 279px;
+  background: #DFDFDF;
+  position: absolute;
+  left: 275px;
+}
+div.news_1100 > div.news > ul > li.two::before, li.six::before{
+  content: "";
+  display: inline-block;
+  width: 1.5px;
+  height: 279px;
+  background: #DFDFDF;
+  position: absolute;
+  left: 550px;
+}
+div.news_1100 > div.news > ul > li.three::before, li.seven::before{
+  content: "";
+  display: inline-block;
+  width: 1.5px;
+  height: 279px;
+  background: #DFDFDF;
+  position: absolute;
+  left: 825px;
+}
+div.news_1100 > div.news > ul{
+  position: relative;
+}
+/* 大橫線 */
+div.news_1100 > div.news > ul::before{
+  content: "";
+  display: inline-block;
+  width: 1069px;
+  height: 1.5px;
+  background: #DFDFDF;
+  position: absolute;
+  top: -20px;
+}
+div.news_1100 > div.news > ul::after{
+  content: "";
+  display: inline-block;
+  width: 1069px;
+  height: 1.5px;
+  background: #DFDFDF;
+  position: absolute;
+  bottom: 20px;
+}
+div.news_1100 > div.news{
+  position: relative;
+}
+
+
+/* ----------------按鈕特效------------- */
+section.news > div.news_1100 > div.number_bt > a.two:hover{
+  background-color: #1152A0;
+  color: white;
+  transition-duration: 0.3s;
+}
+section.news > div.news_1100 > div.change_bt > a:hover{
+  background-color: #1152A0;
+  /* border: 2px solid rgb(28, 221, 235); */
+  color: white;
+  transition-duration: 0.3s;
+}

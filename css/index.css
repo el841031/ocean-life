@@ -1,0 +1,1073 @@
+@import "./common/header.css";
+@import "./common/footer.css";
+@import "./common/all.css";
+@import "./common/font.css";
+@import "./common/header_top.css";
+@import "./common/ticket.css";
+
+
+
+
+/* banner區塊 */
+
+/* 網頁尺寸1366px */
+section.top_bannner{
+min-width: 1100px;
+margin: 0 auto;
+/* border: 1px solid blue; */
+position: relative;
+/* background-color: pink; */
+}
+/* 內容尺寸1100px,並設定flex */
+section.top_bannner > div.top_1100{
+width: 1100px;
+/* height: 518px; */
+margin: 0 auto;
+/* border: 1px solid red; */
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+
+position: absolute;
+width: 425px;
+height: 445px;
+left: 0;
+right: 0;
+bottom: 0;
+top: -60px;
+margin: auto;
+}
+
+/* 針對scroll,設定flex */
+div.scrool_box{
+display: flex;
+flex-direction: column;
+margin-bottom: 22px;
+margin-top: 20px;
+}
+
+
+/* AQUARIUM字體樣式 */
+div.title_logo > h2{
+font-weight: 400;
+color: white;
+letter-spacing: 1px;
+margin-bottom: 100px;
+}
+
+/* SCROLL文字樣式 */
+div.scrool_box > a{
+color: white;
+letter-spacing: 1.5px;
+font-size: 12px;
+margin-bottom: 3px;
+}
+
+/* logo的水平線 */
+div.title_logo > hr{
+background-color: rgba(255,255,255,0.8);
+width: 100%;
+height: 1.5px;
+border: none;
+margin: 15px 0px 10px 0px;
+}
+
+
+
+/* banner大小設定,並定位及設定在最下層 */
+div.index_banner_box{
+background-image: url(../images/index_banner.jpg);
+height: 600px;
+min-width: 1100px;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+position: relative; /* 為了設定z-index */
+z-index: -2;
+}
+
+/* banner黑色遮罩 */
+span.index_banner_bg{
+height: 100%;
+min-width: 100%;
+background: #002f54;
+position: absolute;
+left: 0;
+top: 0;
+opacity: 0.3;
+z-index: -1;
+}
+
+/* 針對h1加上logo並將文字隱藏起來 */
+div.title_logo > h1{
+background-image: url(../images/logo.svg);
+height: 148px;
+width: 227px;
+background-repeat: no-repeat;
+background-position: center center;
+display: inline-block;
+text-indent: -9999px;
+margin: 100px auto 0px auto;
+display: inline-block;
+}
+
+/* 將上面的scroll箭頭往下移動一點 */
+div.scrool_box > a.scroll_01 > img.scroll_arrow{
+position: relative;
+top: 5px;
+}
+
+/* banner區塊-圖片大小設定 */
+img.scroll_arrow{
+width: 19px;
+height: 11px;
+display: inline-block;
+}
+
+/* 更多消息的文字樣式 */
+header.header > div.block_1100 > div.follow_icon > p.more_information{
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+
+
+/* 當日時間與線上預約購票 */
+ul.time_and_ticket{
+  min-width: 1100px;
+  display: flex;
+}
+
+/* 左邊區塊 */
+ul.time_and_ticket > li{
+  width: 50%;
+  background-color: #1152A0;
+}
+div.today_time{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.today_time > p.today{
+  background-image: url(../images/time.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: 24px 24px;
+  background-position: left center; /* 靠左邊中間對齊 */
+  background-repeat: no-repeat;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  padding: 20px 0px 20px 50px;
+}
+div.today_time > p.time{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  padding: 20px 0px 20px 20px;
+}
+/* 右邊區塊 */
+ul.time_and_ticket > li:last-child{  /* 改右邊的區塊顏色 */
+  background-color: #1CDDEB;
+  position: relative;
+}
+ul.time_and_ticket > li:last-child > a{
+  background-image: url(../images/ticket.svg);
+  background-size: 30px 20px;
+  background-position: left center; /* 靠左邊中間對齊 */
+  background-repeat: no-repeat;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  padding: 20px 0px 20px 50px;
+  /* 在li標籤置中 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+
+
+
+
+
+/* 最新消息區塊 */
+
+  /* 網頁尺寸1366px */
+section.news{
+  min-width: 1100px;
+  margin: 0 auto;
+  /* border: 1px solid blue; */
+  position: relative;   /* 裝飾圖片定位 */
+}
+/* 內容尺寸1100px,並設flex*/
+section.news > div.news_1100{
+  width: 1100px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 園區公告/活動消息選擇,設flex */
+ul.change_news{
+  display: flex;
+  margin-bottom: 50px;
+}
+/* 三張照片,設flex */
+ul.three_news{
+  display: flex;
+}
+
+/* 設定三張照片的大小/外距 */
+ul.three_news > li{
+  width: 232px;
+  margin: 0 25px;
+}
+
+/* 加波浪 */
+ul.three_news > li > div.title_wave a > h5::after{
+  content: "";
+  display: inline-block;
+  width: 230px;
+  height: 8px;
+  background-image: url(../images/wave.svg);
+  background-repeat: repeat-x;
+  background-position: center;
+  margin-bottom: 3px;
+}
+
+/* 更多消息的按鈕 */
+div.btn_more_news{
+  /* border: 2px solid #1152A0;
+  border-radius: 20px; */
+  margin: 36px 0px 90px 0px;
+}
+
+
+/* 外距 */
+div.news_1100 > ul.change_news > li:first-child{
+  /* margin-right: 1px; */
+}
+
+/* 字體樣式 */
+div.news_1100 > h3{
+  color: #1152A0;
+  letter-spacing: 1.5px;
+  margin: 55px 0px 40px 0px;
+}
+div.news_1100 > ul.change_news > li > a{
+  background-color: #1152A0;
+  border: 1.5px solid #1152A0;
+  color: white;
+  padding: 9px 70px;
+}
+div.news_1100 > ul.change_news > li:last-child > a{
+  border: 1.5px solid #1152A0;
+  background-color: transparent;
+  color: #1152A0;
+  padding: 9px 70px;
+}
+ul.three_news > li > a > h6{
+  color: #474747;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+ul.three_news > li > div.title_wave > a > h5{
+  color: #474747;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+div.btn_more_news > a{
+  font-size: 13px;
+  color: #1152A0;
+  width: 138px;
+  height: 35px;
+  display: inline-block;
+  text-align: center;
+  line-height: 31px;
+  letter-spacing: 1px;
+
+
+  border: 2px solid #1152A0;
+  border-radius: 20px;
+}
+
+
+/* 照片尺寸 */
+div.news_1100 > ul > li > a > img{
+  width: 232px;
+  height: 165px;
+}
+
+/* 裝飾圖片區塊 */
+section.news > div.news_bg{
+  /* z-index: -1; */
+}
+/* 裝飾圖片大小 */
+img.fish_01{
+  width: 229px;
+  height: 67px;
+  display: inline-block;
+  position: absolute;
+  top: 130px;
+  left: 80px;
+}
+img.fish_02{
+  width: 73px;
+  height: 27px;
+  display: inline-block;
+  position: absolute;
+  right: 250px;
+  top: 90px;
+}
+img.under_bg{
+  /* width: 100%;
+  height: 100%; */
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+
+/* 關於我們區域 */
+
+/* 網頁尺寸1366px */
+section.abouts_us{
+min-width: 1100px;
+margin: 0 auto;
+/* border: 1px solid blue; */
+position: relative; /* 針對背景圖定位 */
+}
+/* 內容尺寸1100px,並設flex*/
+section.abouts_us > div.abouts_1100{
+width: 1100px;
+margin: 0 auto;
+/* border: 1px solid red; */
+display: flex;
+flex-direction: column;
+align-items: center;
+position: relative; /* 針對波浪偽元素定位 */
+}
+
+/* 圖片 */
+section.abouts_us > div.about_bg{
+  background-image: url(../images/about_bg.jpg);
+  height: 568px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+/* 波浪 */
+section.abouts_us > div.abouts_1100 > h3::after{
+  content: "";
+  display: inline-block;
+  width: 140px;
+  height: 8px;
+  background-image: url(../images/wave.svg);
+  background-repeat: repeat-x;
+  background-position: center;
+  margin-bottom: 3px;
+  position: absolute;
+  top: 230px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 泡泡 */
+div.bubble{
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+/* 照片 */
+div.bubble > img.one{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 168px;
+  left: 240px;
+}
+div.bubble > img.two{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 221px;
+  left: 141px;
+}
+div.bubble > img.three{
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  top: 228px;
+  right: 172px;
+}
+div.bubble > img.four{
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 313px;
+  right: 133px;
+}
+div.bubble > img.five{
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 132px;
+  right: 220px;
+}
+div.bubble > img.six{
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  top: 168px;
+  right: 270px;
+}
+div.bubble > img.seven{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 340px;
+  right: 190px;
+}
+div.bubble > img.eight{
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  top: 303px;
+  left: 197px;
+}
+
+
+/* 文字樣式 */
+section.abouts_us > div.abouts_1100 > h3{
+  color: white;
+  letter-spacing: 1.5px;
+  margin: 190px 0px 50px 0px;
+}
+section.abouts_us > div.abouts_1100 > h5{
+  color: white;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+section.abouts_us > div.abouts_1100 > h5:last-child{
+  margin-bottom: 190px;
+}
+
+
+
+
+/* 特色魅力區域 */
+
+/* 網頁尺寸不低於1100px */
+section.feature{
+  min-width: 1100px;
+  margin: 0 auto;
+  background: linear-gradient(#0B3852 0%,#0B437C 70%,#004790 100%);
+}
+
+/* 內容尺寸1100px,並設flex*/
+section.feature > div.feature_1100{
+  width: 1100px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+}
+section.feature > div.feature_1100 > div.right_box{
+  display: flex;
+  align-items: center;
+  /* border: 1px solid pink; */
+}
+section.feature > div.feature_1100 > div.right_box > div.text_img_bt{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0px 45px;
+}
+
+/* 切換 */
+/* ol.change_feature */
+
+
+/* 按鈕 */
+section.feature > div.feature_1100 > div.right_box > div.text_img_bt > div.btn_more{
+  display: inline-block;
+  /* border: 1.5px solid #55F4FF;
+  border-radius: 20px; */
+
+  /* width: 138px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px; */
+}
+
+/* 照片 */
+div.right_box > div.left_img{
+  background-image: url(../images/feature_01a.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom right -160px;
+  background-size: cover;
+  width: 373px;
+  height: 470px;
+  /* border: 1px solid orange; */
+
+  margin: 80px 0px;
+}
+div.right_box > div.text_img_bt > div.right_img{
+  background-image: url(../images/feature_01b.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 225px;
+  height: 155px;
+  /* border: 1px solid orange; */
+}
+
+/* ul外距 */
+section.feature > div.feature_1100 > div.left_box > ul.change_feature{
+  color: white;
+  letter-spacing: 1.5px;
+
+  margin-left: 63px;
+  position: relative;   /* 為了波浪定位 */
+}
+section.feature > div.feature_1100 > div.left_box > ul > li{
+  margin: 40px 0px;
+}
+
+/* ul列表的文字 */
+section.feature > div.feature_1100 > div.left_box > ul.change_feature > li > a > span{
+  color: white;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}
+/* 1.夢幻海底隧道 */
+section.feature > div.feature_1100 > div.left_box > ul.change_feature > li.tunnel > a > span:last-child{
+  font-size: 35px;
+  color: #55F4FF;
+}
+
+/* 波浪 */
+section.feature > div.feature_1100 > div.left_box > ul.change_feature > li.tunnel::after{
+  content: "";
+  display: inline-block;
+  width: 215px;
+  height: 8px;
+  background-image: url(../images/wave.svg);
+  background-repeat: repeat-x;
+  background-position: center;
+  margin-bottom: 3px;
+  position: absolute;
+  top: 55px;
+  left: 20px;
+}
+/* 數字 */
+section.feature > div.feature_1100 > div.left_box > ul.change_feature > li.tunnel > a > span:first-child{
+  font-size: 12px;
+  color: #55F4FF;
+}
+section.feature > div.feature_1100 > div.left_box > ul.change_feature > li.light > a > span:first-child{
+  font-size: 12px;
+}
+section.feature > div.feature_1100 > div.left_box > ul.change_feature > li.moon > a > span:first-child{
+  font-size: 12px;
+}
+/* 文字 */
+section.feature > div.feature_1100 > div.left_box > h3{
+  color: white;
+  letter-spacing: 1.5px;
+
+  margin: 80px 145px 100px 63px;
+}
+
+section.feature > div.feature_1100 > div.right_box > div.text_img_bt > h6{
+  color: white;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+
+  margin: 45px 0px;
+}
+section.feature > div.feature_1100 > div.right_box > div.text_img_bt > div.btn_more > a{
+  color: #55F4FF;
+  letter-spacing: 1px;
+  width: 138px;
+  height: 35px;
+  display: inline-block;
+  text-align: center;
+  line-height: 31px;
+  font-weight: 300;
+  font-size: 13px;
+
+  border: 2px solid #55F4FF;
+  border-radius: 20px;
+}
+
+
+
+/* 地圖區域 */
+
+/* 網頁尺寸不低於1100px */
+section.map{
+  min-width: 1100px;
+  margin: 0 auto;
+  /* border: 1px solid pink; */
+
+  position: relative;   /* 為了地圖定位 */
+}
+
+/* 內容尺寸1100px,並設flex*/
+section.map > div.map_1100{
+  width: 1100px;
+  margin: 0 auto;
+  /* border: 1px solid blue; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-evenly;
+}
+
+div.map_1100 > div.right_box{
+  margin: 75px 0px 120px 0px;
+}
+
+div.map_1100 > div.left_box{
+  position: relative;
+}
+div.map_1100 > div.left_box > div.bottom_bt{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* 讓文字左右並排 */
+div.top_text > div.left_title{
+  display: inline-block;
+  border: 1px solid red;
+  vertical-align: top;
+
+  margin-right: 30px;
+}
+div.top_text > div.right_information{
+  display: inline-block;
+  border: 1px solid red;
+  vertical-align: top;
+}
+
+/* 消除左右並排的空格 */
+div.top_text{
+  font-size: 0px;
+  position: relative;   /* 波浪定位 */
+}
+
+/* 橫線 */
+div.top_text > div.information > h5:first-child::before{
+  content: "|";
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #BEBEBE;
+
+  position: absolute;
+  top: 0px;
+  left: 80px;
+}
+div.top_text > div.information > h5::before{
+  content: "|";
+  display: inline-block;
+  font-size: 36px;
+  font-weight: 100;
+  color: #BEBEBE;
+
+  position: absolute;
+  top: 31px;
+  left: 78px;
+}
+div.top_text > div.information > h5:last-child::before{
+  content: "|";
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #BEBEBE;
+
+  position: absolute;
+  top: 101px;
+  left: 80px;
+}
+div.top_text > div.information{
+  position: relative;
+}
+
+/* 波浪 */
+div.left_box > div.top_text > h3::after{
+  content: "";
+  display: inline-block;
+  width: 110px;
+  height: 8px;
+  background-image: url(../images/wave.svg);
+  background-repeat: repeat-x;
+  background-position: center;
+  position: absolute;
+  top: 38px;
+  left: -5px;
+}
+
+/* 圖片 */
+section.map > div.map_bg{
+  background-image: url(../images/map_bg.svg);
+  background-repeat: repeat;
+  background-size: cover;
+  width: 100%;
+  height: 540px;
+
+  position: absolute;
+  z-index: -1;
+}
+
+/* 地圖 */
+/* section.map > div.map_1100 > div.right_box > div.map{
+  width: 520px;
+  height: 372px;
+} */
+
+/* 按鈕 */
+div.bottom_bt > div.btn_more{
+  display: inline-block;
+  /* border: 2px solid #105A9C;
+  border-radius: 20px; */
+
+  margin-top: 40px;
+}
+
+/* 文字 */
+div.left_box > div.top_text > h3{
+  color: #08448F;
+  letter-spacing: 1.5px;
+
+  margin: 100px 0px 66px 0px;
+}
+div.left_box > div.top_text > div > h5{
+  color: #474747;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+div.left_box > div.top_text > div > h5:first-child{
+  margin: 15px 0px;
+}
+div.left_box > div.top_text > div > h5:last-child{
+  margin: 15px 0px;
+}
+div.bottom_bt > div.btn_more > a{
+  color: #105A9C;
+  letter-spacing: 1px;
+  width: 138px;
+  height: 35px;
+  display: inline-block;
+  text-align: center;
+  line-height: 31px;
+  font-size: 13px;
+
+  border: 2px solid #105A9C;
+  border-radius: 20px;
+}
+
+
+
+
+
+/* IG區域 */
+
+/* 網頁尺寸不低於1100px */
+section.IG{
+  min-width: 1100px;
+  margin: 0 auto;
+  /* border: 1px solid pink; */
+
+  position: relative;
+}
+
+/* 內容尺寸1100px*/
+section.IG > div.IG_1100{
+  width: 1100px;
+  margin: 0 auto;
+  /* border: 1px solid blue; */
+  text-align: center;
+
+  position: relative; /* 波浪定位 */
+}
+
+/* 文字 */
+section.IG > div.IG_1100 > h3{
+  color: #08448F;
+  letter-spacing: 1.5px;
+
+  margin: 20px 0px 500px 0px;
+}
+section.IG > div.IG_1100 > div.Follow_bt > a{
+  color: #105A9C;
+  letter-spacing: 1px;
+  width: 138px;
+  height: 35px;
+  display: inline-block;
+  text-align: center;
+  line-height: 31px;
+  font-size: 13px;
+
+  border: 2px solid #105A9C;
+  border-radius: 20px;
+}
+
+/* 波浪 */
+section.IG > div.IG_1100 > h3::after{
+  content: "";
+  display: inline-block;
+  width: 155px;
+  height: 8px;
+  background-image: url(../images/wave.svg);
+  background-repeat: repeat-x;
+  background-position: center;
+  margin-bottom: 3px;
+  position: absolute;
+  top: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+/* 按鈕 */
+section.IG > div.IG_1100 > div.Follow_bt{
+  display: inline-block;
+  /* border: 2px solid #105A9C;
+  border-radius: 20px; */
+
+  margin: 45px 0px 90px 0px;
+}
+
+/* IG */
+section.IG > div.IG_box{
+  position: absolute;
+  width: 100%;
+  /* border: 1px solid orange; */
+
+  top: 85px;
+
+  display: grid;
+  justify-content: center;
+  gap: 6px;
+  grid-template-columns: 241px 245px 370px 245px 241px;
+  grid-template-rows: 70px 70px 70px 70px 70px 70px;
+
+  overflow: hidden;
+}
+
+/* 合併區 */
+section.IG > div.IG_box > div.column_item01{
+  grid-row: 1 / 4;
+}
+section.IG > div.IG_box > div.column_item02{
+  grid-row: 1 / 5;
+}
+section.IG > div.IG_box > div.column_item03{
+  grid-row: 1 / 4;
+}
+section.IG > div.IG_box > div.column_item04{
+  grid-row: 1 / 5;
+}
+section.IG > div.IG_box > div.column_item05{
+  grid-row: 1 / 4;
+}
+section.IG > div.IG_box > div.column_item06{
+  grid-row: 4 / 7;
+}
+section.IG > div.IG_box > div.column_item07{
+  grid-row: 5 / 7;
+}
+section.IG > div.IG_box > div.column_item08{
+  grid-row: 4 / 7;
+}
+section.IG > div.IG_box > div.column_item09{
+  grid-row: 5 / 7;
+}
+section.IG > div.IG_box > div.column_item10{
+  grid-row: 4 / 7;
+}
+
+/* 圖片 */
+a.img_01{
+  background-image: url(../images/ig_01.jpg);
+  /* height: 241px;
+  width: 258px; */
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right -40px;
+  display: inline-block;
+}
+a.img_02{
+  background-image: url(../images/ig_03.jpg);
+  /* height: 241px;
+  width: 258px; */
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left -110px;
+  display: inline-block;
+}
+a.img_03{
+  background-image: url(../images/ig_05.jpg);
+  /* height: 241px;
+  width: 258px; */
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: inline-block;
+}
+a.img_04{
+  background-image: url(../images/ig_07.jpg);
+  /* height: 241px;
+  width: 258px; */
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left -80px;
+  display: inline-block;
+}
+a.img_05{
+  background-image: url(../images/ig_09.jpg);
+  /* height: 241px;
+  width: 258px; */
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: inline-block;
+}
+a.img_06{
+  background-image: url(../images/ig_02.jpg);
+  /* height: 241px;
+  width: 258px; */
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: inline-block;
+}
+a.img_07{
+  background-image: url(../images/ig_04.jpg);
+  /* height: 241px;
+  width: 258px; */
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: inline-block;
+}
+a.img_08{
+  background-image: url(../images/ig_06.jpg);
+  /* height: 241px;
+  width: 258px; */
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: inline-block;
+}
+a.img_09{
+  background-image: url(../images/ig_08.jpg);
+  /* height: 241px;
+  width: 258px; */
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: inline-block;
+}
+a.img_10{
+  background-image: url(../images/ig_10.jpg);
+  /* height: 241px;
+  width: 258px; */
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: inline-block;
+}
+
+
+
+/* ----------按鈕效果--------------- */
+/* 更多消息 */
+div.btn_more_news > a:hover{
+  background-color: rgb(28, 221, 235);
+  color: white;
+  border: 2px solid rgb(28, 221, 235);
+
+  transition-duration: 0.3s;
+}
+
+/* 深入瞭解 */
+section.feature > div.feature_1100 > div.right_box > div.text_img_bt > div.btn_more > a:hover{
+  background-color: rgb(28, 221, 235);
+  color: white;
+  border: 2px solid rgb(28, 221, 235);
+
+  transition-duration: 0.3s;
+}
+/* 瞭解更多 */
+div.bottom_bt > div.btn_more > a:hover{
+  background-color: rgb(28, 221, 235);
+  color: white;
+  border: 2px solid rgb(28, 221, 235);
+
+  transition-duration: 0.3s;
+}
+/* Follow Us */
+section.IG > div.IG_1100 > div.Follow_bt > a:hover{
+  background-color: rgb(28, 221, 235);
+  color: white;
+  border: 2px solid rgb(28, 221, 235);
+
+  transition-duration: 0.3s;
+}
+
+
+ul.time_and_ticket > li:last-child:hover{
+  background-color: #00D3E2;
+  transition-duration: 0.3s;
+}
+
+div.news_1100 > ul.change_news > li:last-child > a:hover{
+  background-color: #2978D7;
+  border: 1.5px solid #2978D7;
+  color: white;
+  transition-duration: 0.3s;
+}

@@ -1,0 +1,115 @@
+/* 網頁尺寸1366px */
+footer.footer{
+  min-width: 1100px;
+  margin: 0 auto;
+  /* border: 1px solid blue; */
+  background-color: #1152A0;
+}
+/* 內容尺寸1100px */
+footer.footer > div.footer_flex{
+  width: 1100px;
+  margin: 0 auto;
+  /* border: 1px solid pink; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative; /* TOP定位 */
+}
+
+/* 設定flex,針對更多情報/小圖示 */
+div.follow_icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* TOP按鈕 */
+footer.footer > div.footer_flex > div.TOP_bt > a > img{
+  width: 60px;
+  height: 60px;
+}
+footer.footer > div.footer_flex > div.TOP_bt{
+  position: absolute;
+  top: -83px;
+
+}
+
+
+
+/* hr標籤水平線 */
+hr{
+  background-color: rgba(255,255,255,0.5);
+  width: 920px;
+  height: 1.5px;
+  border: none;
+  margin: 10px 0px;
+}
+
+/* icon外距,並設定寬高與img一樣大,為了水平置中 */
+div.follow_icon > a{
+  margin: 0px 8px;
+  width: 23px;
+  height: 21px;
+}
+
+div.follow_icon > p.line {
+  margin: 0px 8px 0px 16px;
+}
+
+/* footer內距 */
+footer.footer{
+  padding: 50px 0px 30px 0px;
+}
+
+/* 文字相關 */
+p{
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+}
+p > a{
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+  text-decoration: underline;
+}
+p.copy{
+  margin-top: 20px;
+}
+div.footer_flex > h5{
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+/* 圖片大小設定 */
+img.facebook{
+  width: 23px;
+  height: 21px;
+}
+img.youtube{
+  width: 23px;
+  height: 21px;
+  /* 有改過尺寸 */
+}
+img.ig{
+  width: 23px;
+  height: 21px;
+  /* margin-left: 10px; */
+}
+
+
+/* 動畫特效 */
+footer.footer > div.footer_flex > div.TOP_bt > a{
+  animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
