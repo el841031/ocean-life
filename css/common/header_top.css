@@ -269,13 +269,13 @@ img.logo_02{
   /* height: 35px; */
   display: inline-block;
 }
-img.language{
+.language{
   width: 20px;
   height: 20px;
   display: inline-block;
   /* margin-right: 10px; */
 }
-img.arrow{
+.arrow{
   width: 13px;
   height: 8px;
   display: inline-block;
@@ -287,4 +287,15 @@ header.header > div.block_1100 > a > img.logo_02:hover{
   opacity: 0.8;
   /* transition: .5s ease; */
   transition-duration: 0.3s;
+}
+
+/* SVG效果 */
+li.language_list:hover .language path{
+  fill: #55F4FF;
+}
+li.language_list:hover > div > a{
+  color: #55F4FF;
+}
+li.language_list:hover .arrow path{
+  fill: #55F4FF;
 }

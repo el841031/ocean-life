@@ -218,7 +218,7 @@ section.ticket > div.buy_ticket_1100 > div.buy_bt > div > a:hover{
 }
 
 
-/* ---------切換|按鈕hover特效--------- */
-/* section.ticket > ul.change_bt_1100 > li.two > a > img:hover{
-  background-image: url(.//images/car_blue.svg);
-} */
+/* ---------SVG特效--------- */
+.faq:hover path{
+  fill: #55F4FF;
+}

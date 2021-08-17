@@ -246,14 +246,36 @@ div.news_1100 > div.news{
 
 
 /* ----------------按鈕特效------------- */
-section.news > div.news_1100 > div.number_bt > a.two:hover{
-  background-color: #1152A0;
+/* 頁數 */
+section.news > div.news_1100 > div.number_bt > a.one:hover{
+  background-color: #2978D7;
+  border: 1.5px solid #2978D7;
   color: white;
   transition-duration: 0.3s;
 }
-section.news > div.news_1100 > div.change_bt > a:hover{
-  background-color: #1152A0;
-  /* border: 2px solid rgb(28, 221, 235); */
+section.news > div.news_1100 > div.number_bt > a.two:hover{
+  /* background-color: #1152A0; */
+  border: 1.5px solid #2978D7;
+  color: #2978D7;
+  transition-duration: 0.3s;
+}
+
+/* 消息切換 */
+section.news > div.news_1100 > div.change_bt > a.all_news:hover{
+  background-color: #2978D7;
+  border: 2px solid #2978D7;
   color: white;
+  transition-duration: 0.3s;
+}
+section.news > div.news_1100 > div.change_bt > a.office_news:hover{
+  /* background-color: #1152A0; */
+  border: 2px solid #2978D7;
+  color: #2978D7;
+  transition-duration: 0.3s;
+}
+section.news > div.news_1100 > div.change_bt > a.activity_news:hover{
+  /* background-color: #1152A0; */
+  border: 2px solid #2978D7;
+  color: #2978D7;
   transition-duration: 0.3s;
 }

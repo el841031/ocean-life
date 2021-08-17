@@ -1059,15 +1059,48 @@ section.IG > div.IG_1100 > div.Follow_bt > a:hover{
   transition-duration: 0.3s;
 }
 
-
+/* 線上預約購票 */
 ul.time_and_ticket > li:last-child:hover{
   background-color: #00D3E2;
   transition-duration: 0.3s;
 }
 
-div.news_1100 > ul.change_news > li:last-child > a:hover{
+/* 消息特報 */
+div.news_1100 > ul.change_news > li:first-child > a:hover{
   background-color: #2978D7;
   border: 1.5px solid #2978D7;
-  color: white;
   transition-duration: 0.3s;
+}
+div.news_1100 > ul.change_news > li:last-child > a:hover{
+  /* background-color: #2978D7; */
+  border: 1.5px solid #2978D7;
+  color: #2978D7;
+  transition-duration: 0.3s;
+}
+
+/* IG效果 */
+section.IG > div.IG_box > div > a{
+  position: relative;
+}
+
+section.IG > div.IG_box > div > a::after{
+  content: '查看貼文';
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+  opacity: 0;
+
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+section.IG > div.IG_box > div > a:hover::after{
+  opacity: 1;
 }

@@ -26,6 +26,8 @@ div.follow_icon{
 
 
 
+
+
 /* TOP按鈕 */
 footer.footer > div.footer_flex > div.TOP_bt > a > img{
   width: 60px;
@@ -110,6 +112,43 @@ img.ig{
 
 
 /* 動畫特效 */
-footer.footer > div.footer_flex > div.TOP_bt > a{
+@keyframes float{
+  0% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(0, -2px);
+  }
+  70% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+footer.footer > div.footer_flex > div.TOP_bt > a > img{
   animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+}
+
+footer.footer > div.footer_flex > div.TOP_bt > a:hover{
+  opacity: 0.9;
+}
+
+/* hover效果 */
+footer.footer > div.footer_flex > p > a:hover{
+  color: #dfe2e5;
+}
+
+
+
+/* SVG效果 */
+.facebook:hover path{
+  fill: #55F4FF;
+}
+.youtube:hover path{
+  fill: #55F4FF;
+}
+.ig:hover path{
+  fill: #55F4FF;
 }
