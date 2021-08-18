@@ -41,19 +41,19 @@ section.ticket > ul.change_bt_1100{
   justify-content: center;
   align-items: flex-end;
 }
-section.ticket > ul.change_bt_1100 > li.one > a > img{
+section.ticket > ul.change_bt_1100 > li.one > a > .ticket{
   width: 59px;
   height: 52px;
 }
-section.ticket > ul.change_bt_1100 > li.two > a > img{
+section.ticket > ul.change_bt_1100 > li.two > a > .car{
   width: 72px;
   height: 38px;
 }
-section.ticket > ul.change_bt_1100 > li.three > a > img{
+section.ticket > ul.change_bt_1100 > li.three > a > .FAQ{
   width: 54px;
   height: 46px;
 }
-section.ticket > ul.change_bt_1100 > li.four > a > img{
+section.ticket > ul.change_bt_1100 > li.four > a > .email{
   width: 53px;
   height: 37px;
 }
@@ -219,6 +219,40 @@ section.ticket > div.buy_ticket_1100 > div.buy_bt > div > a:hover{
 
 
 /* ---------SVG特效--------- */
-.faq:hover path{
-  fill: #55F4FF;
+/* 票價&購票 */
+section.ticket > ul.change_bt_1100 > li.one:hover .ticket path{
+  fill: #2978D7;
+}
+section.ticket > ul.change_bt_1100 > li.one:hover > a > h5{
+  color: #2978D7;
+}
+
+
+/* 交通指南 */
+section.ticket > ul.change_bt_1100 > li.two:hover .car path{
+  fill: #2978D7;
+}
+section.ticket > ul.change_bt_1100 > li.two:hover > a > h5{
+  color: #2978D7;
+}
+
+/* FAQ */
+section.ticket > ul.change_bt_1100 > li.three:hover .FAQ path{
+  fill: #2978D7;
+}
+section.ticket > ul.change_bt_1100 > li.three:hover > a > h5{
+  color: #2978D7;
+}
+
+/* 聯絡我們 */
+section.ticket > ul.change_bt_1100 > li.four:hover .email path{
+  fill: #2978D7;
+}
+section.ticket > ul.change_bt_1100 > li.four:hover > a > h5{
+  color: #2978D7;
+}
+
+/* 票價&購票的BUG */
+section.ticket > ul.change_bt_1100 > li.one .ticket path{
+  fill: #1152A0;
 }

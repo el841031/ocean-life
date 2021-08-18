@@ -279,3 +279,10 @@ section.news > div.news_1100 > div.change_bt > a.activity_news:hover{
   color: #2978D7;
   transition-duration: 0.3s;
 }
+
+
+
+/* 暫時|照片hover */
+div.news_1100 > div.news > ul > li > a >img:hover{
+  opacity: 0.8;
+}

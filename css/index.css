@@ -305,6 +305,9 @@ div.btn_more_news > a{
 div.news_1100 > ul > li > a > img{
   width: 232px;
   height: 165px;
+
+  /* transform: scale(1);
+  opacity: 1; */
 }
 
 /* 裝飾圖片區塊 */
@@ -1103,4 +1106,15 @@ section.IG > div.IG_box > div > a::after{
 }
 section.IG > div.IG_box > div > a:hover::after{
   opacity: 1;
+}
+
+
+/* 獨特魅力hover */
+section.feature > div.feature_1100 > div.left_box > ul.change_feature > li > a:hover > span{
+  color: rgb(85, 244, 255);
+}
+
+/* 暫時|照片hover */
+div.news_1100 > ul.three_news > li > a > img:hover{
+  opacity: 0.8;
 }

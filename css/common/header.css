@@ -273,6 +273,11 @@ header.header > div.block_1100 > a > img.logo_02:hover{
   transition-duration: 0.3s;
 }
 
+/* 語言顏色bug */
+li.language_list .language path{
+  fill: white;
+}
+
 /* SVG效果 */
 li.language_list:hover .language path{
   fill: #55F4FF;

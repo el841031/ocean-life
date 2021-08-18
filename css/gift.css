@@ -50,15 +50,15 @@ section.gift > ul.change_bt_1100{
 }
 
 /* 圖片 */
-section.gift > ul.change_bt_1100 > li.one > a > img{
+section.gift > ul.change_bt_1100 > li.one > a > .animals{
   width: 68px;
   height: 51px;
 }
-section.gift > ul.change_bt_1100 > li.two > a > img{
+section.gift > ul.change_bt_1100 > li.two > a > .eat{
   width: 51px;
   height: 58px;
 }
-section.gift > ul.change_bt_1100 > li.three > a > img{
+section.gift > ul.change_bt_1100 > li.three > a > .gift{
   width: 50px;
   height: 52px;
 }
@@ -188,4 +188,41 @@ section.gift > div.notice{
   font-weight: 400;
 
   margin: 0px auto 90px auto;
+}
+
+
+
+/* ---------SVG特效--------- */
+/* 館內導覽 */
+section.gift > ul.change_bt_1100 > li.one:hover .animals path{
+  fill: #2978D7;
+}
+section.gift > ul.change_bt_1100 > li.one:hover > a > h5{
+  color: #2978D7;
+}
+
+
+/* 特色餐廳 */
+section.gift > ul.change_bt_1100 > li.two:hover .eat path{
+  fill: #2978D7;
+}
+section.gift> ul.change_bt_1100 > li.two:hover > a > h5{
+  color: #2978D7;
+}
+
+/* 紀念品店 */
+section.gift > ul.change_bt_1100 > li.three:hover .gift path{
+  fill: #2978D7;
+}
+section.gift > ul.change_bt_1100 > li.three:hover > a > h5{
+  color: #2978D7;
+}
+
+/* 館內導覽的BUG */
+section.gift > ul.change_bt_1100 > li.one .animals path{
+  fill: #BEBEBE;
+}
+/* 特色餐廳的BUG */
+section.gift > ul.change_bt_1100 > li.two .eat path{
+  fill: #BEBEBE;
 }

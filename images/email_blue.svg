@@ -3,15 +3,9 @@
 <svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 55.5 40" style="enable-background:new 0 0 55.5 40;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#1152A0;stroke-width:2.5;stroke-miterlimit:10;}
+	.st0{fill:#1152A0;}
 </style>
-<g id="圖層_2_1_">
-	<g id="FAQ">
-		<g id="Group_89">
-			<path id="Rectangle_98" class="st0" d="M6.7,1.5h42.2c2.8,0,5.2,2.3,5.2,5.2v26.7c0,2.8-2.3,5.2-5.2,5.2H6.7
-				c-2.8,0-5.2-2.3-5.2-5.2V6.7C1.5,3.8,3.8,1.5,6.7,1.5z"/>
-			<path id="Path_106" class="st0" d="M4.1,2.8l23.5,21.3l24-21.3"/>
-		</g>
-	</g>
-</g>
+<path class="st0" d="M48.9,0.2H6.7c-3.6,0-6.5,2.8-6.5,6.5v26.7c0,3.6,2.9,6.4,6.5,6.4h42.2c3.6,0,6.4-2.9,6.4-6.4V6.7
+	C55.3,3.1,52.5,0.2,48.9,0.2z M6.7,2.8h42.2c0.3,0,0.5,0,0.8,0.1L27.6,22.4L6,2.8C6.2,2.8,6.5,2.8,6.7,2.8z M52.8,33.4
+	c0,2.2-1.8,3.9-3.9,3.9H6.7c-2.2,0-4-1.8-4-3.9V6.7c0-1,0.4-1.9,1-2.6l23.9,21.7L51.9,4.2c0.6,0.7,0.9,1.6,0.9,2.5V33.4z"/>
 </svg>
