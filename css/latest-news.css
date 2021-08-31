@@ -15,6 +15,7 @@ section.news{
 min-width: 1100px;
 margin: 0 auto;
 /* border: 1px solid red; */
+padding-top: 78px;
 
 }
 
@@ -40,7 +41,7 @@ section.news > div.title_1100{
   position: relative; /* 最新消息標題定位 */
 }
 /* 日期跟分類做flex */
-div.news_1100 > div.news > ul > li > a > div.time_box{
+div.news_1100 > div.news > div > ul > li > a > div.time_box{
   display: flex;
   justify-content: space-between;
   margin-top: 8px;
@@ -70,32 +71,42 @@ section.news > div.title_1100 > div.title{
 }
 
 /* 新聞內文 */
-div.news_1100 > div.news > ul{
+div.news_1100 > div.news > div > ul{
   /* border: 1px solid green; */
   display: flex;
-  justify-content: space-around;  /* 原本是between,因為會碰旁邊的訂票 */
+  /* justify-content: space-around; */
   flex-wrap: wrap;
 }
-div.news_1100 > div.news > ul > li{
+div.news_1100 > div.news > div > ul > li{
   /* border: 1px solid pink; */
   width: 243px;
-
-  margin-bottom: 36px;
+  margin: 0px 16px 36px;
+  /* margin-bottom: 36px; */
 }
 
 /* 照片 */
-div.news_1100 > div.news > ul > li > a{
+div.news_1100 > div.news > div > ul > li > a{
   /* width: 245px;
   height: 172px; */
   /* border: 1px solid red; */
   display: inline-block;
 }
-div.news_1100 > div.news > ul > li > a >img{
+div.news_1100 > div.news > div > ul > li > a > div.img >img{
   width: 245px;
   height: 172px;
   display: inline-block;
-}
 
+  transition: all 0.8s;
+}
+div.news_1100 > div.news > div > ul > li > a > div.img{
+  display: inline-block;
+  overflow: hidden;
+  height: 172px;
+}
+div.news_1100 > div.news > div > ul > li > a > div.img >img:hover{
+  transform: scale(1.06);
+  /* opacity: 0.8; */
+}
 
 /* 文字 */
 section.news > div.title_1100 > div.title > P:first-child{
@@ -119,18 +130,23 @@ section.news > div.news_1100 > div.change_bt > a{
   border: 2px solid #1152A0;
   padding: 9px 30px;
   color: #1152A0;
-}
-section.news > div.news_1100 > div.change_bt > a.all_news{
-  background-color: #1152A0;
-  color: white;
+  margin: 0px 8px;
 }
 
-div.news_1100 > div.news > ul > li > a > div > h6{
+
+div.news_1100 > div.news > div > ul > li > a > div > h6{
   color: #585353;
   letter-spacing: 1.5px;
   font-weight: 400;
+
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis; /*被overflow的內容加上刪節號(…)*/
+  -webkit-line-clamp: 2; /*行數*/
+  -webkit-box-orient: vertical;
+  white-space: normal;
 }
-div.news_1100 > div.news > ul > li > a > div > h5{
+div.news_1100 > div.news > div > ul > li > a > div > h5{
   color: #474747;
   letter-spacing: 1.5px;
   font-weight: 600;
@@ -143,17 +159,17 @@ section.news > div.news_1100 > div.number_bt{
   font-size: 0px;
 }
 section.news > div.news_1100 > div.number_bt > a{
-  color: #1152A0;
+  /* color: #1152A0; */
   letter-spacing: 1.5px;
   font-weight: 400;
-  border: 1.5px solid #1152A0;
-  padding: 2px 8px 2px 8px;
+  /* border: 1.5px solid #1152A0;
+  padding: 2px 8px 2px 8px; */
 }
-section.news > div.news_1100 > div.number_bt > a.one{
+/* section.news > div.news_1100 > div.number_bt > a.one{
   background-color: #1152A0;
   color: white;
   padding: 2px 6px 2px 8px;
-}
+} */
 
 /* 按鈕切換的外距 */
 section.news > div.news_1100 > div.change_bt > a.office_news{
@@ -167,7 +183,7 @@ section.news > div.news_1100 > div.number_bt{
 }
 
 /* 偽元素|圓點 */
-div.news_1100 > div.news > ul > li > a > div.time_box > h6:last-child::after{
+div.news_1100 > div.news > div > ul > li > a > div.time_box > h6:last-child::after{
   content: "";
   display: inline-block;
   width: 6px;
@@ -181,17 +197,17 @@ div.news_1100 > div.news > ul > li > a > div.time_box > h6:last-child::after{
 
 /* 偽元素|線條 */
 /* 橫線 */
-div.news_1100 > div.news > ul > li.one::after, li.two::after, li.three::after, li.four::after{
+div.news_1100 > div.news > div > ul > li.one::after, li.two::after, li.three::after, li.four::after{
   content: "";
   display: inline-block;
   width: 245px;
   height: 1.5px;
   background: #DFDFDF;
   position: absolute;
-  top: 296px;
+  top: 297px;
 }
 /* 直線 */
-div.news_1100 > div.news > ul > li.one::before, li.five::before{
+div.news_1100 > div.news > div > ul > li.one::before, li.five::before{
   content: "";
   display: inline-block;
   width: 1.5px;
@@ -200,7 +216,7 @@ div.news_1100 > div.news > ul > li.one::before, li.five::before{
   position: absolute;
   left: 275px;
 }
-div.news_1100 > div.news > ul > li.two::before, li.six::before{
+div.news_1100 > div.news > div > ul > li.two::before, li.six::before{
   content: "";
   display: inline-block;
   width: 1.5px;
@@ -209,7 +225,7 @@ div.news_1100 > div.news > ul > li.two::before, li.six::before{
   position: absolute;
   left: 550px;
 }
-div.news_1100 > div.news > ul > li.three::before, li.seven::before{
+div.news_1100 > div.news > div > ul > li.three::before, li.seven::before{
   content: "";
   display: inline-block;
   width: 1.5px;
@@ -218,11 +234,11 @@ div.news_1100 > div.news > ul > li.three::before, li.seven::before{
   position: absolute;
   left: 825px;
 }
-div.news_1100 > div.news > ul{
+div.news_1100 > div.news > div > ul{
   position: relative;
 }
 /* 大橫線 */
-div.news_1100 > div.news > ul::before{
+div.news_1100 > div.news > div > ul::before{
   content: "";
   display: inline-block;
   width: 1069px;
@@ -230,11 +246,22 @@ div.news_1100 > div.news > ul::before{
   background: #DFDFDF;
   position: absolute;
   top: -20px;
+  left: 16px;
 }
-div.news_1100 > div.news > ul::after{
+/* div.news_1100 > div.news > div > ul::after{
   content: "";
   display: inline-block;
   width: 1069px;
+  height: 1.5px;
+  background: #DFDFDF;
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+} */
+div.news_1100 > div.news > div > ul > li::after{
+  content: "";
+  display: inline-block;
+  width: 245px;
   height: 1.5px;
   background: #DFDFDF;
   position: absolute;
@@ -247,42 +274,137 @@ div.news_1100 > div.news{
 
 /* ----------------按鈕特效------------- */
 /* 頁數 */
-section.news > div.news_1100 > div.number_bt > a.one:hover{
-  background-color: #2978D7;
-  border: 1.5px solid #2978D7;
+/* section.news > div.news_1100 > div.number_bt > a.change.-on:hover{
+  background-color: #1152A0;
+  border: 1.5px solid #1152A0;
   color: white;
   transition-duration: 0.3s;
 }
-section.news > div.news_1100 > div.number_bt > a.two:hover{
-  /* background-color: #1152A0; */
+section.news > div.news_1100 > div.number_bt > a.change:hover{
   border: 1.5px solid #2978D7;
   color: #2978D7;
   transition-duration: 0.3s;
-}
+} */
 
 /* 消息切換 */
-section.news > div.news_1100 > div.change_bt > a.all_news:hover{
-  background-color: #2978D7;
-  border: 2px solid #2978D7;
+section.news > div.news_1100 > div.change_bt > a.change_btn.-on:hover{
+  background-color: #1152A0;
+  border: 2px solid #1152A0;
   color: white;
   transition-duration: 0.3s;
 }
-section.news > div.news_1100 > div.change_bt > a.office_news:hover{
-  /* background-color: #1152A0; */
+section.news > div.news_1100 > div.change_bt > a.change_btn:hover{
   border: 2px solid #2978D7;
   color: #2978D7;
   transition-duration: 0.3s;
 }
-section.news > div.news_1100 > div.change_bt > a.activity_news:hover{
-  /* background-color: #1152A0; */
+/* section.news > div.news_1100 > div.change_bt > a.activity_news:hover{
   border: 2px solid #2978D7;
   color: #2978D7;
   transition-duration: 0.3s;
-}
+} */
 
 
 
 /* 暫時|照片hover */
-div.news_1100 > div.news > ul > li > a >img:hover{
+/* div.news_1100 > div.news > ul > li > a >img:hover{
   opacity: 0.8;
+} */
+/* 切換按鈕 */
+section.news > div.news_1100 > div.change_bt > a.change_btn.-on{
+  background-color: #1152A0;
+  color: white;
+}
+
+div.tab.news_tab01.-on{
+  display: block;
+}
+div.tab.news_tab02{
+  display: none;
+}
+div.tab.news_tab03{
+  display: none;
+}
+
+
+div.tab.news_tab02.-on{
+  display: block;
+}
+div.tab.news_tab01{
+  display: none;
+}
+div.tab.news_tab03{
+  display: none;
+}
+
+div.tab.news_tab03.-on{
+  display: block;
+}
+div.tab.news_tab01{
+  display: none;
+}
+div.tab.news_tab02{
+  display: none;
+}
+
+section.news > div.news_1100 > div.news_tab01.-on{
+  display: block;
+  visibility: visible;
+}
+section.news > div.news_1100 > div.news_tab02{
+  display: none;
+}
+section.news > div.news_1100 > div.news_tab03{
+  display: none;
+}
+
+section.news > div.news_1100 > div.news_tab02.-on{
+  visibility: hidden;
+}
+section.news > div.news_1100 > div.news_tab01{
+  visibility: hidden;
+}
+section.news > div.news_1100 > div.news_tab03{
+  visibility: hidden;
+}
+
+/* section.news > div.news_1100 > div.news_tab03.-on{
+  display: none;
+} */
+
+/* 切換頁碼顏色 */
+section.news > div.news_1100 > div.number_bt > a.change.one.-on{
+  background-color: #1152A0;
+  color: white;
+  padding: 2px 6px 2px 8px;
+}
+section.news > div.news_1100 > div.number_bt > a.change.two{
+  color: #1152A0;
+  border: 1.5px solid #1152A0;
+  padding: 2px 6px 2px 8px;
+}
+
+section.news > div.news_1100 > div.number_bt > a.change.two.-on{
+  background-color: #1152A0;
+  color: white;
+  padding: 2px 6px 2px 8px;
+}
+section.news > div.news_1100 > div.number_bt > a.change.one{
+  color: #1152A0;
+  border: 1.5px solid #1152A0;
+  padding: 2px 6px 2px 8px;
+}
+
+/* ----------------按鈕特效------------- */
+/* 頁數 */
+section.news > div.news_1100 > div.number_bt > a.change.-on:hover{
+  background-color: #1152A0;
+  border: 1.5px solid #1152A0;
+  color: white;
+  transition-duration: 0.3s;
+}
+section.news > div.news_1100 > div.number_bt > a.change:hover{
+  border: 1.5px solid #2978D7;
+  color: #2978D7;
+  transition-duration: 0.3s;
 }

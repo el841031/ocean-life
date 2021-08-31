@@ -10,6 +10,8 @@ header.header{
   /* border: 1px solid blue; */
   background-color: #1152A0;
 
+  box-shadow: none;
+
 /* 目前暫定的，之後可能會改成flexd */
   /* position: relative; /* 為了設定z-index */
   position: absolute; /* 為了做導覽列的變化 */

@@ -4,6 +4,7 @@ div.ticketLink{
   right: 0;
   bottom: 50px;
   z-index: 100;
+
 }
 div.ticketLink > a > img{
   width: 100px;

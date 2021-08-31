@@ -16,6 +16,7 @@ section.contact{
   /* border: 1px solid red; */
 
   position: relative;
+  padding-top: 78px;
 }
 
 /* 背景圖 */
@@ -174,6 +175,7 @@ section.contact > div.form > form > div > input.name{
   border: 1px solid #474747;
 
   margin-right: 41px;
+  padding: 8px 12px;
 }
 section.contact > div.form > form > div > label.male{
   margin-right: 15px;
@@ -184,6 +186,8 @@ section.contact > div.form > form > div > input.email{
   height: 40px;
   border-radius: 5px;
   border: 1px solid #474747;
+
+  padding: 8px 12px;
 }
 section.contact > div.form > form > div > textarea.content{
   display: inline-block;
@@ -192,6 +196,8 @@ section.contact > div.form > form > div > textarea.content{
   border-radius: 5px;
   border: 1px solid #474747;
   resize: none;
+
+  padding: 8px 12px;
 }
 
 section.contact > div.form > form > p{
@@ -272,4 +278,17 @@ section.contact > ul.change_bt_1100 > li.two .car path{
 /* FAQ的BUG */
 section.contact > ul.change_bt_1100 > li.three .FAQ path{
   fill: #BEBEBE;
+}
+
+
+
+/* ----------表單特效---------- */
+section.contact > div.form > form > div > input.name:focus{
+  background-color: #F1F1F1;
+}
+section.contact > div.form > form > div > input.email:focus{
+  background-color: #F1F1F1;
+}
+section.contact > div.form > form > div > textarea.content:focus{
+  background-color: #F1F1F1;
 }

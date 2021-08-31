@@ -2,11 +2,34 @@
 @import "./common/footer.css";
 @import "./common/all.css";
 @import "./common/font.css";
-@import "./common/header_top.css";
+/* @import "./common/header_top.css"; */
 @import "./common/ticket.css";
 
 
+/* folloe區域 */
+header#header.header_top > div.block_1100 > div.follow_icon{
+  display: flex;
+}
 
+/* header區域 */
+header#header.header_top > div.block_1100 > a.header_logo{
+  display: none;
+}
+header#header.header_top{
+  box-shadow: none;
+
+  position: absolute; /* 為了做導覽列的變化 */
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(255,255,255,0); /* 變透明 */
+
+  transition: all 0s;
+}
 
 /* banner區塊 */
 
@@ -44,7 +67,7 @@ div.scrool_box{
 display: flex;
 flex-direction: column;
 margin-bottom: 22px;
-margin-top: 20px;
+/* margin-top: 20px; */
 }
 
 
@@ -53,7 +76,7 @@ div.title_logo > h2{
 font-weight: 400;
 color: white;
 letter-spacing: 1px;
-margin-bottom: 100px;
+margin-bottom: 85px;
 }
 
 /* SCROLL文字樣式 */
@@ -61,8 +84,14 @@ div.scrool_box > a{
 color: white;
 letter-spacing: 1.5px;
 font-size: 12px;
-margin-bottom: 3px;
+/* margin-bottom: 3px; */
+
+animation: scroll_float 2s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
+div.scrool_box:hover{
+  opacity: 0.8;
+}
+
 
 /* logo的水平線 */
 div.title_logo > hr{
@@ -78,7 +107,7 @@ margin: 15px 0px 10px 0px;
 /* banner大小設定,並定位及設定在最下層 */
 div.index_banner_box{
 background-image: url(../images/index_banner.jpg);
-height: 600px;
+height: 510px; /*原本尺寸600px*/
 min-width: 1100px;
 background-size: cover;
 background-position: center;
@@ -87,6 +116,9 @@ background-repeat: no-repeat;
 position: relative; /* 為了設定z-index */
 z-index: -2;
 }
+/* (新版)banner大小設定,並定位及設定在最下層 */
+
+
 
 /* banner黑色遮罩 */
 span.index_banner_bg{
@@ -127,7 +159,7 @@ display: inline-block;
 }
 
 /* 更多消息的文字樣式 */
-header.header > div.block_1100 > div.follow_icon > p.more_information{
+header#header > div.block_1100 > div.follow_icon > p.more_information{
   letter-spacing: 1.5px;
   font-weight: 400;
   font-size: 15px;
@@ -162,14 +194,14 @@ div.today_time > p.today{
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 1.5px;
-  padding: 20px 0px 20px 50px;
+  padding: 22px 0px 22px 50px;
 }
 div.today_time > p.time{
   display: inline-block;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 1.5px;
-  padding: 20px 0px 20px 20px;
+  padding-left: 20px;
 }
 /* 右邊區塊 */
 ul.time_and_ticket > li:last-child{  /* 改右邊的區塊顏色 */
@@ -231,6 +263,11 @@ ul.three_news > li{
   width: 232px;
   margin: 0 25px;
 }
+ul.three_news > li > a.img{
+  display: inline-block;
+  overflow: hidden;
+  height: 165px;
+}
 
 /* 加波浪 */
 ul.three_news > li > div.title_wave a > h5::after{
@@ -263,12 +300,12 @@ div.news_1100 > h3{
   letter-spacing: 1.5px;
   margin: 55px 0px 40px 0px;
 }
-div.news_1100 > ul.change_news > li > a{
+/* div.news_1100 > ul.change_news > li > a{
   background-color: #1152A0;
   border: 1.5px solid #1152A0;
   color: white;
   padding: 9px 70px;
-}
+} */
 div.news_1100 > ul.change_news > li:last-child > a{
   border: 1.5px solid #1152A0;
   background-color: transparent;
@@ -279,12 +316,21 @@ ul.three_news > li > a > h6{
   color: #474747;
   font-weight: 400;
   letter-spacing: 1px;
+
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis; /*被overflow的內容加上刪節號(…)*/
+  -webkit-line-clamp: 2; /*行數*/
+  -webkit-box-orient: vertical;
+  white-space: normal;
 }
 ul.three_news > li > div.title_wave > a > h5{
   color: #474747;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 1px;
 }
+
+
 div.btn_more_news > a{
   font-size: 13px;
   color: #1152A0;
@@ -302,14 +348,15 @@ div.btn_more_news > a{
 
 
 /* 照片尺寸 */
-div.news_1100 > ul > li > a > img{
+ul.three_news > li > a > img{
   width: 232px;
   height: 165px;
-
-  /* transform: scale(1);
-  opacity: 1; */
+  transition: all 0.8s;
 }
-
+ul.three_news > li > a > img:hover{
+  transform: scale(1.06);
+  /* opacity: 0.8; */
+}
 /* 裝飾圖片區塊 */
 section.news > div.news_bg{
   /* z-index: -1; */
@@ -404,13 +451,17 @@ div.bubble > img.one{
   position: absolute;
   top: 168px;
   left: 240px;
+
+  animation-delay: -0.1s;
 }
 div.bubble > img.two{
   width: 40px;
   height: 40px;
   position: absolute;
   top: 221px;
-  left: 141px;
+  left: 121px;
+
+  animation-delay: -1.5s;
 }
 div.bubble > img.three{
   width: 56px;
@@ -418,13 +469,17 @@ div.bubble > img.three{
   position: absolute;
   top: 228px;
   right: 172px;
+
+  animation-delay: -2.3s;
 }
 div.bubble > img.four{
   width: 28px;
   height: 28px;
   position: absolute;
   top: 313px;
-  right: 133px;
+  right: 103px;
+
+  animation-delay: -0.4s;
 }
 div.bubble > img.five{
   width: 14px;
@@ -432,6 +487,8 @@ div.bubble > img.five{
   position: absolute;
   top: 132px;
   right: 220px;
+
+  animation-delay: -0.5s;
 }
 div.bubble > img.six{
   width: 37px;
@@ -439,6 +496,8 @@ div.bubble > img.six{
   position: absolute;
   top: 168px;
   right: 270px;
+
+  animation-delay: -1.6s;
 }
 div.bubble > img.seven{
   width: 60px;
@@ -446,15 +505,27 @@ div.bubble > img.seven{
   position: absolute;
   top: 340px;
   right: 190px;
+
+  animation-delay: -0.7s;
 }
 div.bubble > img.eight{
   width: 85px;
   height: 85px;
   position: absolute;
-  top: 303px;
+  top: 363px;
   left: 197px;
-}
 
+  animation-delay: -2s;
+}
+div.bubble > img.nine{
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 303px;
+  left: 80px;
+
+  animation-delay: -0.4s;
+}
 
 /* 文字樣式 */
 section.abouts_us > div.abouts_1100 > h3{
@@ -1070,9 +1141,10 @@ ul.time_and_ticket > li:last-child:hover{
 
 /* 消息特報 */
 div.news_1100 > ul.change_news > li:first-child > a:hover{
-  background-color: #2978D7;
+  /* background-color: #2978D7; */
   border: 1.5px solid #2978D7;
   transition-duration: 0.3s;
+  color: #2978D7;
 }
 div.news_1100 > ul.change_news > li:last-child > a:hover{
   /* background-color: #2978D7; */
@@ -1115,6 +1187,72 @@ section.feature > div.feature_1100 > div.left_box > ul.change_feature > li > a:h
 }
 
 /* 暫時|照片hover */
-div.news_1100 > ul.three_news > li > a > img:hover{
+/* div.news_1100 > ul.three_news > li > a > img:hover{
   opacity: 0.8;
+} */
+
+
+/* SCROLL動畫 */
+/* 動畫特效 */
+@keyframes scroll_float{
+  0% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(0, 5px);
+  }
+  70% {
+    transform: translate(0, -2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* 最新消息頁籤 */
+/* 頁籤一|園區公告 */
+div.tab.news_tab01.-on{
+  display: block;
+}
+div.tab.news_tab02{
+  display: none;
+}
+div.news_1100 > ul.change_news > li > a.change_btn.-on{
+  background-color: #1152A0;
+  border: 1.5px solid #1152A0;
+  color: white;
+  padding: 9px 70px;
+}
+div.news_1100 > ul.change_news > li > a.change_btn{
+  border: 1.5px solid #1152A0;
+  background-color: transparent;
+  color: #1152A0;
+  padding: 9px 70px;
+}
+/* 頁籤二|活動消息 */
+div.tab.news_tab02.-on{
+  display: block;
+}
+div.tab.news_tab01{
+  display: none;
+}
+
+
+/* 關於我們-泡泡動畫 */
+@keyframes falling{
+  0%, 100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  0% {
+    transform: translate(0px, 100px);
+  }
+  100% {
+    transform: translate(0px, -60px);
+  }
+}
+div.bubble > img{
+  animation: falling 4s infinite;
 }

@@ -1,30 +1,49 @@
-/* 網頁尺寸1366px */
-header.header{
+/* 首頁header */
+
+/* 消除follow */
+header#header > div.block_1100 > div.follow_icon{
+  display: none;
+}
+
+/* -----------------網頁最小尺寸-不低於1100px----------------- */
+header#header{
   min-width: 1100px;
   margin: 0 auto;
   /* border: 1px solid blue; */
   background-color: #1152A0;
 
-  position: relative;
+  position: fixed;
+  display: block;
+  left: 0;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  width: 100%;
+  /* height: 80px; */
   z-index: 1000;
+  box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 10%);
+
+  transition: all .3s;
+
 }
-/* 內容尺寸1100px,並設定flex */
-header.header > div.block_1100{
+
+/* -----------------主要內容尺寸-1100px-----------------*/
+header#header > div.block_1100{
   width: 1100px;
   margin: 0 auto;
   /* border: 1px solid pink; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* position: relative; */
 }
 
+/* -----------------右邊導覽列----------------- */
 /* 設定flex,針對最新消息/入館資訊/探索之旅/語言 */
 nav.nav > ul.nav_list{
   display: flex;
 }
 /* 設定flex,針對語言的icon與文字 */
-li.language_list{
+nav.nav > ul.nav_list > li.language_list{
   display: flex;
 }
 
@@ -194,7 +213,10 @@ div.information_block:hover > ul.information_list{
 div.explore_block:hover > ul.explore_list{
   display: inline-block;
 }
-div.language_block:hover > ul.language_list{
+/* div.language_block:hover > ul.language_list{
+  display: inline-block;
+} */
+li.language_list:hover > div.language_block > ul.language_list{
   display: inline-block;
 }
 
@@ -267,7 +289,7 @@ img.logo_02{
 
 
 /* -----------互動效果--------- */
-header.header > div.block_1100 > a > img.logo_02:hover{
+header#header > div.block_1100 > a > img.logo_02:hover{
   opacity: 0.8;
   /* transition: .5s ease; */
   transition-duration: 0.3s;
@@ -288,3 +310,27 @@ li.language_list:hover > div > a{
 li.language_list:hover .arrow path{
   fill: #55F4FF;
 }
+
+
+/* --------選擇語言--------- */
+/* 繁體中文 */
+ul.language_list > li:first-child > a{
+  background-color: #D9ECFF;
+  border-radius: 3px 3px 0px 0px;
+}
+/* 英文 */
+/* ul.language_list > li:nth-child(2):active > a{
+  background-color: #D9ECFF;
+  border-radius: 3px 3px 0px 0px;
+} */
+
+/* 變換顏色 */
+/* ul.language_list > li.language_change.-on > a{
+  background-color: #D9ECFF;
+  border-radius: 3px 3px 0px 0px;
+}
+
+ul.language_list > li.language_change > a{
+  color: #08448F;
+  border-radius: 3px 3px 0px 0px;
+} */

@@ -15,7 +15,8 @@ section.explore{
   margin: 0 auto;
   /* border: 1px solid red; */
   /* position: relative; */
-   /* 波浪背景定位 */
+  /* 波浪背景定位 */
+  padding-top: 78px;
 }
 
 /* ----------------背景圖---------------- */

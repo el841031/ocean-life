@@ -17,6 +17,7 @@ section.FAQ{
   background-color: #F1F1F1;
 
   position: relative;
+  padding-top: 78px;
 }
 
 /* icon */
@@ -81,7 +82,15 @@ section.FAQ > div.FAQ_1100{
   align-items: center;
 }
 
-
+/* 問與答信箱 */
+div > dt > div.content > p > a{
+  color: #1152A0;
+  font-size: 16px;
+  text-decoration: none;
+}
+div > dt > div.content > p > a:hover{
+  color: #2978D7;
+}
 
 /* 所有按鈕 */
 section.FAQ > div.FAQ_1100 > div > dl > div > dt > button{
@@ -93,7 +102,7 @@ section.FAQ > div.FAQ_1100 > div > dl > div > dt > button{
   padding: 30px 24px 30px 28px;
   width: 900px;
   text-align: left;
-  margin: 10px 0px 10px 0px;
+  margin: 12px 0px 0px 0px;
 
   display: flex;
   align-items: center;
@@ -191,6 +200,45 @@ section.FAQ > div.FAQ_1100_box > div.question_box > div.btn > a{
 
 }
 
+
+/* 解答區域 */
+div > dt > div.content{
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+  width: 900px;
+  border-radius: 0px 0px 3px 3px;
+}
+div > dt > div.content > p{
+  color: #474747;
+  padding: min(calc(1.01232rem + 2.34742vw),3.125rem) min(calc(.36972rem + 3.75587vw),3.75rem);
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  /* font-weight: 400; */
+}
+
+section.FAQ > div.FAQ_1100 > div > dl > div > dt > button.collapsible.active{
+  background-color: rgba(18,30,46,.07);
+  border-radius: 3px 3px 0px 0px;
+  /* border: 1px solid rgba(18,30,46,0); */
+}
+
+/* 加號符號 */
+section.FAQ > div.FAQ_1100 > div > dl > div > dt > button.collapsible::after{
+  content: '\002B';
+  color: rgba(20,20,20,0.4);
+  /* font-weight: bold; */
+  /* float: right; */
+  margin-left: 5px;
+  font-size: 35px;
+  position: absolute;
+  right: 27px;
+}
+section.FAQ > div.FAQ_1100 > div > dl > div > dt > button.collapsible.active:after {
+  content: "\2212";
+}
 
 /* ----------------按鈕特效------------- */
 section.FAQ > div.FAQ_1100_box > div.question_box > div.btn > a:hover{

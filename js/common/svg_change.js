@@ -1,3 +1,4 @@
+"use strict";
 // 改變svg的顏色
 
 jQuery('img.svg').each(function(){
