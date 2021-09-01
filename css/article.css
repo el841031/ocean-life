@@ -239,11 +239,19 @@ section.article > div.others > ul > li > a > h5{
 }
 
 /* 照片 */
-section.article > div.others > ul > li > a > img{
+section.article > div.others > ul > li > a > div.img > img{
   width: 266px;
   height: 189px;
+  transition: all 0.8s;
 }
-
+section.article > div.others > ul > li > a > div.img > img:hover{
+  transform: scale(1.06);
+}
+section.article > div.others > ul > li > a > div.img{
+  display: inline-block;
+  overflow: hidden;
+  height: 189px;
+}
 
 /* ----------------麵包屑特效------------- */
 section.article > div.bread_box > h5 > a:hover{

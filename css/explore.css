@@ -147,16 +147,17 @@ section.explore > div.text_1100 > div.scrool_box{
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: 2s cubic-bezier(0.1, 0.1, 0.88, 0.88) 0s infinite normal none running scroll_float;
 }
 section.explore > div.text_1100 > div.scrool_box > a:first-child{
   font-size: 13px;
   letter-spacing: 1.5px;
   color: white;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
 }
 section.explore > div.text_1100 > div.scrool_box > a > img{
-  width: 18px;
-  height: 9px;
+  width: 19px;
+  height: 11px;
 }
 section.explore > div.text_1100 > div.scrool_box > a.scroll_01 , a.scroll_02{
   display: inline-block;
@@ -917,4 +918,22 @@ section.explore > ul.change_bt_1100 > li.three:hover > a > h5{
 /* 館內導覽的BUG */
 section.explore > ul.change_bt_1100 > li.one .animals path{
   fill: #1152A0;
+}
+
+
+/* SCROLL動畫 */
+/* 動畫特效 */
+@keyframes scroll_float{
+  0% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(0, 5px);
+  }
+  70% {
+    transform: translate(0, -2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }

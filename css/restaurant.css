@@ -171,7 +171,7 @@ section.restaurant > div.menu{
 }
 
 /* 照片 */
-section.restaurant > div.menu > div > div > img{
+/* section.restaurant > div.menu > div > div > img{
   width: 260px;
   height: 260px;
 }
@@ -184,7 +184,7 @@ section.restaurant > div.menu > div > div:last-child > img{
   width: 260px;
   height: 260px;
   margin-top: 50px;
-}
+} */
 
 /* 文字 */
 section.restaurant > div.menu > h3{
@@ -201,19 +201,19 @@ section.restaurant > div.menu > h6{
 
   margin-bottom: 30px;
 }
-section.restaurant > div.menu > div > div > h5{
+/* section.restaurant > div.menu > div > div > h5{
   color: #474747;
   letter-spacing: 1.5px;
   font-weight: 400;
 
   margin-top: 5px;
-}
+} */
 
 /* 餐點 */
-section.restaurant > div.menu > div.menu_box{
+/* section.restaurant > div.menu > div.menu_box{
   display: flex;
   justify-content: space-evenly;
-}
+} */
 
 /* icon */
 /* section.restaurant > div.menu > div.left_icon{

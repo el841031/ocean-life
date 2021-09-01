@@ -81,12 +81,12 @@ margin-bottom: 85px;
 
 /* SCROLL文字樣式 */
 div.scrool_box > a{
-color: white;
-letter-spacing: 1.5px;
-font-size: 12px;
-/* margin-bottom: 3px; */
+  color: white;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  /* margin-bottom: 3px; */
 
-animation: scroll_float 2s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+  animation: scroll_float 2s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
 }
 div.scrool_box:hover{
   opacity: 0.8;
@@ -95,67 +95,66 @@ div.scrool_box:hover{
 
 /* logo的水平線 */
 div.title_logo > hr{
-background-color: rgba(255,255,255,0.8);
-width: 100%;
-height: 1.5px;
-border: none;
-margin: 15px 0px 10px 0px;
-}
+  background-color: rgba(255,255,255,0.8);
+  width: 100%;
+  height: 1.5px;
+  border: none;
+  margin: 15px 0px 10px 0px;
+  }
 
 
 
-/* banner大小設定,並定位及設定在最下層 */
-div.index_banner_box{
-background-image: url(../images/index_banner.jpg);
-height: 510px; /*原本尺寸600px*/
-min-width: 1100px;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+  /* banner大小設定,並定位及設定在最下層 */
+  div.index_banner_box{
+  background-image: url(../images/index_banner.jpg);
+  height: 510px; /*原本尺寸600px*/
+  min-width: 1100px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-position: relative; /* 為了設定z-index */
-z-index: -2;
-}
-/* (新版)banner大小設定,並定位及設定在最下層 */
-
+  position: relative; /* 為了設定z-index */
+  z-index: -2;
+  }
+  /* (新版)banner大小設定,並定位及設定在最下層 */
 
 
 /* banner黑色遮罩 */
 span.index_banner_bg{
-height: 100%;
-min-width: 100%;
-background: #002f54;
-position: absolute;
-left: 0;
-top: 0;
-opacity: 0.3;
-z-index: -1;
+  height: 100%;
+  min-width: 100%;
+  background: #002f54;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.3;
+  z-index: -1;
 }
 
 /* 針對h1加上logo並將文字隱藏起來 */
 div.title_logo > h1{
-background-image: url(../images/logo.svg);
-height: 148px;
-width: 227px;
-background-repeat: no-repeat;
-background-position: center center;
-display: inline-block;
-text-indent: -9999px;
-margin: 100px auto 0px auto;
-display: inline-block;
+  background-image: url(../images/logo.svg);
+  height: 148px;
+  width: 227px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+  text-indent: -9999px;
+  margin: 100px auto 0px auto;
+  display: inline-block;
 }
 
 /* 將上面的scroll箭頭往下移動一點 */
 div.scrool_box > a.scroll_01 > img.scroll_arrow{
-position: relative;
-top: 5px;
+  position: relative;
+  top: 5px;
 }
 
 /* banner區塊-圖片大小設定 */
 img.scroll_arrow{
-width: 19px;
-height: 11px;
-display: inline-block;
+  width: 19px;
+  height: 11px;
+  display: inline-block;
 }
 
 /* 更多消息的文字樣式 */
