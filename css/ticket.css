@@ -12,12 +12,15 @@ header.header > div.block_1100 > nav.nav > ul.nav_list > li > div.information_bl
 
 /* ---------------選單切換--------------- */
 section.ticket{
-  min-width: 1100px;
+  /* max-width: 1100px; */
   margin: 0 auto;
   /* border: 1px solid red; */
 
   position: relative;
-  padding-top: 78px;
+  /* padding-top: 78px; */
+
+  width: 100%;
+
 }
 
 /* 背景圖 */
@@ -35,12 +38,16 @@ section.ticket > div.ticket_bg{
 
 /* icon */
 section.ticket > ul.change_bt_1100{
-  width: 1100px;
+  /* width: 1100px; */
   margin: 0 auto;
 
   display: flex;
   justify-content: center;
   align-items: flex-end;
+
+  width: 100%;
+  max-width: 1100px;
+
 }
 section.ticket > ul.change_bt_1100 > li.one > a > .ticket{
   width: 59px;
@@ -83,7 +90,7 @@ section.ticket > ul.change_bt_1100 > li.two > a > h5{
 
 /* ---------------票價--------------- */
 section.ticket > div.ticket_1100{
-  width: 900px;
+  /* width: 900px; */
   margin: 0 auto;
   /* border: 1px solid red; */
 
@@ -91,6 +98,9 @@ section.ticket > div.ticket_1100{
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  width: 100%;
+  /* margin: 0 auto; */
 }
 
 /* 文字 */
@@ -108,7 +118,7 @@ section.ticket > div.ticket_1100 > div.text_box > table > tbody > tr > th{
   color: white;
   letter-spacing: 1.5px;
   font-size: 15px;
-  border: 1px solid #B3B3B3;
+  border: 1px solid rgba(179, 179, 179, 0.7);
   background-color: #1152A0;
   font-weight: 400;
   padding: 15px 50px;
@@ -117,7 +127,7 @@ section.ticket > div.ticket_1100 > div.text_box > table > tbody > tr > td{
   color: #474747;
   letter-spacing: 1.5px;
   font-size: 15px;
-  border: 1px solid #B3B3B3;
+  border: 1px solid rgba(179, 179, 179, 0.7);
   font-weight: 400;
   text-align: center;
 
@@ -133,6 +143,10 @@ section.ticket > div.ticket_1100 > div.text_box > div.text >h6{
 section.ticket > div.ticket_1100 > div.text_box > table > tbody > tr > td.condition{
   text-align: left;
 }
+section.ticket > div.ticket_1100 > div.text_box > table > tbody > tr > td.condition > span.two{
+  display: none;
+}
+
 section.ticket > div.ticket_1100 > div.text_box > table > tbody > tr.two, tr.four > td{
   background-color: #F1F1F1;
 }
@@ -140,7 +154,7 @@ section.ticket > div.ticket_1100 > div.text_box > table > tbody > tr.two, tr.fou
 
 /* 網路購票 */
 section.ticket > div.buy_ticket_1100{
-  width: 900px;
+  /* width: 900px; */
   margin: 0 auto;
   /* border: 1px solid red; */
 
@@ -148,6 +162,8 @@ section.ticket > div.buy_ticket_1100{
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  width: 100%;
 }
 
 /* 文字 */
@@ -162,19 +178,31 @@ section.ticket > div.buy_ticket_1100 > h5{
 
   margin-top: 30px;
 }
-section.ticket > div.buy_ticket_1100 > hr{
+/* section.ticket > div.buy_ticket_1100 > hr{
   width: 900px;
   height: 1.5px;
   background-color: #C5C5C5;
   margin: 15px auto;
-}
+} */
 section.ticket > div.buy_ticket_1100 > h4{
   color: #474747;
   letter-spacing: 1.5px;
   font-weight: 400;
 
   margin-bottom: 57px;
+  position: relative;
+  margin-top: 30px;
 }
+section.ticket > div.buy_ticket_1100 > h4::before{
+  content: "";
+  width: 100%;
+  height: 1.5px;
+  background-color: #C5C5C5;
+  position: absolute;
+  top: -15px;
+  left: 0px;
+}
+
 section.ticket > div.buy_ticket_1100 > h4 > span{
   font-weight: 700;
   color: #474747;

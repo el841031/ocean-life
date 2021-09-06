@@ -15,7 +15,7 @@ section.activity{
   margin: 0 auto;
   /* border: 1px solid red; */
   position: relative; /* 波浪背景定位 */
-  padding-top: 78px;
+  /* padding-top: 78px; */
 }
 
 /* section.activity > div.activity_bg{
