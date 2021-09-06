@@ -63,13 +63,95 @@ $("a.change_btn").on("click", function(e){
 });
 
 
-// 特色滾輪
-// 
-// document.onscroll=function()
-// {
-//     var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
-//     var cHeight=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight;
-//     var oDiv=document.getElementById('showIt');
-//     if(scrollTop>(oDiv.offsetTop-cHeight))
-//     alert('触发了')
-// }
+// 特色
+// (夢幻海底隧道)
+// $(".tunnel").click(function(){   click事件
+//   $(".feature_img01").attr("src","../images/feature_01a.jpg");  要變換的位置及圖片
+// 	$(".feature_img02").attr("src","../images/feature_01b.jpg");
+//
+// 	$("#text01").hide();  html文字
+// 	$("#text02").show();
+//
+// 	$("#one").css("font-size", "18px");  html文字大小/顏色
+// 	$("#one").css("color", "white");
+// });
+// (聲光結合藝術饗宴)
+// $(".light").click(function(){
+//   $(".feature_img01").attr("src","../images/news_o05.jpg");
+// 	$(".feature_img02").attr("src","../images/news_o05.jpg");
+//
+// 	$("#text01").hide();
+// 	$("#text02").show();
+//
+// 	$("#one").css("font-size", "18px");
+// 	$("#one").css("color", "white");
+// });
+// (聲光結合藝術饗宴)
+// $(".moon").click(function(){
+//   $(".feature_img01a").attr("src","../images/news_o05.jpg");
+// 	$(".feature_img01b").attr("src","../images/news_o05.jpg");
+//
+// 	$("#text01").hide();
+// 	$("#text02").show();
+//
+// 	$("#one").css("font-size", "18px");
+// 	$("#one").css("color", "white");
+// });
+ScrollTrigger.defaults({
+  markers:false
+})
+
+var points = gsap.utils.toArray('.point');
+var indicators = gsap.utils.toArray('.indicator');
+
+var height = 200 * points.length;
+
+gsap.set('.indicators', {display: "flex"});
+
+var tl = gsap.timeline({
+  duration: points.length,
+  scrollTrigger: {
+    trigger: ".feature",
+    start: "top center",
+    end: "+="+height+"%",
+    scrub: true,
+    id: "points",
+  }
+})
+
+var pinner = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".feature",
+    start: "-42px top",
+    end: "+="+height+"%",
+    scrub: true,
+    pin: ".feature",
+    pinSpacing: true,
+    id: "pinning",
+    markers: true
+  }
+})
+
+// {autoAlpha:0, translateY: 100}, i)
+// {autoAlpha:0, translateY: -100}, i + 0.75)
+points.forEach(function(elem, i) {
+  gsap.set(elem, {position: "absolute", top: 0});
+
+  // tl.to(indicators[i], {backgroundColor: "orange", duration: 0.25}, i)
+  tl.from(elem.querySelector('.right_box'), {autoAlpha:0, translateY: 100,}, i)
+  tl.from(elem.querySelector('.left_box'), {autoAlpha:0}, i)
+
+  if (i != points.length-1) {
+    // tl.to(indicators[i], {backgroundColor: "#adadad", duration: 0.25}, i+0.75)
+    tl.to(elem.querySelector('.left_box'), {autoAlpha:0}, i + 0.75)
+    tl.to(elem.querySelector('.right_box'), {autoAlpha:0}, i + 0.75)
+  }
+
+});
+
+
+// document.querySelectorAll('a[href]').forEach(a => {
+//   a.addEventListener('click', e => {
+//     TweenMax.to(window, 1, {scrollTo:{y:"#section2", offsetY:1200}});
+//   });
+// });

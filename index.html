@@ -3,21 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Ocean Life</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <link href="./images/logo_icons.ico" rel="shortcut icon">
 
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- logo_icon連結-->
+    <link href="./images/logo_icons.ico" rel="shortcut icon">
+    <!-- slick套件 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css">
   </head>
   <body>
-  <!-- header區域 -->
+    <!-- header區域 -->
     <header id="header" class="header_top">
       <div class="block_1100">
         <a href="./index.html" class="header_logo">
           <img class="logo_02" src="./images/logo_02.svg" alt="">
         </a>
 
-        <!-- 新增的-追蹤我們 -->
+        <!-- 漢堡選單 -->
+        <!-- <div class="burger_nav">
+          <a class="burger_link" id="nav-toggle" href="#">
+            <span></span>
+          </a>
+        </div> -->
+        <!-- follow Us-->
         <div class="follow_icon">
           <p class="more_information">Follow Us</p>
           <p class="line">|</p>
@@ -26,6 +34,7 @@
           <a href="https://www.instagram.com/" target="_blank"><img class="svg ig" src="./images/ig.svg" alt=""></a>
         </div>
 
+        <!-- 導覽列-->
         <nav class="nav">
           <ul class="nav_list">
             <li><a href="./latest-news.html">最新消息</a></li>
@@ -68,8 +77,7 @@
       </div>
     </header>
 
-
-<!-- 購票視窗 -->
+    <!-- 網路購票區域 -->
     <div class="ticketLink" id="TicketTop">
       <a href="https://www.kkday.com/zh-tw" target="_blank">
         <img src="./images/fixed_ticket.png" alt="">
@@ -77,8 +85,7 @@
     </div>
 
 
-
-<!-- 首頁banner區塊 -->
+    <!-- section01-首頁區域 -->
     <section class="top_bannner">
       <div class="top_1100">
         <div class="title_logo">
@@ -109,8 +116,7 @@
     </section>
 
 
-
-        <!-- 最新消息區塊 -->
+    <!-- 訊息特報區域 -->
     <section class="news">
       <div class="news_bg">
         <img class="fish_01" src="./images/fish_left.svg" alt="">
@@ -195,7 +201,7 @@
     </section>
 
 
-<!-- 關於我們區域 -->
+    <!-- 關於我們區域 -->
     <section class="abouts_us">
       <div class="about_bg"></div> <!-- 放關於我們的背景圖 -->
 
@@ -222,54 +228,155 @@
     </section>
 
 
-<!-- 特色魅力 -->
-    <section id="showIt" class="feature">
+    <!-- 特色魅力區域 -->
+    <section class="feature">
       <div class="feature_1100">
-        <div class="left_box">
-          <h3>OCEAN LIFE<br>獨特魅力</h3>
 
-          <ul class="change_feature">
+        <div id="section1" class="point">
+          <div class="left_box">
+            <h3>OCEAN LIFE<br>獨特魅力</h3>
 
-            <li class="tunnel">
-              <a href="#">
-                <span>1.</span>
-                <span>夢幻海底隧道</span>
-              </a>
-            </li> <!-- 要在下面加波浪 -->
+            <ul class="change_feature">
 
-            <li class="light">
-              <a href="#">
-                <span>2.</span>
-                <span>聲光結合藝術饗宴</span>
-              </a>
-            </li>
+              <li class="tunnel">
+                <a href="#section1"  id="anchor1">
+                  <span>1.</span>
+                  <span>夢幻海底隧道</span>
+                </a>
+              </li> <!-- 要在下面加波浪 -->
 
-            <li class="moon">
-              <a href="#">
-                <span>3.</span>
-                <span>月亮型水母展區 </span>
-              </a>
-            </li>
-          </ul>
-        </div>
+              <li class="light">
+                <a href="#section2"  id="anchor2">
+                  <span>2.</span>
+                  <span>月亮型水母展區</span>
+                </a>
+              </li>
 
-        <div class="right_box">
-          <div class="left_img"></div>
+              <li class="moon">
+                <a href="#section3"  id="anchor3">
+                  <span>3.</span>
+                  <span>聲光結合藝術饗宴</span>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-          <div class="text_img_bt">
-            <div class="right_img"></div>
-            <h6>長達100公尺全台最長的海底隧道，<br>穿梭於150萬加侖水量之巨型人造海<br>洋中，享受180度視角觀賞海中界，<br>提供身歷其境的海底探險。</h6>
-            <div class="btn_more">
-              <a href="./explore.html">深入瞭解</a>
+          <div class="right_box">
+            <div class="left_img">
+              <img src="./images/feature_01a.jpg" alt="">
+            </div>
+
+            <div class="text_img_bt">
+              <div class="right_img">
+                <img src="./images/feature_01b.jpg" alt="">
+              </div>
+              <h6>長達100公尺全台最長的海底隧道，<br>穿梭於150萬加侖水量之巨型人造<br>海洋中，享受180度視角觀賞海中<br>界，提供身歷其境的海底探險。</h6>
+              <div class="btn_more">
+                <a href="./explore.html">深入瞭解</a>
+              </div>
             </div>
           </div>
         </div>
+
+        <div id="section2" class="point">
+          <div class="left_box">
+            <h3>OCEAN LIFE<br>獨特魅力</h3>
+
+            <ul class="change_feature">
+
+              <li class="tunnel02">
+                <a href="#section1"  id="anchor1">
+                  <span>1.</span>
+                  <span>夢幻海底隧道</span>
+                </a>
+              </li> <!-- 要在下面加波浪 -->
+
+              <li class="light02">
+                <a href="#section2"  id="anchor2">
+                  <span>2.</span>
+                  <span>月亮型水母展區</span>
+                </a>
+              </li>
+
+              <li class="moon02">
+                <a href="#section3"  id="anchor3">
+                  <span>3.</span>
+                  <span>聲光結合藝術饗宴</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="right_box">
+            <div class="left_img">
+              <img src="./images/feature_03a.jpg" alt="">
+            </div>
+
+            <div class="text_img_bt">
+              <div class="right_img">
+                <img src="./images/feature_03b.jpg" alt="">
+              </div>
+              <h6>全新型態月亮水槽，直徑為7公尺，<br>培育出高達500隻海月水母。燈光<br>照射在透明的水母池上，各個角度<br>都能欣賞到水母們悠遊的美麗身影。</h6>
+              <div class="btn_more">
+                <a href="./explore.html">深入瞭解</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section3" class="point">
+          <div class="left_box">
+            <h3>OCEAN LIFE<br>獨特魅力</h3>
+
+            <ul class="change_feature">
+
+              <li class="tunne03">
+                <a href="#section1" id="anchor1">
+                  <span>1.</span>
+                  <span>夢幻海底隧道</span>
+                </a>
+              </li> <!-- 要在下面加波浪 -->
+
+              <li class="light03">
+                <a href="#section2"  id="anchor2">
+                  <span>2.</span>
+                  <span>月亮型水母展區</span>
+                </a>
+              </li>
+
+              <li class="moon03">
+                <a href="#section3"  id="anchor3">
+                  <span>3.</span>
+                  <span>聲光結合藝術饗宴</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="right_box">
+            <div class="left_img">
+              <img src="./images/feature_02a.jpg" alt="">
+            </div>
+
+            <div class="text_img_bt">
+              <div class="right_img">
+                <img src="./images/feature_02b.jpg" alt="">
+              </div>
+              <h6>結合七彩繽紛燈光投影及音樂，讓<br>整個水藍色室內空間灑滿了神秘色<br>彩，搭配四季與節日的燈光效果，<br>帶領大家進入一場藝術饗宴。</h6>
+              <div class="btn_more">
+                <a href="./explore.html">深入瞭解</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+
     </section>
 
 
 
-<!-- 地圖區域       -->
+    <!-- 地圖區域-->
     <section class="map">
       <div class="map_bg"></div>
       <div class="map_1100">
@@ -298,7 +405,7 @@
     </section>
 
 
-<!-- IG照片牆區域 -->
+    <!-- IG區域 -->
 
     <section class="IG">
       <div class="IG_1100">
@@ -342,9 +449,6 @@
     </section>
 
 
-
-
-
     <!-- footer -->
     <footer class="footer">
       <div class="footer_flex">
@@ -366,10 +470,14 @@
       </div>
     </footer>
 
-
+    <!-- JQuery套件 -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> -->
+
+    <!-- GSAP套件 -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js'></script>
+
     <script src="./js/common/svg_change.js"></script>
     <script src="./js/common/top_back.js"></script>
     <script src="./js/index.js"></script>

@@ -2,11 +2,10 @@
 @import "./common/footer.css";
 @import "./common/all.css";
 @import "./common/font.css";
-/* @import "./common/header_top.css"; */
 @import "./common/ticket.css";
 
 
-/* folloe區域 */
+/* follo區域 */
 header#header.header_top > div.block_1100 > div.follow_icon{
   display: flex;
 }
@@ -30,6 +29,7 @@ header#header.header_top{
 
   transition: all 0s;
 }
+
 
 /* banner區塊 */
 
@@ -551,27 +551,45 @@ section.abouts_us > div.abouts_1100 > h5:last-child{
 /* 網頁尺寸不低於1100px */
 section.feature{
   min-width: 1100px;
+  height: 100vh;
   margin: 0 auto;
-  background: linear-gradient(#0B3852 0%,#0B437C 70%,#004790 100%);
+  /* background: linear-gradient(#0B3852 0%,#0B437C 70%,#004790 100%); */
 }
 
 /* 內容尺寸1100px,並設flex*/
 section.feature > div.feature_1100{
-  width: 1100px;
-  margin: 0 auto;
+  /* width: 1100px;
+  margin: 0 auto; */
+  /* border: 1px solid red; */
+  /* display: flex;
+  justify-content: space-around; */
+
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(#0B3852 0%,#0B437C 70%,#004790 100%);
+
+}
+section.feature > div.feature_1100 > div.point{
+  height: 100vh;
+  width: 100%;
+  /* margin: 0 auto; */
   /* border: 1px solid red; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
-section.feature > div.feature_1100 > div.right_box{
+section.feature > div.feature_1100 > div.point > div.right_box{
   display: flex;
   align-items: center;
+  z-index: 1;
   /* border: 1px solid pink; */
 }
-section.feature > div.feature_1100 > div.right_box > div.text_img_bt{
+section.feature > div.feature_1100 > div.point > div.left_box{
+  z-index: 1;
+}
+section.feature > div.feature_1100 > div.point > div.right_box > div.text_img_bt{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 
   margin: 0px 45px;
 }
@@ -581,8 +599,9 @@ section.feature > div.feature_1100 > div.right_box > div.text_img_bt{
 
 
 /* 按鈕 */
-section.feature > div.feature_1100 > div.right_box > div.text_img_bt > div.btn_more{
+section.feature > div.feature_1100 > div.point > div.right_box > div.text_img_bt > div.btn_more{
   display: inline-block;
+  text-align: center;
   /* border: 1.5px solid #55F4FF;
   border-radius: 20px; */
 
@@ -593,92 +612,100 @@ section.feature > div.feature_1100 > div.right_box > div.text_img_bt > div.btn_m
 }
 
 /* 照片 */
-div.right_box > div.left_img{
+/* div.right_box > div.left_img{
   background-image: url(../images/feature_01a.jpg);
   background-repeat: no-repeat;
   background-position: bottom right -160px;
   background-size: cover;
   width: 373px;
-  height: 470px;
-  /* border: 1px solid orange; */
+  height: 450px;
 
   margin: 80px 0px;
+} */
+div.right_box > div.left_img > img{
+  width: 373px;
+  height: 450px;
+  margin: 80px 0px;
 }
-div.right_box > div.text_img_bt > div.right_img{
+
+/* div.right_box > div.text_img_bt > div.right_img{
   background-image: url(../images/feature_01b.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   width: 225px;
   height: 155px;
-  /* border: 1px solid orange; */
+} */
+div.right_box > div.text_img_bt > div.right_img > img{
+  width: 225px;
+  height: 155px;
 }
-
 /* ul外距 */
-section.feature > div.feature_1100 > div.left_box > ul.change_feature{
+section.feature > div.feature_1100 > div.point >  div.left_box > ul.change_feature{
   color: white;
   letter-spacing: 1.5px;
 
   margin-left: 63px;
   position: relative;   /* 為了波浪定位 */
 }
-section.feature > div.feature_1100 > div.left_box > ul > li{
+section.feature > div.feature_1100 > div.point > div.left_box > ul > li{
   margin: 40px 0px;
+  cursor: pointer;
 }
 
 /* ul列表的文字 */
-section.feature > div.feature_1100 > div.left_box > ul.change_feature > li > a > span{
+section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li > a > span{
   color: white;
   letter-spacing: 1.5px;
   font-size: 18px;
 }
 /* 1.夢幻海底隧道 */
-section.feature > div.feature_1100 > div.left_box > ul.change_feature > li.tunnel > a > span:last-child{
-  font-size: 35px;
+section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li.tunnel > a > span{
+  font-size: 30px;
   color: #55F4FF;
 }
 
 /* 波浪 */
-section.feature > div.feature_1100 > div.left_box > ul.change_feature > li.tunnel::after{
+section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li.tunnel::after{
   content: "";
   display: inline-block;
-  width: 215px;
+  width: 185px;
   height: 8px;
   background-image: url(../images/wave.svg);
   background-repeat: repeat-x;
   background-position: center;
   margin-bottom: 3px;
   position: absolute;
-  top: 55px;
+  top: 50px;
   left: 20px;
 }
 /* 數字 */
-section.feature > div.feature_1100 > div.left_box > ul.change_feature > li.tunnel > a > span:first-child{
+section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li.tunnel > a > span:first-child{
   font-size: 12px;
   color: #55F4FF;
 }
-section.feature > div.feature_1100 > div.left_box > ul.change_feature > li.light > a > span:first-child{
+section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li.light > a > span:first-child{
   font-size: 12px;
 }
-section.feature > div.feature_1100 > div.left_box > ul.change_feature > li.moon > a > span:first-child{
+section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li.moon > a >  span:first-child{
   font-size: 12px;
 }
 /* 文字 */
-section.feature > div.feature_1100 > div.left_box > h3{
+section.feature > div.feature_1100 > div.point > div.left_box > h3{
   color: white;
   letter-spacing: 1.5px;
 
   margin: 80px 145px 100px 63px;
 }
 
-section.feature > div.feature_1100 > div.right_box > div.text_img_bt > h6{
+section.feature > div.feature_1100 > div.point > div.right_box > div.text_img_bt > h6{
   color: white;
   letter-spacing: 1.5px;
   font-weight: 300;
 
-  margin: 45px 0px;
+  margin: 40px 0px;
 }
-section.feature > div.feature_1100 > div.right_box > div.text_img_bt > div.btn_more > a{
+section.feature > div.feature_1100 > div.point > div.right_box > div.text_img_bt > div.btn_more > a{
   color: #55F4FF;
   letter-spacing: 1px;
   width: 138px;
@@ -692,9 +719,62 @@ section.feature > div.feature_1100 > div.right_box > div.text_img_bt > div.btn_m
   border: 2px solid #55F4FF;
   border-radius: 20px;
 }
-
-
-
+/* 列表-第二 */
+/* 2.月亮型水母展區 */
+section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li.light02 > a > span{
+  font-size: 30px;
+  color: #55F4FF;
+}
+section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li.light02 > a >  span:first-child{
+  font-size: 12px;
+  color: #55F4FF;
+}
+/* 波浪 */
+section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li.light02::after{
+  content: "";
+  display: inline-block;
+  width: 215px;
+  height: 8px;
+  background-image: url(../images/wave.svg);
+  background-repeat: repeat-x;
+  background-position: center;
+  margin-bottom: 3px;
+  position: absolute;
+  top: 107px;
+  left: 20px;
+}
+section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li.tunnel02{
+  margin: 0px 0px 30px 0px;
+  cursor: pointer;
+}
+section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li.light02{
+  margin: 4px 0px 50px 0px;
+  cursor: pointer;
+}
+/* 列表-第三 */
+/* 3.聲光結合藝術饗宴 */
+section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li.moon03 > a > span{
+  font-size: 30px;
+  color: #55F4FF;
+}
+section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li.moon03 > a >  span:first-child{
+  font-size: 12px;
+  color: #55F4FF;
+}
+/* 波浪 */
+section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li.moon03::after{
+  content: "";
+  display: inline-block;
+  width: 246px;
+  height: 8px;
+  background-image: url(../images/wave.svg);
+  background-repeat: repeat-x;
+  background-position: center;
+  margin-bottom: 3px;
+  position: absolute;
+  top: 183px;
+  left: 20px;
+}
 /* 地圖區域 */
 
 /* 網頁尺寸不低於1100px */
@@ -1108,7 +1188,7 @@ div.btn_more_news > a:hover{
 }
 
 /* 深入瞭解 */
-section.feature > div.feature_1100 > div.right_box > div.text_img_bt > div.btn_more > a:hover{
+section.feature > div.feature_1100 > div.point > div.right_box > div.text_img_bt > div.btn_more > a:hover{
   background-color: rgb(28, 221, 235);
   color: white;
   border: 2px solid rgb(28, 221, 235);
@@ -1181,7 +1261,7 @@ section.IG > div.IG_box > div > a:hover::after{
 
 
 /* 獨特魅力hover */
-section.feature > div.feature_1100 > div.left_box > ul.change_feature > li > a:hover > span{
+section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li:hover > a > span{
   color: rgb(85, 244, 255);
 }
 
@@ -1255,3 +1335,10 @@ div.tab.news_tab01{
 div.bubble > img{
   animation: falling 4s infinite;
 }
+
+
+
+/* 新增-魅力特色 */
+/* div#section3{
+  display: none;
+} */
