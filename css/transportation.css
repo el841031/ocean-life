@@ -11,7 +11,8 @@ header#header > div.block_1100 > nav.nav > ul.nav_list > li > div.information_bl
 
 /* ---------------選單切換--------------- */
 section.transportation{
-  min-width: 1100px;
+  /* min-width: 1100px; */
+  width: 100%;
   margin: 0 auto;
   /* border: 1px solid red; */
 
@@ -34,7 +35,8 @@ section.transportation > div.transportation_bg{
 
 /* icon */
 section.transportation > ul.change_bt_1100{
-  width: 1100px;
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
 
   display: flex;
@@ -82,7 +84,8 @@ section.transportation > ul.change_bt_1100 > li.two > a > h5{
 
 /* ---------票價------- */
 section.transportation > div.open_1100{
-  width: 900px;
+  max-width: 900px;
+  width: 100%;
   margin: 0 auto;
   /* border: 1px solid red; */
 
@@ -105,7 +108,11 @@ section.transportation > div.open_1100 > div.right_box{
 section.transportation > div.open_1100 > div.right_box > h3{
   color: #1152A0;
   letter-spacing: 1.5px;
-
+}
+section.transportation > div.open_1100 > h3{
+  color: #1152A0;
+  letter-spacing: 1.5px;
+  display: none;
 }
 section.transportation > div.open_1100 > div.right_box > table{
   border: 1px solid #B3B3B3;
@@ -117,7 +124,7 @@ section.transportation > div.open_1100 > div.right_box > table > tbody > tr > th
   color: white;
   letter-spacing: 1.5px;
   font-size: 15px;
-  border: 1px solid #B3B3B3;
+  border: 1px solid rgba(179, 179, 179, 0.7);
   background-color: #1152A0;
   font-weight: 400;
   padding: 15px 20px;
@@ -128,7 +135,7 @@ section.transportation > div.open_1100 > div.right_box > table > tbody > tr > td
   color: #474747;
   letter-spacing: 1.5px;
   font-size: 15px;
-  border: 1px solid #B3B3B3;
+  border: 1px solid rgba(179, 179, 179, 0.7);
   font-weight: 400;
   text-align: center;
 
@@ -139,6 +146,7 @@ section.transportation > div.open_1100 > div.right_box > h5{
   letter-spacing: 1.5px;
   font-weight: 400;
   line-height: 1.6;
+  font-size: 12px;
 }
 
 
@@ -147,12 +155,13 @@ section.transportation > div.map_1100 > div.line_dot{
   background-image: url(../images/line_dot.png);
   width: 900px;
   height: 1px;
-  margin: 80px auto 70px auto;
+  margin: 70px auto 60px auto;
 }
 
 /* ---------交通指南------- */
 section.transportation > div.map_1100{
-  width: 900px;
+  max-width: 900px;
+  width: 100%;
   margin: 0 auto;
   /* border: 1px solid red; */
   font-size: 0;
