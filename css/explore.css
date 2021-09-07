@@ -5,7 +5,7 @@
 @import "./common/ticket.css";
 
 /* 設定頁面所在位置,探索之旅 */
-header.header > div.block_1100 > nav.nav > ul.nav_list > li > div.explore_block > a.on{
+header#header > div.block_1100 > nav.nav > ul.nav_list > li > div.explore_block > a.on{
   color: #55F4FF;
 }
 
