@@ -142,18 +142,36 @@
 
   /* 商店介紹 */
   section.gift > div.introduce{
-    flex-direction: column-reverse;
-    padding: 0px 60px;
+    flex-direction: column;
+    padding: 0px 80px;
     align-items: center;
   }
   section.gift > div.introduce > div.right_introduce > div.time_bg{
     width: 100%;
-    margin-bottom: 33px;
+    /* margin-bottom: 33px; */
     padding: 0px 15px;
   }
   section.gift > div.introduce > div.right_introduce > h3{
     margin-top: 0px;
   }
+
+  /* 新增文字 */
+  section.gift > div.introduce > div.gift_shop{
+    text-align: center;
+  }
+  section.gift > div.introduce > div.gift_shop > h3{
+    display: inline-block;
+    /* text-align: center; */
+  }
+  section.gift > div.introduce > div.right_introduce > h3{
+    display: none;
+  }
+
+  section.gift > div.introduce > div.right_introduce > h4{
+    margin: 30px auto 20px auto;
+  }
+
+
 
   /* 照片 */
   section.gift > div.introduce > div.gift_shop > img{
@@ -163,7 +181,7 @@
 
   /* 人氣商品 */
   section.gift > div.product_box{
-    padding: 0px 60px;
+    padding: 0px 80px;
   }
   section.gift > div.product_box > h3{
     margin-top: 50px;
@@ -284,17 +302,32 @@
 
   /* 商店介紹 */
   section.gift > div.introduce{
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 0px 50px;
     align-items: center;
   }
   section.gift > div.introduce > div.right_introduce > div.time_bg{
     width: 100%;
-    margin-bottom: 33px;
     padding: 0px 15px;
   }
   section.gift > div.introduce > div.right_introduce > h3{
     margin-top: 0px;
+  }
+
+  /* 新增文字 */
+  section.gift > div.introduce > div.gift_shop{
+    text-align: center;
+  }
+  section.gift > div.introduce > div.gift_shop > h3{
+    display: inline-block;
+    /* text-align: center; */
+  }
+  section.gift > div.introduce > div.right_introduce > h3{
+    display: none;
+  }
+
+  section.gift > div.introduce > div.right_introduce > h4{
+    margin: 30px auto 20px auto;
   }
 
   /* 照片 */
@@ -463,17 +496,30 @@
 
   /* 商店介紹 */
   section.gift > div.introduce{
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
+    flex-direction: column;
     padding: 0px 40px;
   }
   section.gift > div.introduce > div.right_introduce > div.time_bg{
     width: 100%;
-    margin-bottom: 33px;
+    margin-bottom: 0px;
     padding: 0px 15px;
   }
   section.gift > div.introduce > div.right_introduce > h3{
     margin-top: 0px;
   }
+  /* 新增文字 */
+  section.gift > div.introduce > div.gift_shop{
+    text-align: center;
+  }
+  section.gift > div.introduce > div.gift_shop > h3{
+    display: inline-block;
+    /* text-align: center; */
+  }
+  section.gift > div.introduce > div.right_introduce > h3{
+    display: none;
+  }
+
 
   /* 文字大小 */
   section.gift > div.introduce > div.right_introduce > div.time_bg > h5{
@@ -484,6 +530,7 @@
   }
   section.gift > div.introduce > div.right_introduce > h4{
     font-size: 17px;
+    margin: 30px auto 20px auto;
   }
   /* 照片 */
   section.gift > div.introduce > div.gift_shop > img{

@@ -201,7 +201,13 @@ section.gift > div.notice{
   margin: 0px auto 90px auto;
 }
 
-
+/* 新增標題 */
+section.gift > div.introduce > div.gift_shop > h3{
+  display: none;
+  color: #1152A0;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+}
 
 /* ---------SVG特效--------- */
 /* 館內導覽 */
