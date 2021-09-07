@@ -39,7 +39,8 @@ header#header {
 /* --------header 主要內容尺寸-1100px-------- */
 header#header > div.block_1100 {
   width: 100%;
-  padding: 0px 80px;
+  /* padding: 0px 80px; */
+  padding: 0px 80px 0px 70px;
   margin: 0 auto;
   /* border: 1px solid pink; */
   display: flex;

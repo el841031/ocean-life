@@ -13,7 +13,7 @@
   /* header */
   header#header > div.block_1100{
     width: 100%;
-    padding: 0px 50px;
+    padding: 0px 50px 0px 40px;
   }
 }
 
@@ -66,7 +66,7 @@
   /* header */
   header#header > div.block_1100{
     width: 100%;
-    padding: 0px 50px;
+    padding: 0px 50px 0px 40px;
   }
   header#header > div.block_1100 > button.hamburger{
     display: inline-block;
@@ -144,7 +144,7 @@
   /* header */
   header#header > div.block_1100{
     width: 100%;
-    padding: 0px 50px;
+    padding: 0px 40px 0px 30px;
   }
   header#header > div.block_1100 > button.hamburger{
     display: inline-block;
@@ -273,7 +273,7 @@
   }
   header#header > div.block_1100{
     width: 100%;
-    padding: 0px 50px;
+    padding: 0px 40px 0px 30px;
   }
   header#header > div.block_1100 > button.hamburger{
     display: inline-block;
@@ -368,16 +368,16 @@
     margin-right: 15px;
   }
   section.FAQ > div.FAQ_1100 > div > dl > div > dt > button > span{
-    font-size: 14px;
+    font-size: 15px;
   }
   section.FAQ > div.FAQ_1100 > div > dl > div > dt > button > span:nth-child(2){
     width: 78%;
   }
   div > dt > div.content > p{
-    font-size: 14px;
+    font-size: 15px;
   }
   div > dt > div.content > p > a{
-    font-size: 14px;
+    font-size: 15px;
   }
   /* 加號 */
   section.FAQ > div.FAQ_1100 > div > dl > div > dt > button.collapsible::after{

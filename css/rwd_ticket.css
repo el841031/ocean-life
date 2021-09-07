@@ -13,7 +13,7 @@
   /* header */
   header#header > div.block_1100{
     width: 100%;
-    padding: 0px 50px;
+    padding: 0px 50px 0px 40px;
   }
 }
 
@@ -47,7 +47,7 @@
   /* header */
   header#header > div.block_1100{
     width: 100%;
-    padding: 0px 50px;
+    padding: 0px 50px 0px 40px;
   }
   header#header > div.block_1100 > button.hamburger{
     display: inline-block;
@@ -182,7 +182,7 @@
   /* header */
   header#header > div.block_1100{
     width: 100%;
-    padding: 0px 50px;
+    padding: 0px 40px 0px 30px;
   }
   header#header > div.block_1100 > button.hamburger{
     display: inline-block;
@@ -343,7 +343,7 @@
   }
   header#header > div.block_1100{
     width: 100%;
-    padding: 0px 50px;
+    padding: 0px 40px 0px 30px;
   }
   header#header > div.block_1100 > button.hamburger{
     display: inline-block;
