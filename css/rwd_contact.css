@@ -43,7 +43,10 @@
     color: #55F4FF;
   }
 
-
+  /* 線條 */
+  section.contact > div.form > div.line_dot{
+    width: 60%;
+  }
 
   /* header */
   header#header > div.block_1100{
@@ -73,6 +76,11 @@
   }
   span.hamburger-box{
     width: 25px;
+  }
+
+  /* 線條 */
+  section.contact > div.form > div.line_dot{
+    width: 85%;
   }
 
 
@@ -165,7 +173,51 @@
     margin: auto 40px 0px 0px;
   }
 
+  /* 聯絡資訊 */
+  section.contact > div.service{
+    padding: 0px 40px;
+  }
+  /* section.contact > div.service > h4.service_time::after{
+    display: none;
+  } */
+  /* section.contact > div.service > h4.service_time{
+    margin: 0px;
+  } */
 
+  /* 線條 */
+  section.contact > div.form > div.line_dot{
+    width: 100%;
+  }
+
+  /* 表單 */
+  section.contact > div.form > h5{
+    text-align: center;
+  }
+  section.contact > div.form{
+    padding: 0px 40px;
+  }
+  form{
+    width: 100%;
+  }
+  section.contact > div.form > form > div.item_block > input.name{
+    width: 57%;
+    margin-right: 20px;
+  }
+  section.contact > div.form > form > div.item_block > input.email{
+    width: 100%;
+  }
+  section.contact > div.form > form > div > textarea.content{
+    width: 100%;
+  }
+  section.contact > div.form > form > p{
+    width: 100%;
+  }
+  /* 發送問題 */
+  section.contact > div.form > form > button.btn{
+    width: 30%;
+    margin: 40px 35% 90px 35%;
+    /* (100%-寬度40%)/2 */
+  }
 
 
   /* footer */
@@ -258,10 +310,10 @@
     margin: 50px 0px 0px 0px;
   }
   section.contact > ul.change_bt_1100 > li:nth-child(2){
-    margin: auto 18px 0px 18px;
+    margin: auto 23px 0px 23px;
   }
   section.contact > ul.change_bt_1100 > li:nth-child(3){
-    margin: auto 18px 0px 0px;
+    margin: auto 23px 0px 0px;
   }
   /* 選項-圖示1 */
   section.contact > ul.change_bt_1100 > li.one > a > .ticket{
@@ -304,7 +356,56 @@
   }
 
 
+  /* 聯絡資訊 */
+  section.contact > div.service{
+    padding: 0px 40px;
+  }
+  section.contact > div.service > h4.service_time::after{
+    display: none;
+  }
+  section.contact > div.service > h4.service_time{
+    margin: 0px 60px 0px 60px;
+  }
 
+  /* 線條 */
+  section.contact > div.form > div.line_dot{
+    width: 100%;
+    margin: 60px auto 60px auto;
+    height: 0.6px;
+  }
+
+  /* 表單 */
+  section.contact > div.form > h5{
+    text-align: center;
+  }
+  section.contact > div.form{
+    padding: 0px 40px;
+  }
+  form{
+    width: 100%;
+  }
+  section.contact > div.form > form > div.item_block > input.name{
+    width: 57%;
+    margin-right: 20px;
+  }
+  section.contact > div.form > form > div.item_block > input.email{
+    width: 100%;
+  }
+  section.contact > div.form > form > div > textarea.content{
+    width: 100%;
+  }
+  section.contact > div.form > form > p{
+    width: 100%;
+  }
+  section.contact > div.service > h4{
+    font-size: 16px;
+  }
+  /* 發送問題 */
+  section.contact > div.form > form > button.btn{
+    width: 40%;
+    margin: 40px 30% 90px 30%;
+    /* (100%-寬度40%)/2 */
+  }
 
   /* footer */
   footer.footer > div.footer_flex > div.content{

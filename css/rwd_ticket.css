@@ -224,7 +224,7 @@
 
   /* 表格 */
   section.ticket > div.ticket_1100{
-    padding: 0px 45px;
+    padding: 0px 40px;
   }
 
   /* 內距歸零 */
@@ -283,7 +283,7 @@
 
   /* 購買區塊 */
   section.ticket > div.buy_ticket_1100{
-    padding: 0px 55px;
+    padding: 0px 40px;
   }
 
   /* footer */
@@ -376,10 +376,10 @@
     margin: 50px 0px 0px 0px;
   }
   section.ticket > ul.change_bt_1100 > li:nth-child(2){
-    margin: auto 18px 0px 18px;
+    margin: auto 23px 0px 23px;
   }
   section.ticket > ul.change_bt_1100 > li:nth-child(3){
-    margin: auto 18px 0px 0px;
+    margin: auto 23px 0px 0px;
   }
   /* 選項-圖示1 */
   section.ticket > ul.change_bt_1100 > li.one > a > .ticket{
@@ -423,7 +423,7 @@
 
   /* 表格 */
   section.ticket > div.ticket_1100{
-    padding: 0px 45px;
+    padding: 0px 40px;
   }
 
   /* 內距歸零 */
@@ -485,7 +485,7 @@
 
   /* 購買區塊 */
   section.ticket > div.buy_ticket_1100{
-    padding: 0px 55px;
+    padding: 0px 40px;
   }
   section.ticket > div.buy_ticket_1100 > div.buy_bt > div.btn_notice{
     margin-right: 20px;

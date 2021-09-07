@@ -185,7 +185,7 @@
 
   /* FAQ */
   section.FAQ > div.FAQ_1100{
-    padding: 0 45px;
+    padding: 0 40px;
   }
   section.FAQ > div.FAQ_1100 > div{
     width: 100%;
@@ -204,7 +204,7 @@
   /* FAQ-聯絡專區 */
   section.FAQ > div.FAQ_1100_box{
     width: 100%;
-    padding: 0px 45px;
+    padding: 0px 40px;
   }
   section.FAQ > div.FAQ_1100_box > div.question_box{
     flex-direction: column;
@@ -306,10 +306,10 @@
     margin: 50px 0px 0px 0px;
   }
   section.FAQ > ul.change_bt_1100 > li:nth-child(2){
-    margin: auto 18px 0px 18px;
+    margin: auto 23px 0px 23px;
   }
   section.FAQ > ul.change_bt_1100 > li:nth-child(3){
-    margin: auto 18px 0px 0px;
+    margin: auto 23px 0px 0px;
   }
   /* 選項-圖示1 */
   section.FAQ > ul.change_bt_1100 > li.one > a > .ticket{
@@ -353,7 +353,7 @@
 
   /* FAQ */
   section.FAQ > div.FAQ_1100{
-    padding: 0 45px;
+    padding: 0 40px;
   }
   section.FAQ > div.FAQ_1100 > div{
     width: 100%;
@@ -387,7 +387,7 @@
   /* FAQ-聯絡專區 */
   section.FAQ > div.FAQ_1100_box{
     width: 100%;
-    padding: 0px 45px;
+    padding: 0px 40px;
   }
   section.FAQ > div.FAQ_1100_box > div.question_box{
     flex-direction: column;
