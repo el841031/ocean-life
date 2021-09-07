@@ -88,7 +88,7 @@
   /* 照片 */
   section.transportation > div.open_1100 > img{
     width: 49%;
-    height: 49%;
+    height: auto;
   }
   /* 交通資訊-大標 */
   /* section.transportation > div.open_1100 > div.right_box > h3{
@@ -274,7 +274,7 @@
   /* 照片 */
   section.transportation > div.open_1100 > img{
     width: 90%;
-    height: 90%;
+    height: auto;
   }
   /* 交通資訊-大標 */
   section.transportation > div.open_1100 > div.right_box > h3{
@@ -496,7 +496,7 @@
   /* 照片 */
   section.transportation > div.open_1100 > img{
     width: 100%;
-    height: 100%;
+    height: auto;
   }
   /* 交通資訊-大標 */
   section.transportation > div.open_1100 > div.right_box > h3{

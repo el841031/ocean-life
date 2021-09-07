@@ -12,7 +12,8 @@ header#header > div.block_1100 > nav.nav > ul.nav_list > li > div.explore_block 
 
 /* ---------------選單切換--------------- */
 section.gift{
-  min-width: 1100px;
+  /* min-width: 1100px; */
+  width: 100%;
   margin: 0 auto;
   /* border: 1px solid red; */
 
@@ -40,7 +41,8 @@ section.gift> ul.change_bt_1100 > li{
 
 /* icon */
 section.gift > ul.change_bt_1100{
-  width: 1100px;
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
 
   display: flex;
@@ -81,7 +83,8 @@ section.gift > ul.change_bt_1100 > li:last-child > a > h5{
 
 /* 店鋪資訊 */
 section.gift > div.introduce{
-  width: 1100px;
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   /* border: 1px solid blue; */
 
@@ -123,20 +126,26 @@ section.gift > div.introduce > div.right_introduce > div.time_bg{
   /* border: 1px solid rgba(18,30,46,.1); */
 
   display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
 }
 section.gift > div.introduce > div.right_introduce > div.time_bg > h5{
   color: #474747;
   letter-spacing: 1.5px;
   font-weight: 400;
   display: inline-block;
-  margin-left: 10px;
-  margin-top: 25px;
+  margin-left: 10px
+  /* margin-left: 10px;
+  margin-top: 25px; */
 }
 
 
 /* ------------人氣商品------------- */
 section.gift > div.product_box{
-  width: 1100px;
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   /* border: 1px solid blue; */
 
@@ -178,7 +187,8 @@ section.gift > div.product_box > div.product_flex > div.product_small > img{
 
 /* -----------注意事項------------- */
 section.gift > div.notice{
-  width: 1100px;
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   /* border: 1px solid blue; */
 

@@ -105,6 +105,7 @@ section.explore > ul.change_bt_1100 > li:first-child > a > h5{
   color: #1152A0;
   letter-spacing: 1.5px;
   margin-top: 5px;
+  font-weight: 600;
 }
 section.explore > ul.change_bt_1100 > li:last-child > a > h5{
   margin-top: 5px;

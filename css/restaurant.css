@@ -68,6 +68,7 @@ section.restaurant > ul.change_bt_1100 > li > a > h5{
   color: #1152A0;
   letter-spacing: 1.5px;
   margin-top: 2px;
+  font-weight: 600;
 }
 section.restaurant > ul.change_bt_1100 > li:first-child > a > h5{
   letter-spacing: 1.5px;
