@@ -18,14 +18,17 @@ $(document).ready(function(){
     easing:"linear",
 
     responsive:[
-      {breakpoint:801,settings:{
+      {breakpoint:992,settings:{
         slidesToShow:3,
+        slidesToScroll: 1,//切換下一頁時移動1個
       }},
-      {breakpoint:641,settings:{
-        slidesToShow:3,
+      {breakpoint:768,settings:{
+        slidesToShow:2,
+        slidesToScroll: 1,//切換下一頁時移動1個
       }},
-      {breakpoint:481,settings:{
+      {breakpoint:576,settings:{
         slidesToShow:1,
+        slidesToScroll: 1,//切換下一頁時移動1個
       }},
     ],
 

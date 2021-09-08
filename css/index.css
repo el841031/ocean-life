@@ -87,9 +87,11 @@ div.scrool_box > a{
   /* margin-bottom: 3px; */
 
   animation: scroll_float 2s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+
+  cursor: default;
 }
 div.scrool_box:hover{
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 
 

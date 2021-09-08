@@ -34,7 +34,8 @@
 .slick-slider .slick-list {
   transform: translate3d(0, 0, 0);
   /* 新增 */
-  width: 1000px;
+  /* width: 1000px; */
+  width: 100%;
 
 }
 
@@ -313,7 +314,8 @@
 
 .menu_box.slick-initialized.slick-slider.slick-dotted{
   margin: 0 auto;
-  width: auto;
+  /* width: auto; */
+  width: 100%;
 
 }
 .slick-prev, .slick-next{
@@ -336,6 +338,10 @@
   background-repeat: no-repeat;
   width: 16px;
   height: 30px;
+
+  /* 新增 */
+  left: -10px;
+  z-index: 1;
 }
 .slick-prev:hover{
   /* right: -20px; */
@@ -350,6 +356,10 @@
   background-repeat: no-repeat;
   width: 16px;
   height: 30px;
+
+  /* 新增 */
+  right: -10px;
+  z-index: 1;
 }
 .slick-next:hover{
   /* right: -20px; */
@@ -371,4 +381,20 @@ h5{
   font-weight: 400;
 
   margin: 15px auto;
+}
+
+
+@media (max-width: 575.98px){
+  .slick-next, .slick-next:focus{
+    right: -15px;
+    z-index: 1;
+  }
+  .slick-prev, .slick-prev:focus{
+    left: -15px;
+    z-index: 1;
+  }
+  .menu_box.slick-initialized.slick-slider.slick-dotted{
+    width: 90%;
+    height: auto;
+  }
 }

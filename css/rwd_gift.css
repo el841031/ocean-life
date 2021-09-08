@@ -24,9 +24,10 @@
   section.gift > div.introduce > div.right_introduce > div.time_bg{
     width: 100%;
     margin-bottom: 33px;
-    padding-right: 27px;
+    /* padding-right: 27px; */
     margin: 0px;
     margin-top: 20px;
+    padding: 0px 15px;
   }
   section.gift > div.introduce > div.right_introduce > h3{
     margin-top: 0px;
@@ -143,8 +144,11 @@
   /* 商店介紹 */
   section.gift > div.introduce{
     flex-direction: column;
-    padding: 0px 80px;
+    padding: 0px 60px;
     align-items: center;
+  }
+  section.gift > div.introduce > div.right_introduce{
+    width: 60%;
   }
   section.gift > div.introduce > div.right_introduce > div.time_bg{
     width: 100%;
@@ -169,6 +173,8 @@
 
   section.gift > div.introduce > div.right_introduce > h4{
     margin: 30px auto 20px auto;
+
+    margin-left: -10px;
   }
 
 
@@ -181,7 +187,7 @@
 
   /* 人氣商品 */
   section.gift > div.product_box{
-    padding: 0px 80px;
+    padding: 0px 60px;
   }
   section.gift > div.product_box > h3{
     margin-top: 50px;
@@ -306,6 +312,9 @@
     padding: 0px 50px;
     align-items: center;
   }
+  section.gift > div.introduce > div.right_introduce{
+    width: 80%;
+  }
   section.gift > div.introduce > div.right_introduce > div.time_bg{
     width: 100%;
     padding: 0px 15px;
@@ -328,6 +337,8 @@
 
   section.gift > div.introduce > div.right_introduce > h4{
     margin: 30px auto 20px auto;
+
+    margin-left: -10px;
   }
 
   /* 照片 */
@@ -531,6 +542,8 @@
   section.gift > div.introduce > div.right_introduce > h4{
     font-size: 17px;
     margin: 30px auto 20px auto;
+
+    margin-left: -10px;
   }
   /* 照片 */
   section.gift > div.introduce > div.gift_shop > img{
@@ -574,7 +587,7 @@
     margin: 5px auto 30px auto;
   }
   section.gift > div.notice{
-    font-size: 12px;
+    /* font-size: 12px; */
   }
   /* section.gift > div.product_box > div.product_flex > div.product_small:nth-child(9) > h5{
     margin-bottom: 0px;

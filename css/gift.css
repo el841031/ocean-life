@@ -105,7 +105,7 @@ section.gift > div.introduce > div.right_introduce > h3{
 section.gift > div.introduce > div.right_introduce > h4{
   color: #474747;
   letter-spacing: 1.5px;
-  margin: 40px auto 20px auto;
+  margin: 30px auto 20px auto;
   margin-left: -10px;
   font-weight: 500;
 }
@@ -127,16 +127,16 @@ section.gift > div.introduce > div.right_introduce > div.time_bg{
 
   display: inline-block;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
 section.gift > div.introduce > div.right_introduce > div.time_bg > h5{
   color: #474747;
   letter-spacing: 1.5px;
   font-weight: 400;
   display: inline-block;
-  margin-left: 10px
+  /* margin-left: 10px */
   /* margin-left: 10px;
   margin-top: 25px; */
 }
@@ -206,7 +206,7 @@ section.gift > div.introduce > div.gift_shop > h3{
   display: none;
   color: #1152A0;
   letter-spacing: 1.5px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 /* ---------SVG特效--------- */

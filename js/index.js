@@ -24,26 +24,16 @@ window.onscroll = function(){
 }
 
 // scroll_down|點擊並滑到指定區域
-$(document).ready(function(){
-  let viewportHeight = $(window).height();
-  let header = $("header.header");
-
-  $("div.scrool_box").on("click", function(){
-    $("html, body").animate({
-      scrollTop: viewportHeight - 23
-    }, 500)
-  });
-});
-
-// var scroll_down = document.getElementsByClassName("scrool_box")[0];
-// scroll_down.addEventListener("click", function(){
-//   ("html, body").animate()
+// $(document).ready(function(){
+//   let viewportHeight = $(window).height();
+//   let header = $("header.header");
 //
+//   $("div.scrool_box").on("click", function(){
+//     $("html, body").animate({
+//       scrollTop: viewportHeight - 23
+//     }, 500)
+//   });
 // });
-
-// function onTopClick() {
-//      window.location.hash = "#scroll";
-//    }
 
 
 // 最新消息-頁籤切換

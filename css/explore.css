@@ -149,12 +149,16 @@ section.explore > div.text_1100 > div.scrool_box{
   flex-direction: column;
   align-items: center;
   animation: 2s cubic-bezier(0.1, 0.1, 0.88, 0.88) 0s infinite normal none running scroll_float;
+
+  cursor: default;
 }
 section.explore > div.text_1100 > div.scrool_box > a:first-child{
   font-size: 13px;
   letter-spacing: 1.5px;
   color: white;
   /* margin-bottom: 5px; */
+
+  cursor: default;
 }
 section.explore > div.text_1100 > div.scrool_box > a > img{
   width: 19px;
@@ -165,6 +169,8 @@ section.explore > div.text_1100 > div.scrool_box > a.scroll_01 , a.scroll_02{
   width: 19px;
   height: 10px;
   margin-bottom: 3px;
+
+  cursor: default;
 }
 
 /* 小魚 */
