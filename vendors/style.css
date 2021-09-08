@@ -398,3 +398,12 @@ h5{
     height: auto;
   }
 }
+
+
+/* 按鈕 */
+button.slick-prev.slick-arrow{
+  top: 130px;
+}
+button.slick-next.slick-arrow{
+  top: 130px;
+}

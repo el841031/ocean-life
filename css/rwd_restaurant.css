@@ -479,6 +479,7 @@
   }
   section.restaurant > div.introduce > div.left_introduce > h4{
     font-size: 17px;
+    font-weight: 600;
   }
   section.restaurant > div.introduce > div.left_introduce > h5{
     margin: 0;

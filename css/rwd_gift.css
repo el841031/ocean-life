@@ -544,6 +544,7 @@
     margin: 30px auto 20px auto;
 
     margin-left: -10px;
+    font-weight: 600;
   }
   /* 照片 */
   section.gift > div.introduce > div.gift_shop > img{
