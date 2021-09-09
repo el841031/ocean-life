@@ -185,14 +185,14 @@ section.activity > div.box02_1100 > div.text > h5:nth-child(3){
   line-height: 1.6;
   display: none;
 }
-section.activity > div.box02_1100 > div.text > h5:nth-child(5){
+section.activity > div.box02_1100 > div.text > h5:nth-child(4){
   letter-spacing: 1.5px;
   color: #474747;
   font-weight: 400;
   line-height: 1.6;
   /* display: none; */
 }
-section.activity > div.box02_1100 > div.text > h5:nth-child(6){
+section.activity > div.box02_1100 > div.text > h5:nth-child(5){
   letter-spacing: 1.5px;
   color: #474747;
   font-weight: 400;
