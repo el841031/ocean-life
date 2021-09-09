@@ -71,7 +71,7 @@ section.restaurant > ul.change_bt_1100 > li > a > h5{
   color: #1152A0;
   letter-spacing: 1.5px;
   margin-top: 2px;
-  /* font-weight: 600; */
+  font-weight: 600;
 }
 section.restaurant > ul.change_bt_1100 > li.two > a > h5{
   font-weight: 600;

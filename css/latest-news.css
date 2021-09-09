@@ -119,6 +119,7 @@ section.news > div.title_1100 > div.title > P:first-child {
   font-size: 28px;
   letter-spacing: 1.5px;
   font-weight: 500;
+  text-shadow: 2px 4px 3px rgb(0 0 0 / 15%);
 }
 section.news > div.title_1100 > div.title > P:last-child {
   color: #55f4ff;
@@ -126,6 +127,7 @@ section.news > div.title_1100 > div.title > P:last-child {
   letter-spacing: 1.5px;
   font-weight: 500;
   margin-top: -4px;
+  text-shadow: 2px 4px 3px rgb(0 0 0 / 15%);
 }
 
 section.news > div.news_1100 > div.change_bt > a {

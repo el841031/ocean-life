@@ -2,9 +2,16 @@
 <html lang="zh-Hant">
   <head>
     <meta charset="utf-8">
+    <!-- RWD-viewport設定 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
     <title>Ocean Life</title>
     <link rel="stylesheet" href="./css/activity.css">
+    <link rel="stylesheet" href="./css/rwd_activity.css">
     <link href="./images/logo_icons.ico" rel="shortcut icon">
+
+    <!-- jonsuh套件(漢堡選單) -->
+    <link href="./vendors/jonsuh/hamburgers.css" rel="stylesheet">
   </head>
   <body>
 
@@ -14,6 +21,7 @@
         <a href="./index.html" class="header_logo">
           <img class="logo_02" src="./images/logo_02.svg" alt="">
         </a>
+
 
         <nav class="nav">
           <ul class="nav_list">
@@ -54,8 +62,86 @@
             </li>
           </ul>
         </nav>
+
+        <!-- 漢堡選單 -->
+        <button class="hamburger hamburger--slider" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        <div class="burger_nav">
+          <div class="burger_container">
+            <!-- <a class="buy_ticket">
+              <p>網路購票</p>
+            </a> -->
+            <ul class="burger_ul">
+              <li>
+                <div class="burger_li">
+                  <a href="./latest-news.html">最新消息</a>
+                </div>
+              </li>
+              <li>
+                <div class="burger_li">
+                  <a href="#">入館資訊</a>
+                  <div class="add-icon"></div>
+                </div>
+                <div class="burger_content">
+                  <a href="./ticket.html">票價&amp;購票</a>
+                  <a href="./transportation.html">交通指南</a>
+                  <a href="./FAQ.html">常見問答</a>
+                  <a href="./contact.html">聯絡我們</a>
+                </div>
+              </li>
+              <li>
+                <div class="burger_li">
+                  <a href="#">探索之旅</a>
+                  <div class="add-icon"></div>
+                </div>
+                <div class="burger_content">
+                  <a href="./explore.html">館內導覽</a>
+                  <a href="./restaurant.html">特色餐廳</a>
+                  <a href="./gift.html">紀念品店</a>
+                </div>
+              </li>
+              <li>
+                <div class="burger_li">
+                  <a class="on" href="./activity.html">館內活動</a>
+                </div>
+              </li>
+            </ul>
+            <a href="#" class="buy_ticket">
+              <p>網路購票</p>
+            </a>
+            <ul class="burger_language">
+              <li>
+                <a href="#">繁體中文</a>
+              </li>
+              <li>
+                <a href="#">English</a>
+              </li>
+              <li>
+                <a href="#">日本語</a>
+              </li>
+            </ul>
+
+            <div class="burger_follow">
+              <!-- <p>Follow Us</p>
+              <p>|</p> -->
+              <a href="#">
+                <img src="./images/circle_fb.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="./images/circle_yt.svg" alt=""></a>
+              <a href="#">
+                <img src="./images/circle_ig.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </header>
+
 
 <!-- 購票視窗 -->
     <div class="ticketLink">
@@ -80,6 +166,7 @@
         <div class="text">
           <h3>「海之聲」劇場表演</h3>
           <h5>結合聲光藝術，舞者將在水中翩翩起舞<br>帶來一場前所未有的水上演出<br>所需時間約20分鐘<br>帶領一同進入七彩繽紛的絢爛世界</h5>
+          <h5>結合聲光藝術<br>舞者將在水中翩翩起舞<br>帶來一場前所未有的水上演出<br>所需時間約20分鐘<br>帶領一同進入七彩繽紛的絢爛世界</h5>
           <table>
             <tbody>  <!-- 要加入tbody,css才能對th/td有修改 -->
               <tr>
@@ -92,18 +179,28 @@
               </tr>
             </tbody>
           </table>
-          <h5>※為了維護動物的權益，表演不會有動物參與演出</h5>
+          <h5>※為了維護動物權益，表演不會有動物參與演出</h5>
         </div>
-        <div class="activity_01"></div>
+        <div class="activity_box">
+          <h3>「海之聲」劇場表演</h3>
+          <img src="./images/activity_01.jpg" alt="">
+          <!-- <div class="activity_01"></div> -->
+        </div>
       </div>
 
-      <div class="activity_bg02"></div>
+      <!-- <div class="activity_bg02"></div> -->
 
       <div class="box02_1100">
-        <div class="activity_02"></div>
+        <div class="activity_bg02"></div>
+        <div class="activity_box">
+          <h3>「深入水中生活」餵食解說</h3>
+          <img src="./images/activity_02.jpg" alt="">
+          <!-- <div class="activity_02"></div> -->
+        </div>
         <div class="text">
           <h3>「深入水中生活」餵食解說</h3>
           <h5>想瞭解海洋生物的習性及飲食嗎？<br>潛水員會親自餵食示範，所需時間約20分鐘<br>想要發掘更多海底的秘密的話<br>千萬不能錯過這場精彩的介紹解說</h5>
+          <!-- <h5>想瞭解海洋生物的習性及飲食嗎？<br>潛水員會親自餵食示範，所需時間約20分鐘<br>想要發掘更多海底的秘密的話<br>千萬不能錯過這場精彩的介紹解說</h5> -->
           <table>
             <tbody>
               <tr>
@@ -117,13 +214,14 @@
             </tbody>
           </table>
           <h5>※每天會隨機餵食不同的海洋生物，依照生物<br>&emsp;的身體狀況而定</h5>
+          <h5>※每天會隨機餵食不同的海洋生物，依照生物的身體狀況而定</h5>
         </div>
       </div>
 
       <div class="box03_1100">
         <div class="text">
           <h3>「探索海底的秘密」影片欣賞</h3>
-          <h5>影片中會介紹關於OCEAN LIFE的秘密<br>還會解說海洋中的多種生態系統及小知識<br>所需時間約30分鐘<br>透過高畫質影像傳遞給大家</h5>
+          <h5>影片中會介紹關於OCEAN LIFE的秘密<br>及解說海洋中的多種生態系統、小知識<br>所需時間約30分鐘<br>透過高畫質影像傳遞給大家</h5>
           <table>
             <tbody>
               <tr>
@@ -137,7 +235,11 @@
             </tbody>
           </table>
         </div>
-        <div class="activity_03"></div>
+        <div class="activity_box">
+          <h3>「探索海底的秘密」影片欣賞</h3>
+          <img src="./images/activity_03.jpg" alt="">
+          <!-- <div class="activity_03"></div> -->
+        </div>
       </div>
     </section>
 
@@ -179,5 +281,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> -->
     <script src="./js/common/svg_change.js"></script>
     <script src="./js/common/top_back.js"></script>
+
+    <script src="./js/common/header.js"></script>
   </body>
 </html>
