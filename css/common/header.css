@@ -1,3 +1,9 @@
+/* 解決button邊框問題 */
+button{
+outline:none;
+}
+
+
 /* 首頁header */
 
 /* 消除follow */
