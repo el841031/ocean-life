@@ -300,10 +300,11 @@ section.explore > ul.change_bt_1100 > li > a > h5{
   section.explore > div.text_1100{
     width: 100%;
     padding: 0px 40px;
+    /* margin-top: 150px; */
   }
   section.explore > div.text_1100 > h3{
     font-size: 19px;
-    margin-bottom: 105px;   /* scroll定位 */
+    margin-bottom: 145px;   /* scroll定位 */
   }
   section.explore > div.text_1100 > h3 > span{
     font-size: 30px;
@@ -319,7 +320,7 @@ section.explore > ul.change_bt_1100 > li > a > h5{
 
   /* 背景一 */
   section.bg > div.explore_bg_01{
-    top: 300px;
+    top: 310px;
   }
   /* 背景二 */
   section.bg > div.explore_bg_02{
@@ -356,7 +357,7 @@ section.explore > ul.change_bt_1100 > li > a > h5{
   section.explore > div.quantity_1100{
     width: 100%;
     padding: 0px 0px 0px 40px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
   }
   /* 特色一-(左)文字 */
   section.explore > div.quantity_1100 > div.left_box > h4{
@@ -593,7 +594,7 @@ section.explore > ul.change_bt_1100 > li > a > h5{
     /* margin: 0px; */
     text-align: center;
     margin-right: 0px;
-    margin-top: 155px;
+    margin-top: 137px;
   }
 
 
