@@ -470,7 +470,7 @@ section.explore > ul.change_bt_1100 > li > a > h5{
   }
   /* 水杯區塊 */
   section.explore > div.Water_volume_1100 > div.left_box > div.water_cup{
-    margin: 21px 0px 0px 40px;
+    margin: 21px 0px 0px 35px;
   }
   /* 水杯 */
   section.explore > div.Water_volume_1100 > div.left_box > div.water_cup > div.cups > div.cup_icon{
@@ -493,7 +493,7 @@ section.explore > ul.change_bt_1100 > li > a > h5{
   section.explore > div.Water_volume_1100 > div.left_box > h4{
     position: absolute;
     font-size: 14px;
-    width: 163px;
+    width: 166px;
     bottom: 0px;
     right: -115px;
   }
@@ -559,6 +559,7 @@ section.explore > ul.change_bt_1100 > li > a > h5{
     background-size: contain;
     width: 98px;
     left: 140px;
+    display: none;
   }
   section.explore > div.size_1100 > div.right_box > div.tortoise_svg{
     background-size: contain;
