@@ -487,7 +487,8 @@ section.explore > div.size_1100 > div.left_box > div.middle{
 
   position: absolute;
   top: 152px;
-  right: -118px;
+  /* right: -118px; */
+  right: -111px;
   z-index: 1;
 }
 section.explore > div.size_1100 > div.right_box > div.siz01_img{
