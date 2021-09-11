@@ -2051,13 +2051,14 @@ section.explore > ul.change_bt_1100 > li > a > h5{
   section.explore > div.dialog_box_1100 > div.dialog_svg{
     /* display: none; */
     background-size: contain;
-    width: 305px;
+    width: 280px;
     bottom: -20px;
+    right: 54px;
   }
   section.explore > div.dialog_box_1100 > h6{
     /* margin: 0px; */
-    text-align: center;
-    margin-right: 0px;
+    /* text-align: center;
+    margin-right: 0px; */
     margin-top: 155px;
   }
 
