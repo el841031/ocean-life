@@ -16,6 +16,147 @@
     padding: 0px 50px 0px 40px;
   }
 
+
+  /* 主要內容 */
+  /* 麵包屑 */
+  section.article{
+    /* max-width: 992px; */
+    /* padding: 0px; */
+  }
+  section.article > div.bread_box{
+    width: 100%;
+    padding: 0px 40px 0px 40px;
+    /* display: none; */
+  }
+  section.article > div.bread_box > h5{
+    display: inline-block;
+  }
+
+  /* 圖片 */
+  section.article > div.article{
+    width: 100%;
+    padding: 0px 60px;
+    max-width: 992px;
+  }
+  section.article > div.article > img{
+    width: 100%;
+    height: auto;
+  }
+
+  /* 文章內容 */
+  section.article > div.article > div.text{
+    width: 100%;
+  }
+  section.article > div.article > div.text > div.top{
+    /* flex-direction: column;
+    margin-top: 20px;
+    align-items: normal; */
+  }
+
+  /* 分享 */
+  section.article > div.article > div.text > div.top > div.share{
+    /* display: none; */
+  }
+
+  /* 線條 */
+  section.article > div.article > div.text > hr{
+    width: 100%;
+    margin: 25px 0px 25px 0px;
+    background-color: #D8D8D8;
+  }
+
+  /* 新聞文字 */
+  section.article > div.article > div.text > div.bottom > h5{
+    /* font-size: 14px; */
+  }
+  section.article > div.article > div.text > div.bottom > h5 > a{
+    /* font-size: 14px; */
+  }
+
+  /* 注意事項 */
+  section.article > div.article > div.text > div.bottom > div.notice{
+    /* width: 100%; */
+    padding: 0px 24px;
+  }
+  section.article > div.article > div.text > div.bottom > div.notice > h5{
+    margin: 0px;
+  }
+
+  /* 按鈕 */
+  section.article > div.btn{
+    /* width: 100%;
+    margin-top: 70px; */
+  }
+  section.article > div.btn > div.back > a{
+    /* width: 90%;
+    height: 90%;
+    font-size: 14px;
+    line-height: 63px; */
+  }
+  section.article > div.btn > a > .arrow_left, .arrow_right{
+    /* width: 25px;
+    height: 20px; */
+  }
+  section.article > div.btn > div.back{
+    /* margin: 0px 40px; */
+  }
+
+  /* 分享 */
+  section.article > div.share{
+    display: flex;
+    width: 100%;
+    padding: 0px 40px;
+    display: none;
+    /* margin: 30px auto 0px auto; */
+  }
+
+
+  /* 其他消息 */
+  section.article > div.others{
+    width: 100%;
+    max-width: 992px;
+    margin-top: 110px;
+    padding: 0px 60px;
+  }
+  section.article > div.others > h3{
+    /* font-size: 20px; */
+  }
+  section.article > div.others > ul{
+    /* flex-direction: column; */
+    /* justify-content: normal;
+    align-items: center; */
+    /* justify-content: center; */
+  }
+  section.article > div.others > ul > li{
+    /* margin: 0px 15px; */
+  }
+  /* 照片 */
+  section.article > div.others > ul > li > a > div.img{
+    /* width: 100%;
+    height: auto;
+    padding: 0px 10px; */
+    /* margin-right: 10px; */
+    /* margin: 0px 20px; */
+    width: 100%;
+  }
+  section.article > div.others > ul > li > a > div.img > img{
+    /* width: 100%;
+    height: auto; */
+  }
+
+
+  /* 背景 */
+  section.article > div.bg{
+    background-image: url(../images/others_bg02.svg);
+    bottom: -118px;
+    /* top: 906px; */
+    width: 100%;
+    height: 492px;
+    /* background-position: center; */
+  }
+
+
+
 }
 
 
@@ -73,6 +214,156 @@
   span.hamburger-box{
     width: 25px;
   }
+
+
+
+
+  /* 主要內容 */
+  /* 麵包屑 */
+  section.article{
+    /* max-width: 992px; */
+    /* padding: 0px; */
+  }
+  section.article > div.bread_box{
+    width: 100%;
+    padding: 0px 40px 0px 40px;
+    /* display: none; */
+  }
+  section.article > div.bread_box > h5{
+    display: inline-block;
+  }
+
+  /* 圖片 */
+  section.article > div.article{
+    width: 100%;
+    padding: 0px 60px;
+    /* max-width: 768px; */
+  }
+  section.article > div.article > img{
+    width: 100%;
+    height: auto;
+  }
+
+  /* 文章內容 */
+  section.article > div.article > div.text{
+    width: 100%;
+  }
+  section.article > div.article > div.text > div.top{
+    /* flex-direction: column;
+    margin-top: 20px;
+    align-items: normal; */
+  }
+
+  /* 分享 */
+  section.article > div.article > div.text > div.top > div.share{
+    display: none;
+  }
+
+  /* 線條 */
+  section.article > div.article > div.text > hr{
+    width: 100%;
+    margin: 25px 0px 25px 0px;
+    background-color: #D8D8D8;
+  }
+
+  /* 新聞文字 */
+  section.article > div.article > div.text > div.bottom > h5{
+    /* font-size: 14px; */
+  }
+  section.article > div.article > div.text > div.bottom > h5 > a{
+    /* font-size: 14px; */
+  }
+
+  /* 注意事項 */
+  section.article > div.article > div.text > div.bottom > div.notice{
+    /* width: 100%; */
+    padding: 0px 24px;
+  }
+  section.article > div.article > div.text > div.bottom > div.notice > h5{
+    margin: 0px;
+  }
+
+  /* 按鈕 */
+  section.article > div.btn{
+    /* width: 100%;
+    margin-top: 70px; */
+    width: 100%;
+    max-width: 768px;
+  }
+  section.article > div.btn > div.back > a{
+    /* width: 90%;
+    height: 90%;
+    font-size: 14px;
+    line-height: 63px; */
+  }
+  section.article > div.btn > a > .arrow_left, .arrow_right{
+    /* width: 25px;
+    height: 20px; */
+  }
+  section.article > div.btn > div.back{
+    /* margin: 0px 40px; */
+  }
+
+
+  /* 分享 */
+  section.article > div.share{
+    display: flex;
+    width: 100%;
+    padding: 0px 40px;
+    /* margin: 30px auto 0px auto; */
+  }
+
+
+  /* 其他消息 */
+  section.article > div.others{
+    width: 100%;
+    margin-top: 110px;
+    padding: 0px 60px;
+  }
+  section.article > div.others > h3{
+    font-size: 20px;
+  }
+  section.article > div.others > ul{
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+  }
+
+  /* 背景 */
+  section.article > div.bg{
+    background-image: url(../images/others_bg02.svg);
+    bottom: -134px;
+    /* top: 906px; */
+    width: 100%;
+    height: 1611px;
+    background-position: center;
+  }
+  section.article > div.others > ul > li{
+    margin-bottom: 60px;
+  }
+  section.article > div.others > ul > li:last-child{
+    margin: 0px;
+  }
+
+  /* 照片 */
+  section.article > div.others > ul > li > a > div.img{
+    width: 100%;
+    height: auto;
+  }
+  section.article > div.others > ul > li > a > div.img > img{
+    width: 100%;
+    height: auto;
+  }
+
+  /* 文字 */
+  section.article > div.others > ul > li > a > p{
+    font-size: 14px;
+  }
+  section.article > div.others > ul > li > a > h5{
+    font-size: 16px;
+  }
+
+
 
 
 
@@ -152,6 +443,172 @@
   span.hamburger-box{
     width: 25px;
   }
+
+
+  /* 主要內容 */
+  /* 麵包屑 */
+  section.article{
+    padding: 0px;
+  }
+  section.article > div.bread_box{
+    width: 100%;
+    padding: 0px 40px 0px 40px;
+    display: none;
+  }
+  section.article > div.bread_box > h5{
+    display: inline-block;
+  }
+
+  /* 圖片 */
+  section.article > div.article{
+    width: 100%;
+    padding: 0px 60px
+  }
+  section.article > div.article > img{
+    width: 100%;
+    height: auto;
+  }
+
+  /* 文章內容 */
+  section.article > div.article > div.text{
+    width: 100%;
+  }
+  section.article > div.article > div.text > div.top{
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: normal;
+  }
+  section.article > div.article > div.text > div.top > div.title > h5{
+    /* font-size: 14px; */
+  }
+  section.article > div.article > div.text > div.top > div.title{
+    /* margin-bottom: 20px; */
+  }
+  section.article > div.article > div.text > div.top > div.title > h3{
+    /* font-size: 20px; */
+  }
+  /* 分享 */
+  section.article > div.article > div.text > div.top > div.share{
+    display: none;
+  }
+  section.article > div.article > div.text > div.top > div.share > h5{
+    font-size: 14px;
+  }
+  section.article > div.share > a > img.link{
+    margin: 0px 15px;
+  }
+  section.article > div.share > a > img.fb{
+    margin: 0px 15px;
+  }
+  section.article > div.share > a > img{
+    margin: 0px 15px;
+  }
+
+  /* 線條 */
+  section.article > div.article > div.text > hr{
+    width: 100%;
+    margin: 25px 0px 25px 0px;
+    background-color: #D8D8D8;
+  }
+
+  /* 新聞文字 */
+  section.article > div.article > div.text > div.bottom > h5{
+    /* font-size: 14px; */
+  }
+  section.article > div.article > div.text > div.bottom > h5 > a{
+    /* font-size: 14px; */
+  }
+
+  /* 注意事項 */
+  section.article > div.article > div.text > div.bottom > div.notice{
+    /* width: 100%; */
+    padding: 0px 24px;
+  }
+  section.article > div.article > div.text > div.bottom > div.notice > h5{
+    margin: 0px;
+    /* font-size: 13px; */
+    /* width: 286px; */
+  }
+
+  /* 按鈕 */
+  section.article > div.btn{
+    width: 100%;
+    margin-top: 70px;
+  }
+  section.article > div.btn > div.back > a{
+    width: 90%;
+    height: 90%;
+    font-size: 14px;
+    line-height: 63px;
+  }
+  section.article > div.btn > a > .arrow_left, .arrow_right{
+    width: 25px;
+    height: 20px;
+  }
+  section.article > div.btn > div.back{
+    margin: 0px 40px;
+  }
+
+  /* 分享 */
+  section.article > div.share{
+    display: flex;
+    width: 100%;
+    padding: 0px 40px;
+    /* margin: 30px auto 0px auto; */
+  }
+
+
+  /* 其他消息 */
+  section.article > div.others{
+    width: 100%;
+    margin-top: 110px;
+    padding: 0px 60px;
+  }
+  section.article > div.others > h3{
+    font-size: 20px;
+  }
+  section.article > div.others > ul{
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+  }
+
+  /* 背景 */
+  section.article > div.bg{
+    background-image: url(../images/others_bg02.svg);
+    bottom: -122px;
+    /* top: 906px; */
+    width: 100%;
+    height: 1431px;
+    /* background-position: center; */
+  }
+  section.article > div.others > ul > li{
+    margin-bottom: 60px;
+    /* width: 100%; */
+    width: 400px;
+  }
+  section.article > div.others > ul > li:last-child{
+    margin: 0px;
+  }
+
+  /* 照片 */
+  section.article > div.others > ul > li > a > div.img{
+    width: 100%;
+    height: auto;
+  }
+  section.article > div.others > ul > li > a > div.img > img{
+    width: 100%;
+    height: auto;
+  }
+
+  /* 文字 */
+  section.article > div.others > ul > li > a > p{
+    font-size: 14px;
+  }
+  section.article > div.others > ul > li > a > h5{
+    font-size: 16px;
+  }
+
 
 
 
@@ -279,9 +736,10 @@
   section.article > div.article > div.text > div.top{
     flex-direction: column;
     margin-top: 20px;
+    align-items: normal;
   }
   section.article > div.article > div.text > div.top > div.title > h5{
-    font-size: 14px;
+    /* font-size: 14px; */
   }
   section.article > div.article > div.text > div.top > div.title{
     /* margin-bottom: 20px; */
@@ -296,6 +754,15 @@
   section.article > div.article > div.text > div.top > div.share > h5{
     font-size: 14px;
   }
+  section.article > div.share > a > img.link{
+    margin: 0px 15px;
+  }
+  section.article > div.share > a > img.fb{
+    margin: 0px 15px;
+  }
+  section.article > div.share > a > img{
+    margin: 0px 15px;
+  }
 
   /* 線條 */
   section.article > div.article > div.text > hr{
@@ -306,10 +773,10 @@
 
   /* 新聞文字 */
   section.article > div.article > div.text > div.bottom > h5{
-    font-size: 14px;
+    /* font-size: 14px; */
   }
   section.article > div.article > div.text > div.bottom > h5 > a{
-    font-size: 14px;
+    /* font-size: 14px; */
   }
 
   /* 注意事項 */
@@ -326,7 +793,7 @@
   /* 按鈕 */
   section.article > div.btn{
     width: 100%;
-    /* margin-top: 70px; */
+    margin-top: 70px;
   }
   section.article > div.btn > div.back > a{
     width: 90%;
@@ -345,6 +812,9 @@
   /* 分享 */
   section.article > div.share{
     display: flex;
+    width: 100%;
+    padding: 0px 40px;
+    /* margin: 30px auto 0px auto; */
   }
 
 
@@ -352,6 +822,7 @@
   section.article > div.others{
     width: 100%;
     margin-top: 110px;
+    padding: 0px 60px;
   }
   section.article > div.others > h3{
     font-size: 20px;
@@ -365,19 +836,37 @@
   /* 背景 */
   section.article > div.bg{
     background-image: url(../images/others_bg02.svg);
-    bottom: 0px;
-    top: 885px;
+    bottom: -128px;
+    /* top: 906px; */
     width: 100%;
-    height: 1100px;
+    height: 1158px;
     /* background-position: center; */
   }
   section.article > div.others > ul > li{
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    width: 293px;
   }
-    section.article > div.others > ul > li:last-child{
-      margin: 0px;
-    }
+  section.article > div.others > ul > li:last-child{
+    margin: 0px;
+  }
 
+  /* 照片 */
+  section.article > div.others > ul > li > a > div.img{
+    width: 100%;
+    height: auto;
+  }
+  section.article > div.others > ul > li > a > div.img > img{
+    width: 100%;
+    height: auto;
+  }
+
+  /* 文字 */
+  section.article > div.others > ul > li > a > p{
+    font-size: 14px;
+  }
+  section.article > div.others > ul > li > a > h5{
+    font-size: 16px;
+  }
 
 
 
