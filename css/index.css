@@ -35,7 +35,8 @@ header#header.header_top{
 
 /* 網頁尺寸1366px */
 section.top_bannner{
-min-width: 1100px;
+/* min-width: 1100px; */
+width: 100%;
 margin: 0 auto;
 /* border: 1px solid blue; */
 position: relative;
@@ -43,7 +44,7 @@ position: relative;
 }
 /* 內容尺寸1100px,並設定flex */
 section.top_bannner > div.top_1100{
-width: 1100px;
+max-width: 1100px;
 /* height: 518px; */
 margin: 0 auto;
 /* border: 1px solid red; */
@@ -53,7 +54,8 @@ align-items: center;
 text-align: center;
 
 position: absolute;
-width: 425px;
+/* width: 425px; */
+width: 100%;
 height: 445px;
 left: 0;
 right: 0;
@@ -110,7 +112,8 @@ div.title_logo > hr{
   div.index_banner_box{
   background-image: url(../images/index_banner.jpg);
   height: 510px; /*原本尺寸600px*/
-  min-width: 1100px;
+  /* min-width: 1100px; */
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -170,7 +173,9 @@ header#header > div.block_1100 > div.follow_icon > p.more_information{
 
 /* 當日時間與線上預約購票 */
 ul.time_and_ticket{
-  min-width: 1100px;
+  /* min-width: 1100px; */
+  /* max-width: 1100px; */
+  width: 100%;
   display: flex;
 }
 
@@ -235,14 +240,17 @@ ul.time_and_ticket > li:last-child > a{
 
   /* 網頁尺寸1366px */
 section.news{
-  min-width: 1100px;
+  /* min-width: 1100px; */
+  width: 100%;
   margin: 0 auto;
   /* border: 1px solid blue; */
   position: relative;   /* 裝飾圖片定位 */
 }
 /* 內容尺寸1100px,並設flex*/
 section.news > div.news_1100{
-  width: 1100px;
+  /* width: 1100px; */
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   /* border: 1px solid red; */
   display: flex;
@@ -271,7 +279,7 @@ ul.three_news > li > a.img{
 }
 
 /* 加波浪 */
-ul.three_news > li > div.title_wave a > h5::after{
+ul.three_news > li > div.right_text > div.title_wave > a > h5::after{
   content: "";
   display: inline-block;
   width: 230px;
@@ -313,7 +321,7 @@ div.news_1100 > ul.change_news > li:last-child > a{
   color: #1152A0;
   padding: 9px 70px;
 }
-ul.three_news > li > a > h6{
+ul.three_news > li > div.right_text > a > h6{
   color: #474747;
   font-weight: 400;
   letter-spacing: 1px;
@@ -325,7 +333,7 @@ ul.three_news > li > a > h6{
   -webkit-box-orient: vertical;
   white-space: normal;
 }
-ul.three_news > li > div.title_wave > a > h5{
+ul.three_news > li > div.right_text > div.title_wave > a > h5{
   color: #474747;
   font-weight: 600;
   letter-spacing: 1px;
@@ -389,13 +397,26 @@ img.under_bg{
   z-index: -1;
 }
 
+/* 新增 */
+img.under_bg02{
+  /* width: 100%;
+  height: 100%; */
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  display: none;
+}
 
 
 /* 關於我們區域 */
 
 /* 網頁尺寸1366px */
 section.abouts_us{
-min-width: 1100px;
+/* min-width: 1100px; */
+width: 100%;
+/* max-width: 1100px; */
 margin: 0 auto;
 /* border: 1px solid blue; */
 position: relative; /* 針對背景圖定位 */
@@ -441,7 +462,8 @@ section.abouts_us > div.abouts_1100 > h3::after{
 
 /* 泡泡 */
 div.bubble{
-  width: 1100px;
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -781,7 +803,8 @@ section.feature > div.feature_1100 > div.point > div.left_box > ul.change_featur
 
 /* 網頁尺寸不低於1100px */
 section.map{
-  min-width: 1100px;
+  /* min-width: 1100px; */
+  width: 100%;
   margin: 0 auto;
   /* border: 1px solid pink; */
 
@@ -790,7 +813,8 @@ section.map{
 
 /* 內容尺寸1100px,並設flex*/
 section.map > div.map_1100{
-  width: 1100px;
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   /* border: 1px solid blue; */
   display: flex;
@@ -952,7 +976,8 @@ div.bottom_bt > div.btn_more > a{
 
 /* 網頁尺寸不低於1100px */
 section.IG{
-  min-width: 1100px;
+  /* min-width: 1100px; */
+  width: 100%;
   margin: 0 auto;
   /* border: 1px solid pink; */
 
@@ -961,7 +986,8 @@ section.IG{
 
 /* 內容尺寸1100px*/
 section.IG > div.IG_1100{
-  width: 1100px;
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   /* border: 1px solid blue; */
   text-align: center;
@@ -1344,3 +1370,251 @@ div.bubble > img{
 /* div#section3{
   display: none;
 } */
+
+/* 新增 */
+/* 內容尺寸1100px,並設flex*/
+section.abouts_us > div.abouts_1100_rwd{
+width: 1100px;
+margin: 0 auto;
+/* border: 1px solid red; */
+display: flex;
+flex-direction: column;
+align-items: center;
+position: relative; /* 針對波浪偽元素定位 */
+display: none;
+}
+/* 波浪 */
+section.abouts_us > div.abouts_1100_rwd > h3::after{
+  content: "";
+  display: inline-block;
+  width: 140px;
+  height: 8px;
+  background-image: url(../images/wave.svg);
+  background-repeat: repeat-x;
+  background-position: center;
+  margin-bottom: 3px;
+  position: absolute;
+  top: 230px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* 文字樣式 */
+section.abouts_us > div.abouts_1100_rwd  > h3{
+  color: white;
+  letter-spacing: 1.5px;
+  margin: 190px 0px 50px 0px;
+}
+section.abouts_us > div.abouts_1100_rwd  > h5{
+  color: white;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+section.abouts_us > div.abouts_1100_rwd  > h5:last-child{
+  margin-bottom: 190px;
+}
+
+
+/* rwd新增-魅力特色 */
+section.feature_rwd{
+  width: 100%;
+  /* height: 100vh; */
+  background: linear-gradient(#0B3852 0%,#0B437C 70%,#004790 100%);
+  display: none;
+}
+section.feature_rwd > div.feature_1100{
+  max-width: 1100px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+/* 魅力特色文字 */
+section.feature_rwd > div.feature_1100 > h3{
+  color: white;
+  letter-spacing: 1.5px;
+  text-align: center;
+  /* margin: 80px 145px 100px 63px; */
+}
+/* 特色一 */
+section.feature_rwd > div.feature_1100 > div.open_01 > div.collapsible > p{
+  font-size: 25px;
+  color: white;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+section.feature_rwd > div.feature_1100 > div.open_01 > div.collapsible > p > span{
+  font-size: 15px;
+  color: white;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+/* 特色介紹 */
+section.feature_rwd > div.feature_1100 > div.open_01 > div.content > h6{
+  font-size: 14px;
+  color: white;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  text-align: left;
+
+  margin-bottom: 10px;
+}
+
+/* 特色魅力-文字 */
+section.feature_rwd > div.feature_1100 > h3{
+  /* font-size: 20px; */
+  margin-bottom: 60px;
+  position: relative;
+  color: #55F4FF;
+}
+section.feature_rwd > div.feature_1100 > h3::after{
+  content: "";
+  display: inline-block;
+  width: 280px;
+  height: 8px;
+  background-image: url(../images/wave.svg);
+  background-repeat: repeat-x;
+  background-position: center;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 區域一 */
+section.feature_rwd > div.feature_1100 > div.open_01 > div.collapsible{
+  position: relative;
+  padding: 25px 0px 25px 0px;
+  /* border: 1px solid pink; */
+}
+section.feature_rwd > div.feature_1100 > div.open_01 > div.collapsible > p{
+  font-size: 18px;
+  cursor: pointer;
+  text-align: left;
+}
+section.feature_rwd > div.feature_1100 > div.open_01 > div.collapsible.active > p{
+  color: #55F4FF;
+}
+section.feature_rwd > div.feature_1100 > div.open_01 > div.collapsible.active > p > span{
+  color: #55F4FF;
+}
+
+/* 加號 */
+section.feature_rwd > div.feature_1100 > div.open_01 > div.collapsible > div.add-icon::after{
+  content: "\002B";
+  color: rgba(266,266,266,1);
+  font-size: 30px;
+  font-weight: 300;
+  position: absolute;
+  right: 0px;
+  top: 16px;
+}
+section.feature_rwd > div.feature_1100 > div.open_01 > div.collapsible.active > div.add-icon::after{
+  content: "\2212";
+
+}
+section.feature_rwd > div.feature_1100 > div.open_01 > div.content{
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  max-height: 0px;
+}
+
+/* 線條 */
+section.feature_rwd > div.feature_1100 > div.open_01 > div.collapsible::after{
+  content: "";
+  width: 100%;
+  height: 0.8px;
+  background-color: rgba(256, 256, 256, 0.4);
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+
+  /* opacity: 1; */
+    /* transition-duration: 2; */
+}
+
+/* 按鈕 */
+section.feature_rwd > div.feature_1100 > div.btn_more{
+  display: inline-block;
+  text-align: center;
+}
+section.feature_rwd > div.feature_1100 > div.btn_more > a{
+  color: #55F4FF;
+  letter-spacing: 1.5px;
+  width: 138px;
+  height: 35px;
+  display: inline-block;
+  text-align: center;
+  line-height: 31px;
+  font-size: 13px;
+  border: 2px solid #55F4FF;
+  border-radius: 20px;
+  margin: 60px auto 100px auto;
+}
+
+/* 特色一內容 */
+section.feature_rwd > div.feature_1100 > div.open_01 > div.content > div:first-child{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+
+  margin-bottom: 100px;
+}
+section.feature_rwd > div.feature_1100 > div.open_01 > div.content > div:first-child > img{
+  width: 75%;
+  height: auto;
+  position: relative;
+  margin: 20px 0px 0px 0px;
+
+  box-shadow: 0 3px 12px #25266a7a;
+}
+section.feature_rwd > div.feature_1100 > div.open_01 > div.content > div:nth-child(2){
+  width: 100%;
+  height: auto;
+  position: relative;
+  /* display: none; */
+}
+section.feature_rwd > div.feature_1100 > div.open_01 > div.content > div:nth-child(2) > img{
+  width: 49%;
+  height: auto;
+  position: absolute;
+  top: -145px;
+  left: 0px;
+
+  box-shadow: 0 3px 15px #25266a91;
+}
+/* 打開的線 */
+section.feature_rwd > div.feature_1100 > div.open_01 > div.collapsible.active::after{
+  content: "";
+  /* opacity: 0;
+  transition-duration: 2; */
+  display: none;
+}
+
+
+/* 新增地圖文字 */
+div.map_1100 > div.right_box > h3{
+  color: #08448F;
+  letter-spacing: 1.5px;
+  position: relative;
+  display: none;
+  margin-bottom: 50px;
+}
+div.map_1100 > div.right_box > h3::after{
+  content: "";
+  display: inline-block;
+  width: 140px;
+  height: 8px;
+  background-image: url(../images/wave.svg);
+  background-repeat: repeat-x;
+  background-position: center;
+  position: absolute;
+  top: 38px;
+  left: -25px;
+}

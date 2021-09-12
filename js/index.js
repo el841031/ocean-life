@@ -11,6 +11,8 @@ $(function(){
 });
 
 
+
+
 // 首頁header|滾輪往下滑出現
 window.onscroll = function(){
   var scroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -22,6 +24,8 @@ window.onscroll = function(){
     header.classList.add("header_top");
   }
 }
+
+
 
 // scroll_down|點擊並滑到指定區域
 // $(document).ready(function(){
@@ -87,57 +91,73 @@ $("a.change_btn").on("click", function(e){
 // 	$("#one").css("font-size", "18px");
 // 	$("#one").css("color", "white");
 // });
-ScrollTrigger.defaults({
-  markers:false
-})
 
-var points = gsap.utils.toArray('.point');
-var indicators = gsap.utils.toArray('.indicator');
+// 特色
+// ScrollTrigger.defaults({
+//   markers:false
+// })
+//
+// var points = gsap.utils.toArray('.point');
+// var indicators = gsap.utils.toArray('.indicator');
+//
+// var height = 200 * points.length;
+//
+// gsap.set('.indicators', {display: "flex"});
+//
+// var tl = gsap.timeline({
+//
+// 	defaults: {
+// 		ease: "back.inOut(6)"
+// 	},
+//
+//   duration: points.length,
+//   scrollTrigger: {
+//     trigger: ".feature",
+//     start: "top center",
+//     end: "+="+height+"%",
+//     scrub: true,
+//     id: "points",
+//   }
+// })
+//
+// var pinner = gsap.timeline({
+//
+// 	defaults: {
+// 		ease: "back.inOut(6)"
+// 	},
+//
+//   scrollTrigger: {
+//     trigger: ".feature",
+//     start: "-42px top",
+//     end: "+="+height+"%",
+//     scrub: true,
+//     pin: ".feature",
+//     pinSpacing: true,
+//     id: "pinning",
+//     markers: false //參考線關掉
+//   }
+// })
+//
+// // {autoAlpha:0, translateY: 100}, i)
+// // {autoAlpha:0, translateY: -100}, i + 0.75)
+// points.forEach(function(elem, i) {
+//   gsap.set(elem, {position: "absolute", top: 0});
+//
+//   // tl.to(indicators[i], {backgroundColor: "orange", duration: 0.25}, i)
+//   tl.from(elem.querySelector('.right_box'), {autoAlpha:0, translateY: 0,}, i)
+//   tl.from(elem.querySelector('.left_box'), {autoAlpha:0}, i) //translateY: 100
+//
+//   if (i != points.length-1) {
+//     // tl.to(indicators[i], {backgroundColor: "#adadad", duration: 0.25}, i+0.75)
+//     tl.to(elem.querySelector('.left_box'), {autoAlpha:0}, i + 0.75)
+//     tl.to(elem.querySelector('.right_box'), {autoAlpha:0}, i + 0.75)
+//   }
+//
+// });
 
-var height = 200 * points.length;
 
-gsap.set('.indicators', {display: "flex"});
 
-var tl = gsap.timeline({
-  duration: points.length,
-  scrollTrigger: {
-    trigger: ".feature",
-    start: "top center",
-    end: "+="+height+"%",
-    scrub: true,
-    id: "points",
-  }
-})
 
-var pinner = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".feature",
-    start: "-42px top",
-    end: "+="+height+"%",
-    scrub: true,
-    pin: ".feature",
-    pinSpacing: true,
-    id: "pinning",
-    markers: true
-  }
-})
-
-// {autoAlpha:0, translateY: 100}, i)
-// {autoAlpha:0, translateY: -100}, i + 0.75)
-points.forEach(function(elem, i) {
-  gsap.set(elem, {position: "absolute", top: 0});
-
-  // tl.to(indicators[i], {backgroundColor: "orange", duration: 0.25}, i)
-  tl.from(elem.querySelector('.right_box'), {autoAlpha:0, translateY: 100,}, i)
-  tl.from(elem.querySelector('.left_box'), {autoAlpha:0}, i)
-
-  if (i != points.length-1) {
-    // tl.to(indicators[i], {backgroundColor: "#adadad", duration: 0.25}, i+0.75)
-    tl.to(elem.querySelector('.left_box'), {autoAlpha:0}, i + 0.75)
-    tl.to(elem.querySelector('.right_box'), {autoAlpha:0}, i + 0.75)
-  }
-
-});
 
 
 // document.querySelectorAll('a[href]').forEach(a => {
@@ -145,3 +165,91 @@ points.forEach(function(elem, i) {
 //     TweenMax.to(window, 1, {scrollTo:{y:"#section2", offsetY:1200}});
 //   });
 // });
+
+
+
+
+
+// rwd魅力特色
+ScrollTrigger.matchMedia({
+  // 跟設定css 一樣  如果畫面不小於 992px 執行
+  "(min-width: 992px)": () => { ScrollTrigger.defaults({
+	  markers:false
+	})
+
+	var points = gsap.utils.toArray('.point');
+	var indicators = gsap.utils.toArray('.indicator');
+
+	var height = 200 * points.length;
+
+	gsap.set('.indicators', {display: "flex"});
+
+	var tl = gsap.timeline({
+
+		defaults: {
+			ease: "back.inOut(6)"
+		},
+
+	  duration: points.length,
+	  scrollTrigger: {
+	    trigger: ".feature",
+	    start: "top center",
+	    end: "+="+height+"%",
+	    scrub: true,
+	    id: "points",
+	  }
+	})
+
+	var pinner = gsap.timeline({
+
+		defaults: {
+			ease: "back.inOut(6)"
+		},
+
+	  scrollTrigger: {
+	    trigger: ".feature",
+	    start: "-42px top",
+	    end: "+="+height+"%",
+	    scrub: true,
+	    pin: ".feature",
+	    pinSpacing: true,
+	    id: "pinning",
+	    markers: false //參考線關掉
+	  }
+	})
+
+	// {autoAlpha:0, translateY: 100}, i)
+	// {autoAlpha:0, translateY: -100}, i + 0.75)
+	points.forEach(function(elem, i) {
+	  gsap.set(elem, {position: "absolute", top: 0});
+
+	  // tl.to(indicators[i], {backgroundColor: "orange", duration: 0.25}, i)
+	  tl.from(elem.querySelector('.right_box'), {autoAlpha:0, translateY: 0,}, i)
+	  tl.from(elem.querySelector('.left_box'), {autoAlpha:0}, i) //translateY: 100
+
+	  if (i != points.length-1) {
+	    // tl.to(indicators[i], {backgroundColor: "#adadad", duration: 0.25}, i+0.75)
+	    tl.to(elem.querySelector('.left_box'), {autoAlpha:0}, i + 0.75)
+	    tl.to(elem.querySelector('.right_box'), {autoAlpha:0}, i + 0.75)
+	  }
+
+	});
+ },
+});
+
+
+// 特色魅力RWD
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
