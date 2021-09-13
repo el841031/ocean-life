@@ -723,6 +723,8 @@ section.feature > div.feature_1100 > div.point > div.left_box > ul.change_featur
   position: absolute;
   top: 50px;
   left: 20px;
+
+  cursor: default;
 }
 /* 數字 */
 section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li.tunnel > a > span:first-child{
@@ -794,7 +796,8 @@ section.feature > div.feature_1100 > div.point > div.left_box > ul.change_featur
 }
 section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li.light02{
   margin: 4px 0px 50px 0px;
-  cursor: pointer;
+  /* cursor: pointer; */
+
 }
 /* 列表-第三 */
 /* 3.聲光結合藝術饗宴 */
@@ -1315,7 +1318,7 @@ section.IG > div.IG_box > div > a:hover::after{
 
 /* 獨特魅力hover */
 section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li:hover > a > span{
-  color: rgb(85, 244, 255);
+  /* color: rgb(85, 244, 255); */
 }
 
 /* 暫時|照片hover */
@@ -1663,4 +1666,17 @@ section.feature_rwd > div.feature_1100 > div.open_01 > div.content > div:nth-chi
   letter-spacing: 1.5px;
   font-weight: 400;
   display: none;
+}
+
+section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li > a{
+  cursor: default;
+}
+section.feature > div.feature_1100 > div.point > div.left_box > ul > li{
+  cursor: default;
+}
+section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li.light02::after{
+  cursor: default;
+}
+section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li.tunnel02{
+  cursor: default;
 }

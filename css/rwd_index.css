@@ -870,8 +870,8 @@
   }
 }
 
-
-
+/* @media (max-width: 575.98px) */
+/* @media (min-width: 414px) and (max-width: 576px) */
 @media (max-width: 575.98px) {
   /* 訂票 */
   div.ticketLink{
@@ -1263,4 +1263,17 @@
   div.rwd_content > p > a{
     font-size: 10px;
   }
+}
+
+
+@media (max-width: 380px){
+  section.abouts_us > div.abouts_1100_rwd{
+    padding: 0px 34px;
+  }
+  section.abouts_us > div.abouts_1100_rwd > h5{
+    font-size: 14px;
+  }
+  /* section.abouts_us > div.abouts_1100_rwd > h5:last-child{
+    margin-bottom: 125px;
+  } */
 }

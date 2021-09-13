@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./css/rwd_explore.css">
     <link href="./images/logo_icons.ico" rel="shortcut icon">
 
+    <!--AOS動畫套件 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- jonsuh套件(漢堡選單) -->
     <link href="./vendors/jonsuh/hamburgers.css" rel="stylesheet">
   </head>
@@ -195,13 +198,13 @@
       </div>
 
       <!-- 公司開幕 -->
-      <div class="company_1100">
+      <div class="company_1100" data-aos="fade-up">
         <div class="company_img"></div>
         <h4>2020年<br>10月31日<br>OCEAN LIFE盛大開幕</h4>
       </div>
 
       <!-- 展示數量,種類 -->
-      <div class="quantity_1100">
+      <div class="quantity_1100" data-aos="fade-up">
         <div class="left_box">
           <h4>展示數高達<br><span>30000</span> 隻生物<br><span>480</span> 種類</h4>
           <div class="left_img"></div>
@@ -215,7 +218,7 @@
       </div>
 
       <!-- 水量 -->
-      <div class="Water_volume_1100">
+      <div class="Water_volume_1100" data-aos="fade-up">
         <div class="left_box">
           <div class="water_img"></div>
           <div class="water_cup">
@@ -245,7 +248,7 @@
       </div>
 
       <!-- 水族館尺寸 -->
-      <div class="size_1100">
+      <div class="size_1100" data-aos="fade-up">
         <div class="left_box">
           <div class="top">
             <div class="text">
@@ -268,7 +271,7 @@
 
       <!-- 水族館玻璃厚度 -->
       <div class="thickness_bg_box">
-        <div class="thickness_img"></div>
+        <div class="thickness_img" data-aos="fade-up"></div>
       </div>
       <div class="thickness_1100">
         <h4>水槽的壓克力玻璃厚度<br><span>42</span>cm</h4>
@@ -280,7 +283,7 @@
       </div>
 
       <!-- 海底隧道 -->
-      <div class="tunnel_1100">
+      <div class="tunnel_1100" data-aos="fade-up">
         <div class="left_box">
           <div class="tunnel_img"></div>
         </div>
@@ -291,7 +294,7 @@
       </div>
 
       <!-- 水母專區 -->
-      <div class="jellyfish_1100">
+      <div class="jellyfish_1100" data-aos="fade-up">
         <div class="left_box">
           <h4>透明月亮型水母水槽<br>總長 <span>7</span>m<br>水母數量高達 <span>500</span> 隻</h4>
           <div class="dialog_svg"></div>
@@ -304,7 +307,7 @@
       </div>
 
       <!-- 萬花筒隧道 -->
-      <div class="light_1100">
+      <div class="light_1100" data-aos="fade-up">
         <div class="left_box">
           <div class="light_img"></div>
         </div>
@@ -319,7 +322,7 @@
 
 
       <!-- 說明文 -->
-      <div class="introduce_1100">
+      <div class="introduce_1100" data-aos="fade-up">
         <h4>OCEAN LIFE邀請您一同與我們共度這溫柔時光<br>還有更多意想不到的驚奇，等您來發現並創造<br>體驗前所未有的新感動<br>讓我們來場怦然心動的邂逅之旅吧！</h4>
         <div class="bottom_bt">
           <div class="btn_more">
@@ -365,10 +368,19 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> -->
+
+    <!-- AOS動畫套件 -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script src="./js/common/svg_change.js"></script>
     <script src="./js/common/top_back.js"></script>
 
     <script src="./js/common/header.js"></script>
+
+    <script src="./vendors/AOS.js"></script>
 
   </body>
 </html>

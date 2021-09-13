@@ -2238,3 +2238,29 @@ section.explore > ul.change_bt_1100 > li > a > h5{
     font-size: 10px;
   }
 }
+
+
+
+@media (max-width: 380px){
+  section.explore > div.text_1100 > div.fishUP_img{
+    width: 40px;
+    height: 40px;
+    right: 32px;
+  }
+  section.explore > div.company_1100 > div.company_img{
+    width: 110px;
+    height: 100px;
+  }
+  section.explore > div.company_1100 > h4{
+    font-size: 15px;
+  }
+  section.explore > div.quantity_1100 > div.right_box{
+    width: 80%;
+  }
+  section.explore > div.light_1100 > div.right_box{
+    width: 39%;
+  }
+  section.explore > div.introduce_1100 > h4{
+    font-size: 13px;
+  }
+}

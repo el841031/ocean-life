@@ -525,3 +525,19 @@
     font-size: 10px;
   }
 }
+
+
+@media (max-width: 380px){
+  button.slick-prev.slick-arrow{
+    left: -26px;
+  }
+  button.slick-next.slick-arrow{
+    right: -26px;
+  }
+  section.restaurant > div.menu{
+    padding: 0px 38px;
+  }
+  section.restaurant > div.introduce{
+    padding: 0px 38px;
+  }
+}

@@ -438,8 +438,9 @@ ul.burger_ul > li > div.burger_li::after {
 /* 漢堡選單-導覽列字的大小*/
 ul.burger_ul > li > div.burger_li > a {
   color: white;
-  letter-spacing: 1.5;
+  letter-spacing: 1.5px;
   font-size: 17px;
+  display: block;
 }
 /* 漢堡選單-加號+*/
 ul.burger_ul > li > div.burger_li > div.add-icon::after {
@@ -466,7 +467,7 @@ ul.burger_ul > li > div.burger_content {
 ul.burger_ul > li > div.burger_content > a {
   display: block;
   color: white;
-  letter-spacing: 1.5;
+  letter-spacing: 1.5px;
   font-size: 16px;
   font-weight: 300;
   /* border: 1px solid pink; */

@@ -215,8 +215,9 @@
   /* 發送問題 */
   section.contact > div.form > form > button.btn{
     width: 30%;
-    margin: 40px 35% 90px 35%;
+    /* margin: 40px 35% 90px 35%; */
     /* (100%-寬度40%)/2 */
+    margin: 20px 30% 90px 30%;
   }
 
 
@@ -403,8 +404,9 @@
   /* 發送問題 */
   section.contact > div.form > form > button.btn{
     width: 40%;
-    margin: 40px 30% 90px 30%;
+    /* margin: 40px 30% 90px 30%; */
     /* (100%-寬度40%)/2 */
+    margin: 10px 30% 90px 30%;
   }
 
   /* footer */
@@ -429,5 +431,12 @@
   }
   div.rwd_content > p > a{
     font-size: 10px;
+  }
+}
+
+
+@media (max-width: 380px){
+  section.contact > div.form > form > div.item_block > input.name{
+    margin-right: 17px;
   }
 }

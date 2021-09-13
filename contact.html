@@ -190,30 +190,30 @@
         <div class="line_dot"></div>
         <h3>諮詢服務</h3>
         <h5>請提供您的聯絡資訊及訊息，OCEAN LIFE客服團隊很樂意為您服務</h5>
-        <form action="#" method="post" enctype="multipart/form-data">
+        <form name="myForm" action="#" method="get" enctype="multipart/form-data" accept=".image,.pdf">
           <div class="item_block">
             <label for="name">姓名：</label>
             <br>
-            <input class="name" type="text" name="name" id="name">
-            <input type="radio" name="sex" value="" id="male" checked>
+            <input class="name" type="text" name="name" id="name" required>
+            <input type="radio" name="sex" value="" id="male" checked required>
             <label class="male" for="male">先生</label>
-            <input type="radio" name="sex" value="" id="female">
+            <input type="radio" name="sex" value="" id="female" required>
             <label for="female">小姐</label>
           </div>
           <div class="item_block">
-            <label for="email">可聯繫您的信箱：</label>
+            <label for="email" name="email">可聯繫您的信箱：</label>
             <br>
-            <input class="email" type="text" name="email" id="email">
+            <input class="email" type="text" name="email" id="email" required>
           </div>
           <div class="item_block">
             <label for="content">內容描述：</label>
             <br>
-            <textarea class="content" name="content" id="content"></textarea>
+            <textarea class="content" name="content" id="content" required></textarea>
           </div>
-          <p>*可接受檔案數量上限為3，僅支援圖片(jpg / jpeg / png)與PDF檔案，且大小必須小於4.5MB</p>
-          <input class="file" type="file" multiple name="" value="">
-          <br>
-          <button class="btn" type="submit" name="button">發送訊息</button>
+          <!-- <p>*可接受檔案數量上限為3，僅支援圖片(jpg / jpeg / png)與PDF檔案，且大小必須小於4.5MB</p>
+          <input class="file" type="file" multiple name="the_file" value="">
+          <br> -->
+          <button class="btn" type="submit" name="button" >發送訊息</button>
         </form>
       </div>
     </section>
@@ -259,5 +259,6 @@
     <script src="./js/common/top_back.js"></script>
 
     <script src="./js/common/header.js"></script>
+    <script src="./js/contact.js"></script>
   </body>
 </html>

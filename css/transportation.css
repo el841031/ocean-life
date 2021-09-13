@@ -298,3 +298,13 @@ section.transportation > ul.change_bt_1100 > li.four:hover > a > h5{
 section.transportation > ul.change_bt_1100 > li.two .car path{
   fill: #1152A0;
 }
+
+/* 新增文字 */
+section.transportation > div.open_1100 > div.right_box > p{
+  color: #474747;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 12px;
+  display: none;
+}

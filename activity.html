@@ -12,6 +12,9 @@
 
     <!-- jonsuh套件(漢堡選單) -->
     <link href="./vendors/jonsuh/hamburgers.css" rel="stylesheet">
+
+    <!--AOS動畫套件 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
 
@@ -162,7 +165,7 @@
         </div>
       </div>
 
-      <div class="box01_1100">
+      <div class="box01_1100" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="text">
           <h3>「海之聲」劇場表演</h3>
           <h5>結合聲光藝術，舞者將在水中翩翩起舞<br>帶來一場前所未有的水上演出<br>所需時間約20分鐘<br>帶領一同進入七彩繽紛的絢爛世界</h5>
@@ -192,12 +195,12 @@
 
       <div class="box02_1100">
         <div class="activity_bg02"></div>
-        <div class="activity_box">
+        <div class="activity_box" data-aos="fade-up">
           <h3>「深入水中生活」餵食解說</h3>
           <img src="./images/activity_02.jpg" alt="">
           <!-- <div class="activity_02"></div> -->
         </div>
-        <div class="text">
+        <div class="text" data-aos="fade-up">
           <h3>「深入水中生活」餵食解說</h3>
           <h5>想瞭解海洋生物的習性及飲食嗎？<br>潛水員會親自餵食示範，所需時間約20分鐘<br>想要發掘更多海底的秘密的話<br>千萬不能錯過這場精彩的介紹解說</h5>
           <!-- <h5>想瞭解海洋生物的習性及飲食嗎？<br>潛水員會親自餵食示範，所需時間約20分鐘<br>想要發掘更多海底的秘密的話<br>千萬不能錯過這場精彩的介紹解說</h5> -->
@@ -218,7 +221,7 @@
         </div>
       </div>
 
-      <div class="box03_1100">
+      <div class="box03_1100" data-aos="fade-up">
         <div class="text">
           <h3>「探索海底的秘密」影片欣賞</h3>
           <h5>影片中會介紹關於OCEAN LIFE的秘密<br>及解說海洋中的多種生態系統、小知識<br>所需時間約30分鐘<br>透過高畫質影像傳遞給大家</h5>
@@ -279,9 +282,18 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> -->
+
+    <!-- AOS動畫套件 -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+
     <script src="./js/common/svg_change.js"></script>
     <script src="./js/common/top_back.js"></script>
 
     <script src="./js/common/header.js"></script>
+    <script src="./vendors/AOS.js"></script>
   </body>
 </html>

@@ -519,3 +519,10 @@
     font-size: 10px;
   }
 }
+
+
+@media (max-width: 380px){
+  section.ticket > div.buy_ticket_1100 > div.buy_bt > div.btn_notice{
+    margin-right: 15px;
+  }
+}
