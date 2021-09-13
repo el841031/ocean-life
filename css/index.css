@@ -341,7 +341,7 @@ ul.three_news > li > div.right_text > div.title_wave > a > h5{
 
 
 div.btn_more_news > a{
-  font-size: 13px;
+  /* font-size: 13px; */
   color: #1152A0;
   width: 138px;
   height: 35px;
@@ -353,6 +353,9 @@ div.btn_more_news > a{
 
   border: 2px solid #1152A0;
   border-radius: 20px;
+
+  font-size: 14px;
+  font-weight: 500;
 }
 
 
@@ -913,6 +916,7 @@ section.map > div.map_bg{
   background-image: url(../images/map_bg.svg);
   background-repeat: repeat;
   background-size: cover;
+  background-position: bottom;
   width: 100%;
   height: 540px;
 
@@ -962,7 +966,8 @@ div.bottom_bt > div.btn_more > a{
   display: inline-block;
   text-align: center;
   line-height: 31px;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 500;
 
   border: 2px solid #105A9C;
   border-radius: 20px;
@@ -1010,10 +1015,12 @@ section.IG > div.IG_1100 > div.Follow_bt > a{
   display: inline-block;
   text-align: center;
   line-height: 31px;
-  font-size: 13px;
+  /* font-size: 13px; */
 
   border: 2px solid #105A9C;
   border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /* 波浪 */
@@ -1470,7 +1477,8 @@ section.feature_rwd > div.feature_1100 > h3{
   /* font-size: 20px; */
   margin-bottom: 60px;
   position: relative;
-  color: #55F4FF;
+  /* color: #55F4FF; */
+  color: white;
 }
 section.feature_rwd > div.feature_1100 > h3::after{
   content: "";
@@ -1551,10 +1559,13 @@ section.feature_rwd > div.feature_1100 > div.btn_more > a{
   display: inline-block;
   text-align: center;
   line-height: 31px;
-  font-size: 13px;
+  /* font-size: 13px; */
   border: 2px solid #55F4FF;
   border-radius: 20px;
   margin: 60px auto 100px auto;
+
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /* 特色一內容 */

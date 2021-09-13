@@ -10,6 +10,25 @@ $(function(){
 	}).scroll();
 });
 
+// 手機判斷
+// function isMobile() {
+//   try{ document.createEvent("TouchEvent"); return true; }
+//   catch(e){ return false;}
+// }
+//
+// $(function(){
+// 	if(isMobile()){
+//
+// 	}elsa{
+// 		$(window).scroll(function() {
+// 			if ( $(this).scrollTop() > 500 ){
+// 				$('#TicketTop').fadeIn(0);
+// 			} else {
+// 				$('#TicketTop').stop().fadeOut(0);
+// 			}
+// 		}).scroll();
+// 	}
+// });
 
 
 

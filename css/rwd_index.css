@@ -183,7 +183,7 @@
 @media (max-width: 575.98px) {
   /* 訂票 */
   div.ticketLink{
-    display: none;
+    display: none !important;
   }
 
   /* 新增-購票 */
@@ -242,6 +242,11 @@
   }
 
 
+  /* follow */
+  header#header.header_top > div.block_1100 > div.follow_icon{
+    visibility: hidden;
+  }
+
   /* 主要內容 */
   /* 第一區域-首圖 */
   div.index_banner_box{
@@ -269,7 +274,7 @@
   }
   div.today_time{
     flex-direction: column;
-    padding: 15px 0px;
+    padding: 10px 0px;
   }
   /* 區塊文字-營業時間*/
   div.today_time > p.today{
@@ -312,7 +317,7 @@
   }
   div.news_1100 > ul.change_news > li > a.change_btn.-on{
     width: 100%;
-    padding: 10px 52px;
+    padding: 10px 42px;
   }
   div.news_1100 > ul.change_news > li > a.change_btn{
     width: 100%;
@@ -323,7 +328,7 @@
   }
   div.news_1100 > ul.change_news > li > a.change_btn{
     width: 100%;
-    padding: 10px 52px;
+    padding: 10px 42px;
   }
 
 
@@ -381,6 +386,34 @@
     width: 100%;
     background-image: url(./images/news_bg_02.svg);
   }
+
+  /* 泡泡 */
+  div.bubble > img.eight{
+    /* display: none; */
+    width: 70px;
+    height: 70px;
+    top: 466px;
+    left: 246px;
+    z-index: -1;
+  }
+  div.bubble > img.seven{
+    display: none;
+  }
+  div.bubble > img.two{
+    display: none;
+  }
+  div.bubble > img.nine{
+    top: 282px;
+    left: 29px;
+  }
+  div.bubble > img.four{
+    top: 357px;
+    right: 39px;
+  }
+  div.bubble > img.three{
+    display: none;
+  }
+
 
   /* 背景圖 */
   img.under_bg{
@@ -481,6 +514,13 @@
   section.IG > div.IG_1100 > h3{
     margin: 150px 0px 500px 0px;
   }
+
+  /* IG */
+  section.IG > div.IG_box{
+    grid-template-columns: 241px 0px 300px 245px 241px;
+    /* grid-template-rows: 60px 60px 60px 60px 60px 60px; */
+  }
+
 
   /* footer */
   footer.footer > div.footer_flex > div.content{
