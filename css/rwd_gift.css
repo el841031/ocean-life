@@ -61,7 +61,7 @@
     height: auto;
   }
   /* 人氣商品-圖片 */
-  section.gift > div.product_box > div.product_flex > div.product_big > img{
+  section.gift > div.product_box > div.product_flex > div.product_big > a > img{
     width: 100%;
     height: auto;
   }
@@ -69,7 +69,7 @@
     margin-right: 5px;
   }
 
-  section.gift > div.product_box > div.product_flex > div.product_small > img{
+  section.gift > div.product_box > div.product_flex > div.product_small > a > img{
     width: 100%;
     height: auto;
   }
@@ -197,12 +197,12 @@
     /* border: 1px solid red; */
   }
   /* 人氣商品-圖片 */
-  section.gift > div.product_box > div.product_flex > div.product_big > img{
+  section.gift > div.product_box > div.product_flex > div.product_big > a > img{
     width: 100%;
     height: auto;
   }
 
-  section.gift > div.product_box > div.product_flex > div.product_small > img{
+  section.gift > div.product_box > div.product_flex > div.product_small > a > img{
     width: 100%;
     height: auto;
   }
@@ -359,12 +359,12 @@
     /* border: 1px solid red; */
   }
   /* 人氣商品-圖片 */
-  section.gift > div.product_box > div.product_flex > div.product_big > img{
+  section.gift > div.product_box > div.product_flex > div.product_big > a > img{
     width: 100%;
     height: auto;
   }
 
-  section.gift > div.product_box > div.product_flex > div.product_small > img{
+  section.gift > div.product_box > div.product_flex > div.product_small > a > img{
     width: 100%;
     height: auto;
   }
@@ -564,7 +564,7 @@
     /* border: 1px solid red; */
   }
   /* 人氣商品-圖片 */
-  section.gift > div.product_box > div.product_flex > div.product_big > img{
+  section.gift > div.product_box > div.product_flex > div.product_big > a > img{
     width: 100%;
     height: auto;
   }
@@ -572,7 +572,7 @@
     /* margin-bottom: 20px; */
   }
 
-  section.gift > div.product_box > div.product_flex > div.product_small > img{
+  section.gift > div.product_box > div.product_flex > div.product_small > a > img{
     width: 100%;
     height: auto;
   }

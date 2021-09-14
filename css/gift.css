@@ -175,13 +175,15 @@ section.gift > div.product_box > div.product_flex > div > h5{
 }
 
 /* 照片 */
-section.gift > div.product_box > div.product_flex > div.product_big > img{
+section.gift > div.product_box > div.product_flex > div.product_big > a > img{
   width: 540px;
   height: 258px;
+  cursor: zoom-in;
 }
-section.gift > div.product_box > div.product_flex > div.product_small > img{
+section.gift > div.product_box > div.product_flex > div.product_small > a > img{
   width: 259px;
   height: 259px;
+  cursor: zoom-in;
 }
 
 
