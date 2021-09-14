@@ -18,6 +18,19 @@ $(function(){
   });
 });
 
+// 漢堡語言切換
+$(function(){
+$("ul.burger_language > li").on("click", function(e){
+  e.preventDefault();
+
+  /* 將頁籤列表移除所有 -on，再將指定的加上 -on */
+  $(this).closest("ul.burger_language").find("li").removeClass("-on");
+  $(this).addClass("-on");
+
+  });
+});
+
+
 // 點擊按鈕，選單縮放
 $(function(){
   $("button.hamburger").on("click", function(){

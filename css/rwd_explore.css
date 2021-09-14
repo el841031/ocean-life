@@ -1862,6 +1862,11 @@ section.explore > ul.change_bt_1100 > li > a > h5{
     bottom: 136px;
     width: 112px;
     height: 44px;
+
+    animation-name: none;
+    /* animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-delay: 2s; */
   }
 
 

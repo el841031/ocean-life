@@ -574,6 +574,7 @@ section.abouts_us > div.abouts_1100 > h3{
   color: white;
   letter-spacing: 1.5px;
   margin: 190px 0px 50px 0px;
+  cursor: default;
 }
 section.abouts_us > div.abouts_1100 > h5{
   color: white;
@@ -585,6 +586,7 @@ section.abouts_us > div.abouts_1100 > h5{
 section.abouts_us > div.abouts_1100 > h5:last-child{
   margin-bottom: 190px;
   text-align: center;
+  cursor: default;
 }
 
 
@@ -1679,4 +1681,12 @@ section.feature > div.feature_1100 > div.point > div.left_box > ul.change_featur
 }
 section.feature > div.feature_1100 > div.point > div.left_box > ul.change_feature > li.tunnel02{
   cursor: default;
+}
+
+
+/* 波浪hover動畫 */
+/* 最新消息 */
+ul.three_news > li:hover > div.right_text > div.title_wave > a > h5::after{
+  transition: background-position 0.3s ease;
+  background-position: 60px;
 }

@@ -23,6 +23,7 @@ header#header {
   background-color: #1152a0;
 
   position: sticky;
+  /* position: fixed; */
   display: block;
   left: 0;
   top: 0;
@@ -579,3 +580,8 @@ div.burger_follow > a > img {
     min-width: auto;
   }
 } */
+
+/* 語言選擇 */
+ul.burger_language > li.-on > a{
+  color: #55F4FF;
+}

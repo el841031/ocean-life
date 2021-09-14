@@ -24,6 +24,18 @@ window.onscroll = function(){
   }
 }
 
+// 將下滑的導覽列變成fixed
+function my_function(){
+	var header_top = document.querySelector(".header_top");
+	var header = document.querySelector("#header");
+	if (header_top = null){
+		header_top.style.position = "relative";
+	}
+	else {
+		header.style.position = "fixed";
+	}
+}
+my_function();
 
 
 // scroll_down|點擊並滑到指定區域
