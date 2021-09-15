@@ -394,9 +394,13 @@
   }
   div.map_1100 > div.left_box{
     width: 100%;
+    margin-right: 20px;
     /* display: flex;
     flex-direction: column;
     align-items: center; */
+  }
+  div.top_text > div.information{
+    /* width: 350px; */
   }
 
   /* 按鈕 */
@@ -819,6 +823,10 @@
     flex-direction: column;
     align-items: center;
   }
+  div.left_box > div.top_text > div.information > div{
+    margin-top: 15px;
+  }
+
 
   /* 按鈕 */
   div.map_1100 > div.left_box > div.bottom_bt{
@@ -1210,7 +1218,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
+  div.left_box > div.top_text > div.information > div > h5{
+    font-size: 14px;
+  }
+  div.left_box > div.top_text > div.information > div.Location{
+    margin-top: 15px;
+  }
+  div.top_text > div.information > div.time > h5:nth-child(1)::before{
+    left: 75px;
+  }
+  div.top_text > div.information > div.phone > h5:nth-child(1)::before{
+    left: 75px;
+  }
+  div.top_text > div.information > div.Location > h5:nth-child(1)::before{
+    left: 75px;
+  }
+  div.top_text{
+    width: 334px;
+  }
+
 
   /* 按鈕 */
   div.map_1100 > div.left_box > div.bottom_bt{
@@ -1218,11 +1246,12 @@
     left: 0px;
     transform: none;
     margin-bottom: 0px;
+    text-align: center;
   }
 
   /* 背景 */
   section.map > div.map_bg{
-    height: 780px;
+    height: 744px;
     background-position: center;
     background-image: url(../images/map_bg_02.svg);
   }
@@ -1273,7 +1302,53 @@
   section.abouts_us > div.abouts_1100_rwd > h5{
     font-size: 14px;
   }
-  /* section.abouts_us > div.abouts_1100_rwd > h5:last-child{
-    margin-bottom: 125px;
-  } */
+
+  /* 地圖文字 */
+  /* 地址 */
+  div.left_box > div.top_text > div.information > div.Location > h5:nth-child(1){
+    margin: 0px 23px 15px 0px;
+  }
+  div.top_text > div.information > div.Location > h5:nth-child(1)::before{
+    left: 41px;
+  }
+  /* 營業時間 */
+  div.left_box > div.top_text > div.information > div.time > h5:nth-child(1){
+    width: 31px;
+    margin: 0px 23px 15px 0px;
+  }
+  div.top_text > div.information > div.time > h5:nth-child(1)::before{
+    left: 41px;
+    top: 2px;
+  }
+  /* 客服專線 */
+  div.left_box > div.top_text > div.information > div.phone > h5:nth-child(1){
+    width: 31px;
+    margin: 0px 23px 0px 0px;
+  }
+  div.top_text > div.information > div.phone > h5:nth-child(1)::before{
+    left: 41px;
+    top: 2px;
+    height: 40px;
+  }
+
+  div.map_1100 > div.left_box{
+    align-items: baseline;
+  }
+  div.left_box > div.top_text > div.information > div.phone{
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  div.left_box > div.top_text > div.information > div{
+    width: 300px;
+  }
+  div.map_1100 > div.left_box > div.bottom_bt{
+    text-align: center;
+  }
+  div.map_1100 > div.left_box{
+    align-items: normal;
+  }
+  section.map > div.map_bg{
+    height: 763px;
+  }
+
 }

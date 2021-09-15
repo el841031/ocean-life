@@ -883,7 +883,7 @@ div.top_text{
 }
 
 /* 橫線 */
-div.top_text > div.information > h5:first-child::before{
+/* div.top_text > div.information > div > h5:first-child::before{
   content: "|";
   display: inline-block;
   font-size: 15px;
@@ -893,8 +893,8 @@ div.top_text > div.information > h5:first-child::before{
   position: absolute;
   top: 0px;
   left: 80px;
-}
-div.top_text > div.information > h5::before{
+} */
+/* div.top_text > div.information > div > h5::before{
   content: "|";
   display: inline-block;
   font-size: 36px;
@@ -904,18 +904,51 @@ div.top_text > div.information > h5::before{
   position: absolute;
   top: 31px;
   left: 78px;
+} */
+div.top_text > div.information > div.Location > h5:nth-child(1){
+  position: relative;
 }
-div.top_text > div.information > h5:last-child::before{
-  content: "|";
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 700;
-  color: #BEBEBE;
+div.top_text > div.information > div.Location > h5:nth-child(1)::before{
+  content: "";
+  width: 2px;
+  height: 18px;
+  background-color: #C9C9C9;
 
   position: absolute;
-  top: 101px;
+  top: 4px;
   left: 80px;
 }
+div.left_box > div.top_text > div.information > div.time > h5{
+  margin-bottom: 15px;
+}
+div.top_text > div.information > div.time > h5:nth-child(1)::before{
+  content: "";
+  width: 2px;
+  height: 40px;
+  background-color: #C9C9C9;
+
+  position: absolute;
+  top: 5px;
+  left: 80px;
+}
+div.top_text > div.information > div.time > h5:nth-child(1){
+  position: relative;
+}
+div.top_text > div.information > div.phone > h5:nth-child(1)::before{
+  content: "";
+  width: 2px;
+  height: 18px;
+  background-color: #C9C9C9;
+
+  position: absolute;
+  top: 4px;
+  left: 80px;
+}
+div.top_text > div.information > div.phone > h5:nth-child(1){
+  position: relative;
+}
+
+
 div.top_text > div.information{
   position: relative;
 }
@@ -969,17 +1002,23 @@ div.left_box > div.top_text > h3{
 
   margin: 100px 0px 66px 0px;
 }
-div.left_box > div.top_text > div > h5{
+div.left_box > div.top_text > div.information > div > h5{
   color: #474747;
   letter-spacing: 1.5px;
   font-weight: 400;
   line-height: 1.6;
 }
-div.left_box > div.top_text > div > h5:first-child{
-  margin: 15px 0px;
+div.left_box > div.top_text > div.information > div.Location > h5:nth-child(1){
+  margin: 0px 64px 15px 0px;
 }
-div.left_box > div.top_text > div > h5:last-child{
-  margin: 15px 0px;
+div.left_box > div.top_text > div.information > div > h5:nth-child(3){
+  /* margin: 15px 0px; */
+}
+div.left_box > div.top_text > div.information > div.time > h5:nth-child(1){
+  margin: 0px 30px 15px 0px;
+}
+div.left_box > div.top_text > div.information > div.phone > h5:nth-child(1){
+  margin: 0px 30px 15px 0px;
 }
 div.bottom_bt > div.btn_more > a{
   color: #105A9C;
@@ -996,7 +1035,12 @@ div.bottom_bt > div.btn_more > a{
   border-radius: 20px;
 }
 
-
+/* 新增文字 */
+div.left_box > div.top_text > div.information > div{
+  display: flex;
+  /* justify-content: space-between; */
+  width: 348px;
+}
 
 
 
@@ -1690,3 +1734,23 @@ ul.three_news > li:hover > div.right_text > div.title_wave > a > h5::after{
   transition: background-position 0.3s ease;
   background-position: 60px;
 }
+
+
+/* 修改地圖文字 */
+/* div.left_box > div.top_text > div > p{
+  color: #474747;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 15px;
+  display: none;
+} */
+
+/* div.left_box > div.top_text > div > div.rwd_576 > h5{
+  color: #474747;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 15px;
+  display: none;
+} */
